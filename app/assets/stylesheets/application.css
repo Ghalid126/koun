@@ -77,6 +77,10 @@ a {
 }
 .header {
   height: 125px;
+  width: 100%;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  z-index: 2;
+  position: absolute;
 }
 .logo {
   position: absolute;
@@ -92,15 +96,4 @@ a {
   --gradient-color-2: #EC53B0; 
   z-index:0;
 }
-.header-separator {
-  height: 150px;
-  position: relative;
-  z-index: 1;
-}
-.separator {
-  position: absolute;
-  bottom: 125px;
-  height: 3rem;
-  z-index: 1;
-  width: 100%;
-}
+
