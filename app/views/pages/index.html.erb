@@ -3,7 +3,19 @@
   <canvas id="gradient-canvas">
   </canvas>
   <div class="header">
-    <div class="header-logo"><%= image_tag 'Koun-logo.svg', class: 'logo' %></div>
-    <div class="navbar"></div>
+    <div class="header-logo">
+      <%= link_to root_path do %>
+        <%= image_tag 'Koun-logo.svg', class: 'logo', alt: 'logo KOUN Website' %>
+      <% end %>
+    </div>
+    </div>
+    <div class="navbar">
+      <ul>
+        <li>Portfolio</li>
+        <li>Services</li>
+        <li>Blog</li>
+        <li class="quote-button">Get a quote</li>
+      </ul>
+    </div>
   </div>
 </div>

@@ -96,4 +96,30 @@ a {
   --gradient-color-2: #EC53B0; 
   z-index:0;
 }
+.navbar {
+  color: white;
+  position: absolute;
+  padding: 3.5rem 2rem;
+  width: auto;
+  z-index: 1;
+  right: 2px;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+}
+.navbar li {
+  display: inline;
+  list-style: none;
+}
+.navbar li ~li {
+  padding-left: 0.8rem;
+}
+.navbar .quote-button {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0.2rem 0.8rem;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  text-transform: uppercase;
 
+}
