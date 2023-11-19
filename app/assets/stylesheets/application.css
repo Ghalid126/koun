@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  */
+ 
  @font-face {
   font-family: 'Bahnschrift';
   src: url('<%= asset_path('fonts/BAHNSCHRIFT.TTF') %>') format('truetype');
@@ -172,12 +173,13 @@ a {
 /* PROCESS STYLES */
 .process {
   background-color: #F4F9FF;
+  border-bottom: rgba(26, 128, 249, 0.2) solid 2px;
 }
 .process h1 {
   color: #3095FF;
-  font-size: 32pt;
+  font-size: 30pt;
   font-weight: 500;
-  padding-bottom: 2rem;
-  padding-top: 2rem;
+  padding-bottom: 4rem;
+  padding-top: 3rem;
   text-align: center;
 }
