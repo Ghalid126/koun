@@ -196,6 +196,8 @@ h1 {
   justify-content:  center;
 }
 .thumbnail {
+  margin-left: auto;
+  margin-right: auto;
   flex: 0 0 auto;
   position: relative;
   width: 88px;
@@ -221,15 +223,24 @@ h1 {
   -webkit-transition: all .3s ease-in;
   transition: all .3s ease-in;
 }
-.thumbnail ~ .thumbnail {
-  margin-left: 120px;
-}
 .process-content {
   background-color: #fff;
   display: flex;
   flex-direction: row;
   height: 550px;
-  margin-left: 12rem;
+  margin-left: 15.5rem;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 80px;
+}
+.item h2 {
+  color: #5f6568;
+  font-size: 18pt;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 .process-text {
   margin-right: 10rem;
