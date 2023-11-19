@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
- 
+
  @font-face {
   font-family: 'Bahnschrift';
   src: url('<%= asset_path('fonts/BAHNSCHRIFT.TTF') %>') format('truetype');
@@ -182,4 +182,41 @@ a {
   padding-bottom: 4rem;
   padding-top: 3rem;
   text-align: center;
+}
+.process-logo {
+  display: flex;
+  flex-direction: row;
+  top: 44px;
+  left: 220px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.thumbnail {
+  position: relative;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 4px 10px #eaf7ff, 0 0 0 10px #fff;
+  box-shadow: 0 4px 10px #eaf7ff, 0 0 0 10px #fff;
+  border: 1px solid #f2f2f2;
+  background: linear-gradient(146deg,#f1f1f1 0,#fff 30.72%,#eeebeb 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+.thumbnail ~ .thumbnail {
+  margin-left: 120px;
 }
