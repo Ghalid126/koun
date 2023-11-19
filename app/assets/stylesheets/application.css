@@ -15,7 +15,7 @@
  */
  @font-face {
   font-family: 'Bahnschrift';
-  src: url('fonts/BAHNSCHRIFT.TTF') format('truetype');
+  src: url('<%= asset_path('fonts/BAHNSCHRIFT.TTF') %>') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -92,7 +92,7 @@ a {
 }
 .logo {
   position: absolute;
-  padding: 2.5rem;
+  padding: 2.5rem 3rem;
   width: 200px;
   z-index: 1;
 }
@@ -113,6 +113,7 @@ a {
   right: 2px;
   font-size: 1.5rem;
   box-sizing: border-box;
+  font-size: 16pt;
 }
 .navbar li {
   display: inline;
@@ -123,11 +124,60 @@ a {
 }
 .navbar .quote-button {
   background-color: rgba(255, 255, 255, 0.2);
-  padding: 0.2rem 1rem;
+  padding: 0.4rem 2.2rem;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
   margin-left: 1rem;
   text-transform: uppercase;
+  width: fit-content;
+}
+
+/* HERO STYLES */
+.hero {
+  color: #fff;
+  display: flex;
+  position: absolute;
+  z-index: 3;
+}
+.hero-text {
+  left: 130px;
+  position: relative;
+  top: 30vh;
+  width: 100%;
+}
+.hero-text h1 {
+  font-weight: bold;
+  font-size: 32pt;
+}
+.hero-text h2 {
+  margin-top: 1.5rem;
+  width: 70%;
+  font-size: 20pt;
+  font-weight: 300;
+}
+.hero-text .quote-button {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0.6rem 2.2rem;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  font-size: 20pt;
+  margin-top: 1.5rem;
+  width: fit-content;
+}
+
+/* PROCESS STYLES */
+.process {
+  background-color: #F4F9FF;
+}
+.process h1 {
+  color: #3095FF;
+  font-size: 32pt;
+  font-weight: 500;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  text-align: center;
 }
