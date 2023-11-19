@@ -195,6 +195,37 @@ h1 {
   position: relative;
   justify-content:  center;
 }
+.jumper {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: linear-gradient(145deg,#138adf 0,#9335e4 100%);
+  position: absolute;
+  z-index: 9;
+  top: 77px;
+  -webkit-transition: all .25s linear;
+  transition: all .25s linear;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  pointer-events: none;
+}
+jumper::after {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: transparent;
+  border-top-color: #844be2;
+  border-width: 12px;
+  margin-left: -12px;
+  margin-top: -3px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
 .thumbnail {
   margin-left: auto;
   margin-right: auto;
@@ -223,6 +254,7 @@ h1 {
   -webkit-transition: all .3s ease-in;
   transition: all .3s ease-in;
 }
+
 .process-content {
   background-color: #fff;
   display: flex;
@@ -243,6 +275,7 @@ h1 {
   text-align: center;
 }
 .process-text {
+  height: max-content;
   margin-right: 10rem;
   width: 30vw;
   position: relative;
@@ -258,16 +291,19 @@ h1 {
   color: #1b2c5c;
 }
 .process-img {
+  height: max-content;
   position: relative;
   z-index: 2;
   top: 80px;
+}
+.hidden {
+  display: none;
 }
 
 /* TESTIMONIALS STYLES */
 .testimonials {
   background-color: #F4F9FF;
   height: 400px;
-  margin-top: 5rem;
 }
 
 /* FAQ STYLES */

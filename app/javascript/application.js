@@ -880,5 +880,5 @@ function toggleVisibility(elementId) {
   var contenu = document.getElementById(elementId);
 
   // Inverse la visibilité du contenu en ajoutant ou supprimant la classe 'hidden'
-  contenu.classList.toggle('conten');
+  contenu.classList.toggle('contenu');
 }
