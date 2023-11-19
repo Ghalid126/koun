@@ -874,3 +874,11 @@ gradient.initGradient("#gradient-canvas");
 
 var gradientBottom = new Gradient ();
 gradientBottom.initGradient("#gradient-canvas-bottom");
+
+// Fonction pour process rubrique apparition
+function toggleVisibility(elementId) {
+  var contenu = document.getElementById(elementId);
+
+  // Inverse la visibilité du contenu en ajoutant ou supprimant la classe 'hidden'
+  contenu.classList.toggle('conten');
+}

@@ -224,16 +224,19 @@ h1 {
 .thumbnail ~ .thumbnail {
   margin-left: 120px;
 }
+.contenu {
+  display: none;
+}
 .process-content {
   background-color: #fff;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   height: 550px;
+  margin-left: 12rem;
 }
 .process-text {
-  margin-right: 15rem;
-  width: 25vw;
+  margin-right: 10rem;
+  width: 30vw;
   position: relative;
   top: 140px;
 }
@@ -242,6 +245,9 @@ h1 {
   font-size: 20pt;
   font-weight: 600;
   margin-bottom: 2rem;
+}
+.process-text p {
+  color: #1b2c5c;
 }
 .process-img {
   position: relative;
@@ -253,6 +259,7 @@ h1 {
 .testimonials {
   background-color: #F4F9FF;
   height: 400px;
+  margin-top: 5rem;
 }
 
 /* FAQ STYLES */
