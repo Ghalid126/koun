@@ -866,5 +866,9 @@ class Gradient {
  * Gradient.toggleColor(index)
  * Gradient.updateFrequency(freq)
  */
+
 var gradient = new Gradient();
 gradient.initGradient("#gradient-canvas");
+
+var gradientBottom = new Gradient ();
+gradientBottom.initGradient("#gradient-canvas-bottom");
