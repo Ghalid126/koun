@@ -196,6 +196,7 @@ h1 {
   justify-content:  center;
 }
 .thumbnail {
+  flex: 0 0 auto;
   position: relative;
   width: 88px;
   height: 88px;
@@ -225,7 +226,20 @@ h1 {
 }
 .process-content {
   background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   height: 400px;
+  align-items: flex-start;
+}
+.process-text {
+  width: 40vw;
+  position: relative;
+  top: 100px;
+}
+.process-img {
+  position: relative;
+  z-index: 2;
 }
 
 /* TESTIMONIALS STYLES */
@@ -243,7 +257,9 @@ h1 {
   width:100%;
   height:100%;
   --gradient-color-1: #0E21A0; 
-  --gradient-color-2: #EC53B0; 
+  --gradient-color-2: #EC53B0;
+  --gradient-color-3: #EC53B0; 
+  --gradient-color-4: #7C3AA8;  
   z-index:0;
 }
 .faq h1 {
