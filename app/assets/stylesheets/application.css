@@ -186,6 +186,31 @@ h1 {
 
 }
 /* PROCESS STYLES */
+.contenu {
+  display: none;
+}
+
+.contenu.active {
+  display: block;
+}
+#content1.active {
+  display: block; /* ou tout autre style nécessaire */
+}
+#content2.active {
+  display: block; /* ou tout autre style nécessaire */
+}
+#content3.active {
+  display: block; /* ou tout autre style nécessaire */
+}
+#content4.active {
+  display: block; /* ou tout autre style nécessaire */
+}
+#content5.active {
+  display: block; /* ou tout autre style nécessaire */
+}
+#content6.active {
+  display: block; /* ou tout autre style nécessaire */
+}
 .process {
   background-color: #F4F9FF;
   border-bottom: rgba(26, 128, 249, 0.2) solid 2px;
@@ -199,7 +224,7 @@ h1 {
   position: relative;
   justify-content:  center;
 }
-.jumper {
+/* .jumper {
   width: 90px;
   height: 90px;
   border-radius: 50%;
@@ -229,7 +254,7 @@ jumper::after {
   margin-top: -3px;
   -webkit-transition: all .2s;
   transition: all .2s;
-}
+} */
 .thumbnail {
   margin-left: auto;
   margin-right: auto;
@@ -266,6 +291,10 @@ jumper::after {
   height: 550px;
   margin-left: 15.5rem;
 }
+[id^="rubrique"] {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out; /* Ajoutez une transition pour un effet fluide */
+}
 .item {
   display: flex;
   flex-direction: column;
@@ -277,6 +306,11 @@ jumper::after {
   font-size: 18pt;
   margin-bottom: 1.5rem;
   text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+.item h2:hover {
+  cursor: pointer;
+  transform: scale(1.1); /* Agrandit la taille au survol */
 }
 .process-text {
   height: max-content;
@@ -300,14 +334,15 @@ jumper::after {
   z-index: 2;
   top: 80px;
 }
-.hidden {
-  display: none;
-}
+
 
 /* TESTIMONIALS STYLES */
 .testimonials {
   background-color: #F4F9FF;
   height: 400px;
+}
+.testimonials h1 {
+  padding-top: 5rem;
 }
 
 /* FAQ STYLES */

@@ -876,13 +876,28 @@ var gradientBottom = new Gradient ();
 gradientBottom.initGradient("#gradient-canvas-bottom");
 
 // Fonction pour process rubrique apparition
-function activateProcess() {
-  let thumbnails = document.querySelectorAll(".thumbnaiil");
+document.addEventListener('DOMContentLoaded', function() {
+  // Sélectionnez tous les éléments de rubrique et de contenu
+  var rubriques = document.querySelectorAll('[id^="rubrique"]');
+  var contenus = document.querySelectorAll('[id^="content"]');
 
-  thumbnails.forEach(function(thumbnail) {
-    thumbnail.addEventListener("click", function() {
-      alert(thumbnail)
+  // Ajoutez des gestionnaires d'événements pour chaque rubrique
+  rubriques.forEach(function(rubrique, index) {
+    rubrique.addEventListener('click', function() {
+      console.log('Rubrique cliquée :', index);
+
+      // Retirez la classe "active" de tous les contenus
+      contenus.forEach(function(contenu) {
+        contenu.classList.remove('active');
+      });
+
+      // Vérifiez si l'index est valide avant d'ajouter la classe "active"
+      if (contenus[index]) {
+        contenus[index].classList.add('active');
+        contenus[index].classList.add('contenu');
+      }
     });
   });
-}
+});
+
 
