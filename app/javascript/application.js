@@ -876,9 +876,13 @@ var gradientBottom = new Gradient ();
 gradientBottom.initGradient("#gradient-canvas-bottom");
 
 // Fonction pour process rubrique apparition
-function toggleVisibility(elementId) {
-  var contenu = document.getElementById(elementId);
+function activateProcess() {
+  let thumbnails = document.querySelectorAll(".thumbnaiil");
 
-  // Inverse la visibilité du contenu en ajoutant ou supprimant la classe 'hidden'
-  contenu.classList.toggle('contenu');
+  thumbnails.forEach(function(thumbnail) {
+    thumbnail.addEventListener("click", function() {
+      alert(thumbnail)
+    });
+  });
 }
+
