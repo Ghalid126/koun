@@ -183,9 +183,26 @@ h1 {
 
 /* SERVICES STYLES */
 .services {
-
+  height: 300px;
 }
+
 /* PROCESS STYLES */
+.process {
+  position: relative;
+  width: 100%;
+}
+.process::before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: -10vmin;
+  right: -10vmin;
+  top: -25%;
+  height: 14vmin;
+  background-color: #fff;
+  z-index: 11;
+  border-radius: 100%;
+}
 .contenu {
   display: none;
 }
