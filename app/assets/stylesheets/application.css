@@ -204,6 +204,33 @@ h1 {
   text-align: left;
   width: 100%;
 }
+.services-container {
+  display: flex;
+  flex-direction: column;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+}
+.element {
+  border: #000 solid 1px;
+  height: fit-content;
+  margin: 25px;
+  padding: 1rem;
+  width: 300px;
+}
+.service-icon {
+  margin-left: -85px;
+  min-width: 129px;
+  height: 129px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #f4ffff;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /* PROCESS STYLES */
 .process {
