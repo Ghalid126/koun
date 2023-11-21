@@ -191,6 +191,7 @@ h1 {
 .rounded-video {
   border-radius: 15px; /* Adjust the radius as per your design */
   overflow: hidden; /* This ensures the corners outside the radius are hidden */
+  width: 57vw;
 }
 /* SERVICES STYLES */
 .services {
