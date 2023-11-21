@@ -875,42 +875,19 @@ gradient.initGradient("#gradient-canvas");
 var gradientBottom = new Gradient ();
 gradientBottom.initGradient("#gradient-canvas-bottom");
 
-// Fonction pour vérifier si l'élément est dépassé de 20 pixels
-function isElementPassedThreshold(el, threshold) {
-  var rect = el.getBoundingClientRect();
-  var thresholdPixels = threshold || 100; // Par défaut, 20 pixels
-
-  return rect.bottom + thresholdPixels <= (window.innerHeight || document.documentElement.clientHeight);
-}
-
-// Fonction pour ajouter une classe active lors du défilement
-function addActiveClassOnScroll() {
-  var content1 = document.getElementById('content1');
-  var triggerElement = document.getElementById('triggerElement');
-
-  if (isElementPassedThreshold(triggerElement, 100)) {
-    content1.classList.add('active');
-  } else {
-    content1.classList.remove('active');
-  }
-}
-
-// Ajouter un écouteur d'événement de défilement
-window.addEventListener('scroll', addActiveClassOnScroll);
-
-// Appeler la fonction une fois au chargement de la page pour vérifier l'état initial
-addActiveClassOnScroll();
 
 // Fonction pour process rubrique apparition
 document.addEventListener('DOMContentLoaded', function() {
   // Sélectionnez tous les éléments de rubrique et de contenu
   var rubriques = document.querySelectorAll('[id^="rubrique"]');
   var contenus = document.querySelectorAll('[id^="content"]');
+  let slideBottomElements = document.querySelectorAll('.slide-bottom');
 
   // Ajoutez des gestionnaires d'événements pour chaque rubrique
   rubriques.forEach(function(rubrique, index) {
     rubrique.addEventListener('click', function() {
       console.log('Rubrique cliquée :', index);
+
 
       // Retirez la classe "active" de tous les contenus
       contenus.forEach(function(contenu) {
@@ -927,4 +904,49 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+// Fonction pour slider du contenu depuis le bas
 
+function slideBottomElements(entries, observer) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('active-bottom'); // Ajoutez la classe 'active-bottom' pour l'animation
+    } // else {
+    //   entry.target.classList.remove('active-bottom'); // Supprimez la classe 'active-bottom' si l'élément sort de la vue
+    // }
+  });
+}
+
+// Fonction pour animer les éléments de la gauche
+function slideLeftElements(entries, observer) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('active-left'); // Ajoutez la classe 'active-left' pour l'animation
+    } // else {
+    //   entry.target.classList.remove('active-left'); // Supprimez la classe 'active-left' si l'élément sort de la vue
+    // }
+  });
+}
+
+// Options pour les observateurs Intersection Observer
+const options = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.2 // Ajustez ceci pour définir quand les éléments devraient apparaître
+};
+
+// Créez un observateurs, pour le bas et pour la gauche
+const observerBottom = new IntersectionObserver(slideBottomElements, options);
+const observerLeft = new IntersectionObserver(slideLeftElements, options);
+
+// Sélectionnez les éléments avec les classes 'slide-bottom' et 'slide-left'
+const elementsBottom = document.querySelectorAll('.slide-bottom');
+const elementsLeft = document.querySelectorAll('.slide-left');
+
+// Enregistrez chaque élément pour observer, en utilisant le bon observateur
+elementsBottom.forEach(element => {
+  observerBottom.observe(element);
+});
+
+elementsLeft.forEach(element => {
+  observerLeft.observe(element);
+});

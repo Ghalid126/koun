@@ -400,6 +400,26 @@ jumper::after {
   z-index: 2;
   top: 80px;
 }
+.slide-bottom {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s ease, transform 2s ease;
+}
+
+.slide-bottom.active-bottom {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Animation pour les éléments de la gauche */
+.slide-left {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: opacity 1s ease, transform 2s ease;
+}
+.slide-left.active-left {
+  opacity: 1;
+  transform: translateX(0);
+}
 
 
 /* TESTIMONIALS STYLES */
