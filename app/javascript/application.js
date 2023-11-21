@@ -910,9 +910,9 @@ function slideBottomElements(entries, observer) {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('active-bottom'); // Ajoutez la classe 'active-bottom' pour l'animation
-    } // else {
-    //   entry.target.classList.remove('active-bottom'); // Supprimez la classe 'active-bottom' si l'élément sort de la vue
-    // }
+    } else {
+        entry.target.classList.remove('active-bottom'); // Supprimez la classe 'active-bottom' si l'élément sort de la vue
+      }
   });
 }
 
@@ -921,9 +921,9 @@ function slideLeftElements(entries, observer) {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('active-left'); // Ajoutez la classe 'active-left' pour l'animation
-    } // else {
-    //   entry.target.classList.remove('active-left'); // Supprimez la classe 'active-left' si l'élément sort de la vue
-    // }
+    } else {
+        entry.target.classList.remove('active-left'); // Supprimez la classe 'active-left' si l'élément sort de la vue
+      }
   });
 }
 
