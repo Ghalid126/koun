@@ -875,6 +875,32 @@ gradient.initGradient("#gradient-canvas");
 var gradientBottom = new Gradient ();
 gradientBottom.initGradient("#gradient-canvas-bottom");
 
+// Fonction pour vérifier si l'élément est dépassé de 20 pixels
+function isElementPassedThreshold(el, threshold) {
+  var rect = el.getBoundingClientRect();
+  var thresholdPixels = threshold || 100; // Par défaut, 20 pixels
+
+  return rect.bottom + thresholdPixels <= (window.innerHeight || document.documentElement.clientHeight);
+}
+
+// Fonction pour ajouter une classe active lors du défilement
+function addActiveClassOnScroll() {
+  var content1 = document.getElementById('content1');
+  var triggerElement = document.getElementById('triggerElement');
+
+  if (isElementPassedThreshold(triggerElement, 100)) {
+    content1.classList.add('active');
+  } else {
+    content1.classList.remove('active');
+  }
+}
+
+// Ajouter un écouteur d'événement de défilement
+window.addEventListener('scroll', addActiveClassOnScroll);
+
+// Appeler la fonction une fois au chargement de la page pour vérifier l'état initial
+addActiveClassOnScroll();
+
 // Fonction pour process rubrique apparition
 document.addEventListener('DOMContentLoaded', function() {
   // Sélectionnez tous les éléments de rubrique et de contenu
@@ -899,5 +925,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
 
 
