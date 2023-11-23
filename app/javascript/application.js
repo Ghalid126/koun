@@ -881,7 +881,8 @@ document.addEventListener('DOMContentLoaded', function() {
   // Sélectionnez tous les éléments de rubrique et de contenu
   var rubriques = document.querySelectorAll('[id^="rubrique"]');
   var contenus = document.querySelectorAll('[id^="content"]');
-  let slideBottomElements = document.querySelectorAll('.slide-bottom');
+  let jumpers = document.querySelectorAll('[id^="jumper"]');
+
 
   // Ajoutez des gestionnaires d'événements pour chaque rubrique
   rubriques.forEach(function(rubrique, index) {
@@ -899,6 +900,14 @@ document.addEventListener('DOMContentLoaded', function() {
         contenus[index].classList.add('active');
         contenus[index].classList.add('contenu');
       }
+      jumpers.forEach(function(jumper) {
+        jumper.classList.remove('jumper');
+      });
+      jumpers.forEach(function(jumper, index) {
+        if (contenus[index].classList.contains("active")) {
+          jumpers[index].classList.add("jumper");
+        }
+      });
     });
   });
 });
