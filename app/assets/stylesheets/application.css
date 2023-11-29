@@ -489,6 +489,7 @@ jumper::after {
 /* TECHNOLOGY-STACK STYLES */
 
 .technology-stack_container {
+  margin-bottom: 5rem;
   /* background-color: #F4F9FF; */
 }
 .technology-stack_container h1 {
