@@ -249,6 +249,12 @@ h1 {
   position: relative;
   width: 100%;
 }
+.process-headers h1 {
+  background: linear-gradient(to right, #0E21A0, #51C2EF);
+  background-clip: text;
+  -webkit-background-clip: text; /* Pour la compatibilité avec certains navigateurs WebKit */
+  color: transparent;
+}
 /* .process::before {
   content: "";
   position: absolute;
@@ -459,6 +465,7 @@ jumper::after {
   z-index: 2;
   top: 80px;
 }
+
 .slide-bottom {
   opacity: 0;
   transform: translateY(100px);
@@ -479,9 +486,76 @@ jumper::after {
   opacity: 1;
   transform: translateX(0);
 }
+/* TECHNOLOGY-STACK STYLES */
 
+.technology-stack_container {
+  /* background-color: #F4F9FF; */
+}
+.technology-stack_container h1 {
+  background: linear-gradient(to right, #51C2EF, #0E21A0);
+  background-clip: text;
+  -webkit-background-clip: text; /* Pour la compatibilité avec certains navigateurs WebKit */
+  color: transparent;
+}
+.elements-container {
+  display: flex;
+  flex-direction: column;
+}
+.technology-stack_container .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.technology {
+  background-color: #F4F9FF;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: row;
+  height: 40vh;
+  align-items: center;
+  flex: 0 1 35%;
+  margin: 2rem;
+  padding: 4rem 3rem;
+}
+.technology-logo {
+  margin-right: 2rem;
+}
+.technology text {
+  color: #0E21A0;
+  width: 55%;
+}
+.technology-text h2 {
+  color: #0E21A0;
+  margin-bottom: 1.5rem;
+  font-size: 16pt;
+  font-weight: 500;
+}
+.technology-text p {
+  color: #0E21A0;
+  font-size: 12pt;
+  font-weight: 300;
+}
+.bottom-arrow {
+  position: relative;
+  top: 130px;
+  right: -33px;
+}
 
 /* TESTIMONIALS STYLES */
+/* .testimonials::before {
+  margin-top: -5rem;
+  content: "";
+  position: absolute;
+  display: block;
+  left: -10vmin;
+  right: -10vmin;
+  top: -25%;
+  height: 14vmin;
+  background-color: #fff;
+  z-index: 5;
+  border-radius: 100%;
+} */
 .testimonials {
   background-color: #F4F9FF;
   height: 400px;
