@@ -882,7 +882,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var rubriques = document.querySelectorAll('[id^="rubrique"]');
   var contenus = document.querySelectorAll('[id^="content"]');
   let jumpers = document.querySelectorAll('[id^="jumper"]');
-
+  let svgs = document.querySelectorAll('[id^="svg"]');
 
   // Ajoutez des gestionnaires d'événements pour chaque rubrique
   rubriques.forEach(function(rubrique, index) {
@@ -903,9 +903,13 @@ document.addEventListener('DOMContentLoaded', function() {
       jumpers.forEach(function(jumper) {
         jumper.classList.remove('jumper');
       });
+      svgs.forEach(function(svg) {
+        svg.classList.remove('svg-active');
+      });
       jumpers.forEach(function(jumper, index) {
         if (contenus[index].classList.contains("active")) {
           jumpers[index].classList.add("jumper");
+          svgs[index].classList.add('svg-active');
         }
       });
     });

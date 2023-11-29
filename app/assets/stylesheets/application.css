@@ -249,7 +249,7 @@ h1 {
   position: relative;
   width: 100%;
 }
-.process::before {
+/* .process::before {
   content: "";
   position: absolute;
   display: block;
@@ -260,7 +260,7 @@ h1 {
   background-color: #fff;
   z-index: 5;
   border-radius: 100%;
-}
+} */
 .contenu {
   display: none;
 }
@@ -329,7 +329,56 @@ jumper::after {
   margin-left: -12px;
   margin-top: -3px;
   -webkit-transition: all .2s;
-  transition: all .2s;
+  transition: all .2s ease-in-out;
+}
+#svg1 {
+  fill: #3B7BCE;
+}
+#svg1.svg-active {
+  fill: #fff;
+  z-index: 9;
+  transition: all 1s ease-in-out;
+}
+#svg2 {
+  fill: #7748E3;
+}
+#svg2.svg-active {
+  fill: #fff;
+  z-index: 9;
+  transition: all 1s ease-in-out;
+}
+#svg3 {
+  fill: #F1CD0E;
+  /* transition: all 1s; */
+}
+#svg3.svg-active {
+  fill: #fff;
+  z-index: 9;
+  transition: all 1s ease-in-out;
+}
+#svg4 {
+  fill: #01AFE9;
+}
+#svg4.svg-active {
+  fill: #fff;
+  z-index: 9;
+  transition: all 1s ease-in-out;
+}
+#svg5 {
+  fill: #90C404;
+}
+#svg5.svg-active {
+  fill: #fff;
+  z-index: 9;
+  transition: all 1s ease-in-out;
+}
+#svg6 {
+  fill: #3B7BCE;
+}
+#svg6.svg-active {
+  fill: #fff;
+  z-index: 9;
+  transition: all 1s ease-in-out;
 }
 .thumbnail {
   margin-left: auto;
@@ -359,9 +408,6 @@ jumper::after {
   -webkit-transition: all .3s ease-in;
   transition: all .3s ease-in-out;
 }
-.thumbnail:hover {
-  transform: scale(1.2);
-}
 
 .process-content {
   background-color: #fff;
@@ -387,7 +433,7 @@ jumper::after {
   text-align: center;
   transition: transform 0.3s ease-in-out;
 }
-.item h2:hover {
+.item:hover {
   cursor: pointer;
   transform: scale(1.1); /* Agrandit la taille au survol */
 }
