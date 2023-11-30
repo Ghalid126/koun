@@ -80,7 +80,7 @@ a {
 h1 {
   color: #3095FF;
   font-size: 30pt;
-  font-weight: 500;
+  font-weight: 600;
   padding-bottom: 4rem;
   padding-top: 3rem;
   text-align: center;
@@ -497,6 +497,7 @@ jumper::after {
   background-clip: text;
   -webkit-background-clip: text; /* Pour la compatibilité avec certains navigateurs WebKit */
   color: transparent;
+  font-weight: 600;
 }
 .elements-container {
   display: flex;
@@ -510,7 +511,7 @@ jumper::after {
 .technology {
   background-color: #F4F9FF;
   box-sizing: border-box;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: row;
   height: 40vh;
@@ -519,28 +520,45 @@ jumper::after {
   margin: 2rem;
   padding: 4rem 3rem;
 }
+.technology:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all 0.5s ease-in-out;
+}
 .technology-logo {
   margin-right: 2rem;
 }
-.technology text {
+.technology:hover h2 {
+  background: linear-gradient(to right, #EC53B0, #0E21A0);
+  background-clip: text;
+  -webkit-background-clip: text; /* Pour la compatibilité avec certains navigateurs WebKit */
+  color: transparent;
+}
+.technology:hover p {
+  background: linear-gradient(to right, #EC53B0, #0E21A0);
+  background-clip: text;
+  -webkit-background-clip: text; /* Pour la compatibilité avec certains navigateurs WebKit */
+  color: transparent;
+}
+.technology-text {
   color: #0E21A0;
-  width: 55%;
+  width: 100%;
 }
 .technology-text h2 {
   color: #0E21A0;
   margin-bottom: 1.5rem;
-  font-size: 16pt;
-  font-weight: 500;
+  font-size: 20pt;
+  font-weight: 600;
 }
 .technology-text p {
   color: #0E21A0;
-  font-size: 12pt;
-  font-weight: 300;
+  font-size: 16pt;
+  font-weight: 500;
 }
 .bottom-arrow {
   position: relative;
+  right: -30px;
   top: 130px;
-  right: -33px;
 }
 
 /* TESTIMONIALS STYLES */
