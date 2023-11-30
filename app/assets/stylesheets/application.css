@@ -249,6 +249,11 @@ h1 {
   position: relative;
   width: 100%;
 }
+.process-headers {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 .process-headers h1 {
   background: linear-gradient(to right, #0E21A0, #51C2EF);
   background-clip: text;
@@ -490,6 +495,9 @@ jumper::after {
 
 .technology-stack_container {
   margin-bottom: 5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   /* background-color: #F4F9FF; */
 }
 .technology-stack_container h1 {

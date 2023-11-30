@@ -876,6 +876,7 @@ var gradientBottom = new Gradient ();
 gradientBottom.initGradient("#gradient-canvas-bottom");
 
 
+
 // Fonction pour process rubrique apparition
 document.addEventListener('DOMContentLoaded', function() {
   // Sélectionnez tous les éléments de rubrique et de contenu
