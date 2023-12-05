@@ -597,10 +597,10 @@ jumper::after {
   font-weight: 600;
 }
 .testimonials-container {
-  min-height: 100vh;
+  min-height: 80vh;
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   padding: 30px;
   background-image: url('pattern-curve.svg');
@@ -744,7 +744,7 @@ jumper::after {
     width: 600px;
   }
   .testimonials .buttons {
-    top: 150px;
+    top: 260px;
     transform: translate(0);
     left: calc(100% - 450px);
 
