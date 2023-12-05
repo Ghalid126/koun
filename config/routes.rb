@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   root "pages#home"
 
   get 'home', to: 'pages#home'
+  get 'quote_step1', to: 'pages#quote_step1'
 end

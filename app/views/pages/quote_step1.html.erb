@@ -1,0 +1,39 @@
+<canvas id="gradient-canvas-quote">
+</canvas>
+<%= render 'layouts/navbar' %>
+<div class="header-quote">
+  <h1>
+    Tell us about<br>
+    your project
+  </h1>
+  <div class="quote-svg-container">
+    <%= image_tag "quote-hero-image.svg", class: "quote-svg" %>
+  </div>
+</div>
+<div class="choice-container">
+  <div class="choice">
+    <%= image_tag 'custom-web-dev.svg', class: "choice-svg" %>
+    <h2>
+      Custom Web<br>
+      Development
+    </h2>
+  </div>
+  <div class="choice">
+    <%= image_tag 'vitrine-web-dev.svg', class: "choice-svg" %>
+    <h2>
+      Static<br>
+      Website
+    </h2>
+  </div>
+  <div class="choice">
+    <%= image_tag 'ecommerce-web-dev.svg', class: "choice-svg" %>
+    <h2>
+      E-commerce<br>
+      Website
+    </h2>
+  </div>
+  <div class="choice">
+    <%= image_tag 'webdesign.svg', class: "choice-svg", id: "webdesign" %>
+    <h2>Website Design</h2>
+  </div>
+</div>

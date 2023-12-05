@@ -4,4 +4,8 @@ class PagesController < ApplicationController
 
   end
 
+  def quote_step1
+
+  end
+
 end

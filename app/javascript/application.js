@@ -875,7 +875,8 @@ gradient.initGradient("#gradient-canvas");
 var gradientBottom = new Gradient ();
 gradientBottom.initGradient("#gradient-canvas-bottom");
 
-
+var gradientBottom = new Gradient ();
+gradientBottom.initGradient("#gradient-canvas-quote");
 
 // Fonction pour process rubrique apparition
 document.addEventListener('DOMContentLoaded', function() {
