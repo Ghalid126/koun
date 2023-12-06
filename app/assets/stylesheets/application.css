@@ -100,6 +100,7 @@ h1 {
   flex-direction: row;
   height: 125px;
   justify-content: space-between;
+  height: 15vh;
   width: 100%;
 }
 .logo {
@@ -532,21 +533,47 @@ jumper::after {
   transform: scale(1.05);
   transition: all 0.5s ease-in-out;
 }
+
 .technology-logo {
   margin-right: 2rem;
 }
 .technology:hover h2 {
-  background: linear-gradient(to right, #EC53B0, #0E21A0);
+  background: linear-gradient(
+    to right,
+    #0E21A0 10%,
+    #EC53B0 80%,
+    #7C3AA8 10%
+  );
+  -webkit-background-clip: text;
   background-clip: text;
-  -webkit-background-clip: text; /* Pour la compatibilité avec certains navigateurs WebKit */
+  -webkit-text-fill-color: transparent;
   color: transparent;
+  background-size: 500% auto;
+  animation: textShine 2s ease-in infinite alternate;
 }
-.technology:hover p {
-  background: linear-gradient(to right, #EC53B0, #0E21A0);
+
+ .technology:hover p {
+  background: linear-gradient(
+    to right,
+    #0E21A0 10%,
+    #EC53B0 80%,
+    #7C3AA8 10%
+  );
+  -webkit-background-clip: text;
   background-clip: text;
-  -webkit-background-clip: text; /* Pour la compatibilité avec certains navigateurs WebKit */
+  -webkit-text-fill-color: transparent;
   color: transparent;
-}
+  background-size: 500% auto;
+  animation: textShine 2s ease-in-out infinite alternate;
+} 
+  @keyframes textShine {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+  }
 .technology-text {
   color: #0E21A0;
   width: 100%;
@@ -558,7 +585,7 @@ jumper::after {
   font-weight: 600;
 }
 .technology-text p {
-  color: #0E21A0;
+  /* color: #0E21A0; */
   font-size: 16pt;
   font-weight: 500;
 }
@@ -567,6 +594,7 @@ jumper::after {
   right: -30px;
   top: 130px;
 }
+
 
 /* TESTIMONIALS STYLES */
 /* .testimonials::before {
@@ -787,7 +815,7 @@ jumper::after {
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 44.2vh;
+  height: 45vh;
   justify-content: space-evenly;
 }
 .header-quote h1 {
@@ -841,4 +869,37 @@ jumper::after {
 #webdesign {
   width: 72px;
   padding-bottom: 10px;
+}
+
+/* PORTFOLIO STYLES */
+
+#gradient-canvas-portfolio {
+  position: absolute;
+  width:100%;
+  height:100%;
+  --gradient-color-1: #0E21A0; 
+  --gradient-color-2: #EC53B0;
+  z-index:-1;
+  height: 100vh;
+}
+.portfolio-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-top: 2vh;
+  background-color: white;
+  z-index: 2;
+  height: 83vh;
+}
+
+.thumb-col {
+  border-right: 2px solid rgba(26, 128, 249, 0.2);
+  display: flex;
+  flex-direction: column;
+  height: 83vh;
+  align-items: flex-start;
+  width: 250px;
+  overflow: scroll;
 }

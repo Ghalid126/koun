@@ -878,6 +878,12 @@ gradientBottom.initGradient("#gradient-canvas-bottom");
 var gradientBottom = new Gradient ();
 gradientBottom.initGradient("#gradient-canvas-quote");
 
+var gradientPortfolio= new Gradient ();
+gradientPortfolio.initGradient("#gradient-canvas-portfolio");
+
+
+
+
 // Fonction pour process rubrique apparition
 document.addEventListener('DOMContentLoaded', function() {
   // Sélectionnez tous les éléments de rubrique et de contenu
@@ -999,3 +1005,4 @@ function prevSlide() {
 
 next.addEventListener('click', nextSlide); 
 prev.addEventListener('click', prevSlide); 
+
