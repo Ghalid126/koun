@@ -845,13 +845,13 @@ jumper::after {
 }
 
 .mobileShow {
-  display: none;
+  display: none !important;
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 800px) {
   .mobileHide {
     display: none;
   }
-  .mobileShow {display: inline;}
+  .mobileShow {display: flex !important;}
 }
 .hero-text-mobile {
   left: 2rem;
