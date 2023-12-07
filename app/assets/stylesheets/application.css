@@ -979,7 +979,10 @@ footer li {
   /* border-radius: 15px; */
 }
 .thumb {
-  margin: 2rem auto .5rem;
+  margin: 2rem auto 0;
+}
+.thumb ~ .thumb {
+  margin-top: 1rem;
 }
 .thumb:hover {
   cursor: pointer;
