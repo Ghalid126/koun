@@ -902,6 +902,7 @@ footer li {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 40vh;
 }
 .choice {
   background-color: #F4F9FF;
