@@ -1020,6 +1020,9 @@ jumper::after {
     padding-top: 2.8rem;
     margin-right: 1rem;
   }
+  .row {
+    flex-direction: column !important;
+  }
 
   .menu {
     display: none;
