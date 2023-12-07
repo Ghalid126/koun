@@ -1278,6 +1278,17 @@ footer li {
  .about-container {
   display: flex;
   height: 84vh;
+  align-items: flex-start;
+  justify-content: center;
+ }
+ .hero-about {
+  height: 60vh;
+ }
+ .photo-about {
+  filter: grayscale(100%);
+  width: 100%;
+  height: 60vh;
+
  }
 
 
