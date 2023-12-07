@@ -1250,3 +1250,55 @@ footer li {
   display: block; 
 }
 
+
+/* Existing CSS */
+/* ... (Your existing CSS goes here) ... */
+
+/* Add responsive styles at the end of your existing CSS */
+@media screen and (max-width: 768px) {
+    .process-logo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .process-content {
+        flex-direction: column;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        height: auto;
+    }
+
+    .process-text, .process-img {
+        width: 100%;
+        top: 0;
+        margin-right: 0;
+    }
+
+    .process-text {
+        order: 2; /* Make text appear after the image on small screens */
+    }
+
+    .process-img {
+        order: 1;
+        top: -20px; /* Adjust as per your design needs */
+    }
+}
+
+/* Additional styles for very small screens, if needed */
+@media screen and (max-width: 480px) {
+    .item h2 {
+        font-size: 16pt; /* Smaller font size for very small screens */
+    }
+
+    .process-text h2 {
+        font-size: 18pt; /* Adjust heading size in the content */
+    }
+}
+
+/* Feel free to add more media queries and adjustments as needed */
+
