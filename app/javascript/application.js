@@ -926,6 +926,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // CODE POUR PORTFOLIO 
   let thumbs = document.querySelectorAll('[id^="thumb-"]');
   let mains = document.querySelectorAll('[id^="main-image-"]');
+  let texts = document.querySelectorAll('[id^="portfolio-text-"]');
   
   console.log('Thumbs:', thumbs);
   console.log('Mains:', mains);
@@ -951,6 +952,13 @@ document.addEventListener('DOMContentLoaded', function() {
       if (mains[index]) {
         mains[index].classList.add('main-active');
         console.log('Main activé :', mains[index]);
+      }
+      texts.forEach(function(text) {
+        text.classList.remove('portfolio-text-active');
+      });
+
+      if (texts[index]) {
+        texts[index].classList.add('portfolio-text-active');
       }
     });
   });
