@@ -923,6 +923,8 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   });
+
+
   // CODE POUR PORTFOLIO 
   let thumbs = document.querySelectorAll('[id^="thumb-"]');
   let mains = document.querySelectorAll('[id^="main-image-"]');
