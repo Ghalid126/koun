@@ -926,20 +926,27 @@ document.addEventListener('DOMContentLoaded', function() {
   // CODE POUR PORTFOLIO 
   let thumbs = document.querySelectorAll('[id^="thumb-"]');
   let mains = document.querySelectorAll('[id^="main-image-"]');
-
+  
   console.log('Thumbs:', thumbs);
   console.log('Mains:', mains);
-
+  
   thumbs.forEach(function(thumb, index) {
     thumb.addEventListener('click', function() {
       console.log('Thumb cliqué :', index);
-      thumb.classList.remove('thumb-active');
+  
+      // Retirez la classe "thumb-active" de tous les thumbs
+      thumbs.forEach(function(t) {
+        t.classList.remove('thumb-active');
+      });
+  
+      // Ajoutez la classe "thumb-active" à l'élément cliqué
       thumb.classList.add('thumb-active');
+  
       // Retirez la classe "main-active" de tous les contenus
       mains.forEach(function(main) {
         main.classList.remove('main-active');
       });
-
+  
       // Ajoutez la classe "main-active" à l'élément correspondant
       if (mains[index]) {
         mains[index].classList.add('main-active');
@@ -947,6 +954,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
+  
 
 });
 
