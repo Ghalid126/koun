@@ -853,6 +853,9 @@ footer li {
   z-index: 1;
   box-sizing: border-box;
 }
+.footer-logo {
+  width: 180px;
+}
 .footer-right {
   flex: 1 1 0%;
   z-index: 1;
