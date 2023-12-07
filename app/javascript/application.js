@@ -1007,3 +1007,21 @@ function prevSlide() {
 next.addEventListener('click', nextSlide); 
 prev.addEventListener('click', prevSlide); 
 
+// CODE POUR PORTFOLIO 
+document.addEventListener("DOMContentLoaded", function() {
+  const thumbs = document.querySelectorAll('.thumb');
+  const mains = document.querySelectorAll('.main-image');
+
+  let index = 0;
+  display(index);
+
+  thumbs.forEach((thumb) =>{ 
+    function display(index) {
+      mains.forEach((main) => {
+        main.style.display = 'none';
+      });
+      main[index].style.display ='block';
+    }
+
+  });
+});
