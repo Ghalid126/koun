@@ -793,6 +793,7 @@ jumper::after {
 /* FAQ STYLES */
 .faq {
   height: auto;
+  margin-bottom: 3rem;
 }
 #gradient-canvas-bottom {
   position: absolute;
@@ -812,8 +813,19 @@ jumper::after {
 
 /* FOOTER STYLES */
 
+#gradient-canvas-footer{
+  position: absolute;
+  width:100%;
+  height: 13vh;
+  --gradient-color-1: #0E21A0; 
+  --gradient-color-2: #EC53B0;
+  /* --gradient-color-3: #EC53B0; 
+  --gradient-color-4: #7C3AA8;   */
+  z-index:-1;
+}
+
 footer {
-  border-top: 2px solid rgba(255, 255, 255, 0.2);
+  border-top: 3px solid rgba(255, 255, 255, 0.2);
   display: flex;
   flex-direction: row;
   align-items: center;

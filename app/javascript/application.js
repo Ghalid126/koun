@@ -881,7 +881,8 @@ gradientBottom.initGradient("#gradient-canvas-quote");
 var gradientPortfolio= new Gradient ();
 gradientPortfolio.initGradient("#gradient-canvas-portfolio");
 
-
+var gradientPortfolio= new Gradient ();
+gradientPortfolio.initGradient("#gradient-canvas-footer");
 
 
 // Fonction pour process rubrique apparition
