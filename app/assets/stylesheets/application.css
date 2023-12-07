@@ -802,8 +802,8 @@ jumper::after {
   height: auto;
   --gradient-color-1: #0E21A0; 
   --gradient-color-2: #EC53B0;
-  --gradient-color-3: #EC53B0; 
-  --gradient-color-4: #7C3AA8;  
+  /* --gradient-color-3: #EC53B0; 
+  --gradient-color-4: #7C3AA8;   */
   z-index:-1;
 }
 .faq h1 {
@@ -1188,6 +1188,7 @@ footer li {
 }
 .thumb {
   margin: 2rem auto 0;
+  opacity: 0.5;
 }
 .thumb ~ .thumb {
   margin-top: 1rem;
@@ -1196,7 +1197,7 @@ footer li {
   cursor: pointer;
   transform: scale(1.02);
   transition: all ease-in-out 0.2s ;
-
+  opacity: 0.8;
 }
 .center {
   height: 83vh;
@@ -1207,8 +1208,9 @@ footer li {
   justify-content: center;
 }
 .thumb-active {
-  border: .3rem solid #1b2c5c;
-  /* border-radius: 15px; */
+  opacity: 1;
+  /* border: .3rem solid #1b2c5c; */ */
+   /* border-radius: 15px; */
 }
 .center-portfolio {
   width: 950px;
