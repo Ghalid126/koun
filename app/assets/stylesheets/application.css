@@ -153,6 +153,7 @@ h1 {
   width: fit-content;
 }
 
+
 /* HERO STYLES */
 .hero {
   color: #fff;
@@ -178,7 +179,7 @@ h1 {
   font-size: 20pt;
   font-weight: 300;
 }
-.hero-text .quote-button {
+ .hero-text .quote-button {
   background-color: rgba(255, 255, 255, 0.2);
   padding: 0.6rem 2.2rem;
   border-top-left-radius: 25px;
@@ -188,6 +189,11 @@ h1 {
   font-size: 20pt;
   margin-top: 1.5rem;
   width: fit-content;
+}
+.hero-text .quote-button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
 }
 .hero-carrousel {
   position: relative;
@@ -819,19 +825,28 @@ footer {
   font-size: 14pt;
   color: white;
   line-height: 1.6;
+  text-align: center;
 }
 .footer-left {
-  display: flex;
-  width: auto;
+  flex: 1 1 0%;
   z-index: 1;
   box-sizing: border-box;
-
-
 }
 footer li {
   display: block;
   list-style: none;
 }
+.footer-center {
+  flex: 1 1 0%;
+  z-index: 1;
+  box-sizing: border-box;
+}
+.footer-right {
+  flex: 1 1 0%;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
 
 /* QUOTE STYLES */
 
