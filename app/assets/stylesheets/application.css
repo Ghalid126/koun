@@ -979,7 +979,7 @@ footer li {
   /* border-radius: 15px; */
 }
 .thumb {
-  margin: 1rem auto .5rem;
+  margin: 2rem auto .5rem;
 }
 .thumb:hover {
   cursor: pointer;
@@ -1018,6 +1018,7 @@ footer li {
   height: 100%;
 }
 .right-col {
+  margin-top: 2rem;
   padding: 3rem 1rem 1rem;
 }
 .right-col h3 {
