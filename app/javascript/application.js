@@ -923,6 +923,31 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   });
+  // CODE POUR PORTFOLIO 
+  let thumbs = document.querySelectorAll('[id^="thumb-"]');
+  let mains = document.querySelectorAll('[id^="main-image-"]');
+
+  console.log('Thumbs:', thumbs);
+  console.log('Mains:', mains);
+
+  thumbs.forEach(function(thumb, index) {
+    thumb.addEventListener('click', function() {
+      console.log('Thumb cliqué :', index);
+      thumb.classList.remove('thumb-active');
+      thumb.classList.add('thumb-active');
+      // Retirez la classe "main-active" de tous les contenus
+      mains.forEach(function(main) {
+        main.classList.remove('main-active');
+      });
+
+      // Ajoutez la classe "main-active" à l'élément correspondant
+      if (mains[index]) {
+        mains[index].classList.add('main-active');
+        console.log('Main activé :', mains[index]);
+      }
+    });
+  });
+
 });
 
 
@@ -1008,20 +1033,5 @@ next.addEventListener('click', nextSlide);
 prev.addEventListener('click', prevSlide); 
 
 // CODE POUR PORTFOLIO 
-document.addEventListener("DOMContentLoaded", function() {
-  const thumbs = document.querySelectorAll('.thumb');
-  const mains = document.querySelectorAll('.main-image');
 
-  let index = 0;
-  display(index);
 
-  thumbs.forEach((thumb) =>{ 
-    function display(index) {
-      mains.forEach((main) => {
-        main.style.display = 'none';
-      });
-      main[index].style.display ='block';
-    }
-
-  });
-});
