@@ -913,6 +913,7 @@ footer li {
   margin: 2.5rem .7rem;
 }
 .choice:hover {
+  cursor: pointer;
   color: #F4F9FF;
   background-color: #0E21A0;
   transition: all ease-in-out 0.3s;
