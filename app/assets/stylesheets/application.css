@@ -968,7 +968,8 @@ footer li {
 .rounded-video-mobile {
   overflow: hidden;
   width: 100vw;
-  margin-top: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
 }
 .hero-text-mobile h1 {
     color: #fff;
