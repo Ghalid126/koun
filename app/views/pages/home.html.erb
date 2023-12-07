@@ -2,22 +2,40 @@
   <canvas id="gradient-canvas">
   </canvas>
   <%= render 'layouts/navbar' %>
-    <div class="hero">
-      <div class="hero-text">
-        <h1>
-          Offline is silent,<br>
-          Online is loud.
-        </h1>
-        <h2>
-          Partner with us to create a tailored website.
-        </h2>
-        <div class="quote-button">Request a quote</div>  
-      </div>
+  <div class="hero mobileHide">
+    <div class="hero-text">
+      <h1>
+        Offline is silent,<br>
+        Online is loud.
+      </h1>
+      <h2>
+        Partner with us to create a tailored website.
+      </h2>
+      <div class="quote-button">Request a quote</div>
+    </div>
     <div class="hero-carrousel">
       <video class="rounded-video" autoplay loop muted >
         <source src="<%= asset_path 'animationkoun.mov' %>" type="video/mp4">
         Your browser does not support the video tag.
       </video>
+    </div>
+  </div>
+  <div class="hero-mobile mobileShow">
+    <div class="hero-text-mobile">
+      <h1>
+        Offline is silent,<br>
+        Online is loud.
+      </h1>
+      <h2>
+        Partner with us to create a tailored website.
+      </h2>
+    </div>
+    <div class="hero-carrousel-mobile">
+      <video class="rounded-video-mobile" autoplay loop muted >
+        <source src="<%= asset_path 'animationkoun.mov' %>" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="quote-button">Request a quote</div>
     </div>
   </div>
 </div>

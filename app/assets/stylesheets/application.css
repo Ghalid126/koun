@@ -843,3 +843,203 @@ jumper::after {
   width: 72px;
   padding-bottom: 10px;
 }
+
+.mobileShow {
+  display: none;
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 800px) {
+  .mobileHide {
+    display: none;
+  }
+  .mobileShow {display: inline;}
+}
+.hero-text-mobile {
+  left: 2rem;
+  position: relative;
+}
+.hero-mobile {
+  color: #fff;
+  display: flex;
+  height: 80vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+}
+.hero-carrousel-mobile {
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rounded-video-mobile {
+  overflow: hidden;
+  width: 100vw;
+  margin-top: 2rem;
+}
+.hero-text-mobile h1 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 32pt;
+    padding: 0;
+    text-align: left;
+}
+.hero-text-mobile h2 {
+    margin-top: 1.5rem;
+    width: 70%;
+    font-size: 20pt;
+    font-weight: 300;
+}
+.hero-carrousel-mobile .quote-button {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0.6rem 2.2rem;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    font-size: 20pt;
+    margin-top: 1.5rem;
+    width: fit-content;
+}
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 184px; /* Smaller size */
+    }
+}
+/* Existing CSS */
+/* ... */
+
+/* Smaller logo for mobile screens */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  height: 125px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  position: absolute;
+  width: 200px;
+  z-index: 1;
+}
+
+.menu {
+  color: white;
+  padding: 3.5rem 2rem;
+  width: auto;
+  z-index: 1;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+  font-size: 16pt;
+}
+
+.menu li {
+  display: inline;
+  list-style: none;
+}
+
+.menu li ~ li {
+  padding-left: 1rem;
+}
+
+.menu .quote-button {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0.4rem 2.2rem;
+  border-radius: 25px;
+  margin-left: 1rem;
+  width: fit-content;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+/* Mobile specific styles */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  height: 125px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  position: absolute;
+  width: 200px;
+  z-index: 1;
+}
+
+.menu {
+  color: white;
+  padding: 3.5rem 2rem;
+  width: auto;
+  z-index: 1;
+  font-size: 1.5rem;
+  box-sizing: border-box;
+  font-size: 16pt;
+}
+.menu-container {
+  position: relative; /* Set relative positioning for the container */
+  z-index:1;
+}
+.menu li {
+  display: inline;
+  list-style: none;
+}
+
+.menu li ~ li {
+  padding-left: 1rem;
+}
+
+.menu .quote-button {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0.4rem 2.2rem;
+  border-radius: 25px;
+  margin-left: 1rem;
+  width: fit-content;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+/* Mobile specific styles */
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 160px; /* Smaller logo on mobile */
+  }
+
+  .menu-toggle {
+    display: block;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    background: none;
+  }
+
+  .menu {
+    display: none;
+    padding: 0;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 100%;
+  }
+  .menu .quote-button {
+    display:none;
+  }
+  .menu li {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .menu li ~ li {
+    padding-left: 0;
+  }
+}
+.menu-svg {
+  height:48px;
+}
