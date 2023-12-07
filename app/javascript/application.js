@@ -878,6 +878,13 @@ gradientBottom.initGradient("#gradient-canvas-bottom");
 var gradientBottom = new Gradient ();
 gradientBottom.initGradient("#gradient-canvas-quote");
 
+var gradientPortfolio= new Gradient ();
+gradientPortfolio.initGradient("#gradient-canvas-portfolio");
+
+var gradientPortfolio= new Gradient ();
+gradientPortfolio.initGradient("#gradient-canvas-footer");
+
+
 // Fonction pour process rubrique apparition
 document.addEventListener('DOMContentLoaded', function() {
   // Sélectionnez tous les éléments de rubrique et de contenu
@@ -916,6 +923,49 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   });
+
+
+  // CODE POUR PORTFOLIO 
+  let thumbs = document.querySelectorAll('[id^="thumb-"]');
+  let mains = document.querySelectorAll('[id^="main-image-"]');
+  let texts = document.querySelectorAll('[id^="portfolio-text-"]');
+  
+  console.log('Thumbs:', thumbs);
+  console.log('Mains:', mains);
+  
+  thumbs.forEach(function(thumb, index) {
+    thumb.addEventListener('click', function() {
+      console.log('Thumb cliqué :', index);
+  
+      // Retirez la classe "thumb-active" de tous les thumbs
+      thumbs.forEach(function(t) {
+        t.classList.remove('thumb-active');
+      });
+  
+      // Ajoutez la classe "thumb-active" à l'élément cliqué
+      thumb.classList.add('thumb-active');
+  
+      // Retirez la classe "main-active" de tous les contenus
+      mains.forEach(function(main) {
+        main.classList.remove('main-active');
+      });
+  
+      // Ajoutez la classe "main-active" à l'élément correspondant
+      if (mains[index]) {
+        mains[index].classList.add('main-active');
+        console.log('Main activé :', mains[index]);
+      }
+      texts.forEach(function(text) {
+        text.classList.remove('portfolio-text-active');
+      });
+
+      if (texts[index]) {
+        texts[index].classList.add('portfolio-text-active');
+      }
+    });
+  });
+  
+
 });
 
 
@@ -999,3 +1049,7 @@ function prevSlide() {
 
 next.addEventListener('click', nextSlide); 
 prev.addEventListener('click', prevSlide); 
+
+// CODE POUR PORTFOLIO 
+
+

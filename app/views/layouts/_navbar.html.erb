@@ -1,12 +1,12 @@
 <div class="navbar">
     <div class="header-logo">
-        <%= link_to home_path do %> <%= image_tag 'Koun-logo.svg', class: 'logo', alt: 'logo KOUN Website' %> <% end %>
+        <%= link_to root_path do %> <%= image_tag 'Koun-logo.svg', class: 'logo', alt: 'logo KOUN Website' %> <% end %>
     </div>
     <div class="menu-container">
         <button class="menu-toggle"><%= image_tag 'menu.svg', class: 'menu-svg'%></button> <!-- Button for toggling menu -->
         <div class="menu">
             <ul>
-                <li>Portfolio</li>
+                <li><%= link_to portfolio_path do %> Portfolio <% end %></li>
                 <li>Services</li>
                 <li>Blog</li>
                 <li class="quote-button"><%= link_to quote_step1_path do %> Get a quote <% end %> </li>
