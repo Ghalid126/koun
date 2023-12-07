@@ -85,6 +85,11 @@ h1 {
   padding-top: 3rem;
   text-align: center;
 }
+.container {
+  display: flex;
+  flex: 1 1 auto;
+  width: 100%;
+}
 
 /* HEADER STYLES */
 .header-hero {
@@ -781,17 +786,17 @@ jumper::after {
 
 /* FAQ STYLES */
 .faq {
-  height: 400px;
+  height: auto;
 }
 #gradient-canvas-bottom {
   position: absolute;
   width:100%;
-  height:100%;
+  height: auto;
   --gradient-color-1: #0E21A0; 
   --gradient-color-2: #EC53B0;
   --gradient-color-3: #EC53B0; 
   --gradient-color-4: #7C3AA8;  
-  z-index:0;
+  z-index:-1;
 }
 .faq h1 {
   color: #fff;
@@ -799,6 +804,34 @@ jumper::after {
   z-index: 1;
 }
 
+/* FOOTER STYLES */
+
+footer {
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* position: fixed;
+  bottom: 0; */
+  height: 12vh;
+  justify-content: space-evenly;
+  width: 100%;
+  font-size: 14pt;
+  color: white;
+  line-height: 1.6;
+}
+.footer-left {
+  display: flex;
+  width: auto;
+  z-index: 1;
+  box-sizing: border-box;
+
+
+}
+footer li {
+  display: block;
+  list-style: none;
+}
 
 /* QUOTE STYLES */
 
