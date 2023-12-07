@@ -1017,6 +1017,8 @@ jumper::after {
     cursor: pointer;
     z-index: 1;
     background: none;
+    padding-top: 2.8rem;
+    margin-right: 1rem;
   }
 
   .menu {
@@ -1026,6 +1028,8 @@ jumper::after {
     z-index: 1;
     position: absolute;
     top: 100%;
+    background: white;
+    color: #0E21A0;
   }
   .menu .quote-button {
     display:none;
