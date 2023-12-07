@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   get 'home', to: 'pages#home'
   get 'quote_step1', to: 'pages#quote_step1'
   get 'portfolio', to: 'pages#portfolio'
+  get 'about', to: 'pages#about'
 end

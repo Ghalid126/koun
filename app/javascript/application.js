@@ -884,6 +884,9 @@ gradientPortfolio.initGradient("#gradient-canvas-portfolio");
 var gradientPortfolio= new Gradient ();
 gradientPortfolio.initGradient("#gradient-canvas-footer");
 
+var gradientPortfolio= new Gradient ();
+gradientPortfolio.initGradient("#gradient-canvas-about");
+
 
 // Fonction pour process rubrique apparition
 document.addEventListener('DOMContentLoaded', function() {
@@ -892,6 +895,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var contenus = document.querySelectorAll('[id^="content"]');
   let jumpers = document.querySelectorAll('[id^="jumper"]');
   let svgs = document.querySelectorAll('[id^="svg"]');
+  let items = document.querySelectorAll('.item');
 
   // Ajoutez des gestionnaires d'événements pour chaque rubrique
   rubriques.forEach(function(rubrique, index) {
@@ -964,8 +968,14 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
+  // NAVBAR CODE
+    var menuToggle = document.querySelector('.menu-toggle');
+    var menu = document.querySelector('.menu');
   
-
+    menuToggle.addEventListener('click', function() {
+      menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    });
+  
 });
 
 

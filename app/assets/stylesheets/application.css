@@ -103,7 +103,6 @@ h1 {
 .navbar {
   display: flex;
   flex-direction: row;
-  height: 125px;
   justify-content: space-between;
   height: 15vh;
   width: 100%;
@@ -480,6 +479,19 @@ jumper::after {
   position: relative;
   z-index: 2;
   top: 80px;
+}
+.arrow-process{
+  width: 30px;
+}
+.arrow-left {
+  position: relative;
+  top: -32px;
+  left: 20px;
+}
+.arrow-right {
+  position: relative;
+  top: -92px;
+  left: 360px;
 }
 
 .slide-bottom {
@@ -1209,7 +1221,7 @@ footer li {
 }
 .thumb-active {
   opacity: 1;
-  /* border: .3rem solid #1b2c5c; */ */
+  /* border: .3rem solid #1b2c5c; */ 
    /* border-radius: 15px; */
 }
 .center-portfolio {
@@ -1252,6 +1264,24 @@ footer li {
   display: block; 
 }
 
+/* ABOUT STYLES */
+#gradient-canvas-about{
+  position: absolute;
+  width:100%;
+  height:100%;
+  --gradient-color-1: #0E21A0; 
+  --gradient-color-2: #EC53B0;
+  z-index:-1;
+  height: 100vh;
+}
+
+ .about-container {
+  display: flex;
+  height: 84vh;
+ }
+
+
+
 
 /* Existing CSS */
 /* ... (Your existing CSS goes here) ... */
@@ -1259,13 +1289,18 @@ footer li {
 /* Add responsive styles at the end of your existing CSS */
 @media screen and (max-width: 768px) {
     .process-logo {
+      top: 65px;
         flex-direction: column;
         align-items: center;
     }
 
     .item {
+        display: none;
         margin-left: 0;
         margin-bottom: 20px;
+    }
+    .item-active {
+      display: block;
     }
 
     .process-content {
