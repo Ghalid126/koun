@@ -483,13 +483,12 @@ jumper::after {
 .arrow-process{
   width: 30px;
 }
-.arrow-left {
+#arrow-left {
   position: relative;
   top: -32px;
   left: 20px;
 }
-
-.arrow-right {
+#arrow-right {
   position: relative;
   top: -32px;
   float: right;
@@ -1331,8 +1330,29 @@ footer li {
     }
 
     .process-img {
-        order: 1;
-        top: -20px; /* Adjust as per your design needs */
+      margin-top: 3rem;
+      order: 1; 
+      text-align: center;
+      justify-content: center;
+    }
+    
+    .process-image {
+      width: 320px;
+      margin: 1rem auto;
+    }
+    .fdr {
+      flex-direction: column !important;
+    }
+    .photo-about img {
+      height: 180px !important;
+    }
+    .photo-about {
+      margin: auto !important;
+    }
+    .text-about {
+      padding-left: 4rem !important;
+      padding-right: 4rem !important;
+      padding-top: 0rem !important;
     }
     .fdr {
       flex-direction: column !important;
