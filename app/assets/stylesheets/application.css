@@ -1334,8 +1334,14 @@ footer li {
     }
 
     .process-img {
-        order: 1;
-        top: -20px; /* Adjust as per your design needs */
+      margin-top: 3rem;
+      order: 1; 
+      text-align: center;
+      justify-content: center;
+    }
+    .process-image {
+      width: 320px;
+      margin: 1rem auto;
     }
 }
 
