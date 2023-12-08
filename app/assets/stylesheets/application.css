@@ -1317,6 +1317,7 @@ footer li {
     justify-content: center;
     text-align: center;
     margin-bottom: 4vh;
+    overflow-x: hidden;
   }
   .center {
     height: auto;
@@ -1334,7 +1335,7 @@ footer li {
     flex: 1;
     height: auto;
     white-space: nowrap;
-    width: 100%;
+    width: 99%;
     flex-direction: row;
   }
   .thumb {
