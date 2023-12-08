@@ -1300,7 +1300,7 @@ footer li {
 /* ... (Your existing CSS goes here) ... */
 
 /* Add responsive styles at the end of your existing CSS */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 820px) {
     .process-logo {
       top: 65px;
         flex-direction: column;
@@ -1308,7 +1308,6 @@ footer li {
     }
 
     .item {
-        display: none;
         margin-left: 0;
         margin-bottom: 20px;
     }
