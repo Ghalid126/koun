@@ -486,12 +486,14 @@ jumper::after {
 #arrow-left {
   position: relative;
   top: -32px;
-  left: 20px;
+  float: left;
+  margin-left: 5vw;
 }
 #arrow-right {
   position: relative;
   top: -32px;
   float: right;
+  margin-right: 5vw;
 }
 
 .slide-bottom {
@@ -1335,7 +1337,7 @@ footer li {
       text-align: center;
       justify-content: center;
     }
-    
+
     .process-image {
       width: 320px;
       margin: 1rem auto;
