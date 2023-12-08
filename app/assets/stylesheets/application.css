@@ -1306,13 +1306,13 @@ footer li {
     }
 
     .item {
-        display: none;
+        /* display: none; */
         margin-left: 0;
         margin-bottom: 20px;
     }
-    .item-active {
+    /* .item-active {
       display: block;
-    }
+    } */
 
     .process-content {
         flex-direction: column;
