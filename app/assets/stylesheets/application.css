@@ -525,10 +525,10 @@ jumper::after {
   align-items: center;
   flex-direction: column;
   margin-top: 4rem;
-  /* background-color: #F4F9FF; */
+  background-color: #F4F9FF;
 }
 .technology-stack_container h1 {
-  background: linear-gradient(to right, #51C2EF, #0E21A0);
+  background: linear-gradient(to right, #0E21A0, #EC53B0);
   background-clip: text;
   -webkit-background-clip: text; /* Pour la compatibilité avec certains navigateurs WebKit */
   color: transparent;
@@ -544,8 +544,9 @@ jumper::after {
   flex-direction: row;
   justify-content: center;
 }
+
 .technology {
-  background-color: #F4F9FF;
+  background-color: #FFF;
   box-sizing: border-box;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -1358,7 +1359,7 @@ footer li {
     box-sizing: border-box;
   }
   .navbar {
-    height: 16vh;
+    height: 13vh;
   }
   #gradient-canvas-portfolio {
     height: 100vh;
@@ -1427,6 +1428,9 @@ footer li {
         margin-right: 0;
     }
 
+    .process-headers h1 {
+      padding-bottom: 0px !important;
+    }
     .process-text {
         order: 2; /* Make text appear after the image on small screens */
     }
@@ -1469,6 +1473,9 @@ footer li {
       padding-left: 4rem !important;
       padding-right: 4rem !important;
       padding-top: 0rem !important;
+    }
+    .technology-stack_container h1 {
+      padding-top: 6rem !important;
     }
 }
 
