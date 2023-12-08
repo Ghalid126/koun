@@ -486,12 +486,12 @@ jumper::after {
 .arrow-left {
   position: relative;
   top: -32px;
-  left: 20px;
+  float: left
 }
 .arrow-right {
   position: relative;
-  top: -92px;
-  left: 360px;
+  top: -32px;
+  float: right;
 }
 
 .slide-bottom {
