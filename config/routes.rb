@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   get 'quote_step1', to: 'pages#quote_step1'
   get 'portfolio', to: 'pages#portfolio'
   get 'about', to: 'pages#about'
+  get 'contact', to: 'pages#contact'
 end
