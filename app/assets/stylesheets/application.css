@@ -776,11 +776,15 @@ jumper::after {
 
   .testimonials-container {
     align-items: flex-start;
+    width: 100%;
   }
 
   .testimonials .slide {
     flex-direction: row;
     text-align: left;
+  }
+  .testimonials .slider {
+    margin: 2rem auto 12rem;
   }
   .testimonials .slide-text {
     background-position: 10% top;
