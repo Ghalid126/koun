@@ -524,6 +524,7 @@ jumper::after {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-top: 4rem;
   /* background-color: #F4F9FF; */
 }
 .technology-stack_container h1 {
@@ -563,7 +564,7 @@ jumper::after {
 }
 
 .technology-logo {
-  margin-right: 2rem;
+  margin-right: 3rem;
 }
 .technology:hover h2 {
   background: linear-gradient(
@@ -1326,6 +1327,9 @@ footer li {
     margin-left: auto;
     margin-right: auto;
     width: 95vw;
+  }
+  .technology-logo {
+    margin-left:2rem;
   }
   .main-image {
     flex: 1;
