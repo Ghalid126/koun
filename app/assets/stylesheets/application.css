@@ -1272,14 +1272,14 @@ footer li {
     flex-direction: column;
     margin-left: 0;
     margin-right: 0;
-    margin-top: 1vh;
+    margin-top: 4vh;
     z-index: 2;
     height: 100%;
     width: 100%;
     border-radius: 15px;
     justify-content: center;
     text-align: center;
-
+    margin-bottom: 4vh;
   }
   .center {
     height: auto;
@@ -1287,7 +1287,7 @@ footer li {
   .center-portfolio {
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    width: 95vw;
   }
   .main-image {
     flex: 1;
@@ -1307,6 +1307,19 @@ footer li {
     padding-left: .5rem;
     padding-bottom: .5rem;
     box-sizing: border-box;
+  }
+  .right-col {
+    margin: 0;
+    padding: 0 .8rem .8rem;
+    text-align: left;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  .navbar {
+    height: 16vh;
+  }
+  #gradient-canvas-portfolio {
+    height: 100vh;
   }
 }
 
