@@ -103,7 +103,6 @@ h1 {
 .navbar {
   display: flex;
   flex-direction: row;
-  height: 125px;
   justify-content: space-between;
   height: 15vh;
   width: 100%;
@@ -480,6 +479,19 @@ jumper::after {
   position: relative;
   z-index: 2;
   top: 80px;
+}
+.arrow-process{
+  width: 30px;
+}
+.arrow-left {
+  position: relative;
+  top: -32px;
+  left: 20px;
+}
+.arrow-right {
+  position: relative;
+  top: -92px;
+  left: 360px;
 }
 
 .slide-bottom {
@@ -968,8 +980,7 @@ footer li {
 .rounded-video-mobile {
   overflow: hidden;
   width: 100vw;
-  margin-top: 3rem;
-  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 .hero-text-mobile h1 {
     color: #fff;
@@ -1122,13 +1133,12 @@ footer li {
   .menu {
     display: none;
     padding: 0;
-    position: fixed;
-    top: 8rem;
     width: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 100%;
     background: white;
     color: #0E21A0;
-    z-index: 100;
-    left: 0;
   }
   .menu .quote-button {
     display:none;
@@ -1211,7 +1221,7 @@ footer li {
 }
 .thumb-active {
   opacity: 1;
-  /* border: .3rem solid #1b2c5c; */ */
+  /* border: .3rem solid #1b2c5c; */
    /* border-radius: 15px; */
 }
 .center-portfolio {
@@ -1254,6 +1264,24 @@ footer li {
   display: block; 
 }
 
+/* ABOUT STYLES */
+#gradient-canvas-about{
+  position: absolute;
+  width:100%;
+  height:100%;
+  --gradient-color-1: #0E21A0;
+  --gradient-color-2: #EC53B0;
+  z-index:-1;
+  height: 100vh;
+}
+
+ .about-container {
+  display: flex;
+  height: 84vh;
+ }
+
+
+
 
 /* Existing CSS */
 /* ... (Your existing CSS goes here) ... */
@@ -1261,13 +1289,18 @@ footer li {
 /* Add responsive styles at the end of your existing CSS */
 @media screen and (max-width: 768px) {
     .process-logo {
+      top: 65px;
         flex-direction: column;
         align-items: center;
     }
 
     .item {
+        display: none;
         margin-left: 0;
         margin-bottom: 20px;
+    }
+    .item-active {
+      display: block;
     }
 
     .process-content {
@@ -1306,3 +1339,33 @@ footer li {
 
 /* Feel free to add more media queries and adjustments as needed */
 
+/*DISPLAYS */
+.df {
+  display: flex;
+}
+.fdr {
+  flex-direction:row;
+}
+.text-about {
+  padding-left:5rem;
+}
+.photo-about {
+  padding: 2rem;
+}
+
+.aboutus-container {
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+.aboutus-container h1 {
+  color: white;
+  text-align: center;
+}
+.aboutus-container h3 {
+  color: white;
+  text-align:center;
+}
+.wrapper-us {
+  height: 100vh;
+}
