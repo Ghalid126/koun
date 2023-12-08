@@ -233,6 +233,7 @@ h1 {
 .row{
   display: flex;
   flex-direction: row;
+  box-sizing: border-box;
 }
 .element {
   border: #000 solid 1px;
@@ -535,6 +536,7 @@ jumper::after {
 .elements-container {
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 }
 .technology-stack_container .row {
   display: flex;
@@ -644,6 +646,7 @@ jumper::after {
 }
 .testimonials h1 {
   padding-bottom: 0;
+  padding-top: 0;
   background: linear-gradient(to right, #0E21A0, #51C2EF);
   background-clip: text;
   -webkit-background-clip: text; /* Pour la compatibilité avec certains navigateurs WebKit */
@@ -651,8 +654,8 @@ jumper::after {
   font-weight: 600;
 }
 .testimonials-container {
-  min-height: 80vh;
-  width: 100%;
+  min-height: 60vh;
+  max-width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -661,6 +664,7 @@ jumper::after {
   background-position: center bottom;
   background-size: contain;
   background-repeat: no-repeat;
+  box-sizing: border-box;
 }
 .testimonials .slider {
   display: block;
@@ -671,7 +675,7 @@ jumper::after {
   position: relative;
 }
 .testimonials .slide {
-  width: 100;
+  width: 100%;
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
@@ -687,6 +691,7 @@ jumper::after {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  box-sizing: border-box;
 }
 .testimonials .slide-text {
   padding: 30px;
@@ -698,6 +703,7 @@ jumper::after {
   background-repeat: no-repeat;
   background-size: 80px;
   background-position: top center;
+  box-sizing: border-box;
 } 
 .testimonials .testimonial-text {
   font-weight: 300;
@@ -853,6 +859,7 @@ footer {
   color: white;
   line-height: 1.6;
   text-align: center;
+  box-sizing: border-box;
 }
 .footer-left {
   flex: 1 1 0%;
@@ -962,8 +969,9 @@ footer li {
   .mobileShow {display: flex !important;}
 }
 .hero-text-mobile {
-  left: 2rem;
+  padding-left: 2rem;
   position: relative;
+  box-sizing: border-box;
 }
 .hero-mobile {
   color: #fff;
@@ -1012,6 +1020,31 @@ footer li {
     .logo {
         width: 184px; /* Smaller size */
     }
+    .elements-container {
+      width: 100%;
+    }
+    .technology {
+      padding: 0;
+      min-height: 30vh;
+    }
+    .technology h2 {
+      font-size: 16pt;
+    }
+    .technology p {
+      font-size: 14pt;
+    }
+    .bottom-arrow {
+      position: relative;
+      right: 9px;
+      top: 105px;
+    }
+    footer {
+      display: block;
+    }
+    #gradient-canvas-footer {
+      height: 30vh;
+    }
+
 }
 /* Existing CSS */
 /* ... */
