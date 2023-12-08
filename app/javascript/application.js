@@ -920,6 +920,27 @@ function fonctionMobile() {
       item.style.display = 'none';
     });
     items[indexItem].style.display = 'flex';
+    contenus.forEach(function(contenu) {
+      contenu.classList.remove('active');
+    });
+
+    // Vérifiez si l'index est valide avant d'ajouter la classe "active"
+    if (contenus[indexItem]) {
+      contenus[indexItem].classList.add('active');
+      contenus[indexItem].classList.add('contenu');
+    }
+    jumpers.forEach(function(jumper) {
+      jumper.classList.remove('jumper');
+    });
+    svgs.forEach(function(svg) {
+      svg.classList.remove('svg-active');
+    });
+    jumpers.forEach(function(jumper, index) {
+      if (contenus[indexItem].classList.contains("active")) {
+        jumpers[indexItem].classList.add("jumper");
+        svgs[indexItem].classList.add('svg-active');
+      }
+    });
   }
 
   function nextItem() {
@@ -955,9 +976,6 @@ function fonctionMobile() {
 if (estMobile()) {
   fonctionMobile();
 }
-
-
-
 
   // Ajoutez des gestionnaires d'événements pour chaque rubrique
   rubriques.forEach(function(rubrique, index) {
