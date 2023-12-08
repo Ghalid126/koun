@@ -488,10 +488,11 @@ jumper::after {
   top: -32px;
   left: 20px;
 }
+
 .arrow-right {
   position: relative;
-  top: -92px;
-  left: 360px;
+  top: -32px;
+  float: right;
 }
 
 .slide-bottom {
@@ -1221,7 +1222,6 @@ footer li {
 }
 .thumb-active {
   opacity: 1;
-  /* border: .3rem solid #1b2c5c; */
    /* border-radius: 15px; */
 }
 .center-portfolio {
@@ -1278,6 +1278,16 @@ footer li {
  .about-container {
   display: flex;
   height: 84vh;
+  align-items: flex-start;
+  justify-content: center;
+ }
+ .hero-about {
+  height: 60vh;
+ }
+ .photo-about {
+  filter: grayscale(100%);
+  width: 100%;
+  height: 60vh;
  }
 
 

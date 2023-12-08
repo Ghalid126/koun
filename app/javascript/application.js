@@ -884,6 +884,9 @@ gradientPortfolio.initGradient("#gradient-canvas-portfolio");
 var gradientPortfolio= new Gradient ();
 gradientPortfolio.initGradient("#gradient-canvas-footer");
 
+var gradientPortfolio= new Gradient ();
+gradientPortfolio.initGradient("#gradient-canvas-about");
+
 
 // Fonction pour process rubrique apparition
 document.addEventListener('DOMContentLoaded', function() {
@@ -892,6 +895,58 @@ document.addEventListener('DOMContentLoaded', function() {
   var contenus = document.querySelectorAll('[id^="content"]');
   let jumpers = document.querySelectorAll('[id^="jumper"]');
   let svgs = document.querySelectorAll('[id^="svg"]');
+  let items = document.querySelectorAll('.item');
+
+
+
+  // Fonction pour vérifier si l'écran est un mobile
+  function estMobile() {
+  return window.innerWidth <= 768; // Vous pouvez ajuster cette valeur en fonction de vos besoins
+  }
+
+  // Fonction à appliquer uniquement en mode mobile
+  function fonctionMobile() {
+    // ITEM MOBILE SLIDE FUNCTION
+
+    let left = document.querySelector('.arrow-left');
+    let right = document.querySelector('.arrow-right');
+    let indexItem = 0;
+    displayItem(indexItem); // Move this line after the displayItem function definition
+
+    function displayItem(indexItem) {
+      items.forEach((item) => {
+        item.classList.display = 'none';
+      });
+      items[indexItem].style.display = 'flex';
+    }
+
+    function nextItem() {
+      indexItem++;
+      if (indexItem > items.length - 1) {
+        indexItem = 0;
+      }
+      displayItem(indexItem);
+    }
+
+    function prevItem() {
+      indexItem--;
+      if (indexItem < 0) {
+        indexItem = items.length - 1;
+      }
+      displayItem(indexItem);
+    }
+
+    right.addEventListener('click', nextItem);
+    left.addEventListener('click', prevItem);
+
+      console.log("Ceci s'exécute uniquement sur mobile");
+  }
+
+  // Vérifier si l'écran est un mobile avant d'exécuter la fonction
+  if (estMobile()) {
+  fonctionMobile();
+  }
+
 
   // Ajoutez des gestionnaires d'événements pour chaque rubrique
   rubriques.forEach(function(rubrique, index) {
@@ -964,8 +1019,14 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
+  // NAVBAR CODE
+    var menuToggle = document.querySelector('.menu-toggle');
+    var menu = document.querySelector('.menu');
   
-
+    menuToggle.addEventListener('click', function() {
+      menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    });
+  
 });
 
 
@@ -1050,6 +1111,6 @@ function prevSlide() {
 next.addEventListener('click', nextSlide); 
 prev.addEventListener('click', prevSlide); 
 
-// CODE POUR PORTFOLIO 
+
 
 
