@@ -946,7 +946,7 @@ function fonctionMobile() {
   function nextItem() {
     indexItem++;
     if (indexItem > items.length - 1) {
-      indexItem = 0; // Réinitialisez l'index si nécessaire
+      return; // Réinitialisez l'index si nécessaire
     }
     displayItem(indexItem);
   }
@@ -954,7 +954,7 @@ function fonctionMobile() {
   function prevItem() {
     indexItem--;
     if (indexItem < 0) {
-      indexItem = items.length - 1;
+      return;
     }
     displayItem(indexItem);
   }
