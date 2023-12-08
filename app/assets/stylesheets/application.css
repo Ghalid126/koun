@@ -483,12 +483,12 @@ jumper::after {
 .arrow-process{
   width: 30px;
 }
-.arrow-left {
+#arrow-left {
   position: relative;
   top: -32px;
   float: left
 }
-.arrow-right {
+#arrow-right {
   position: relative;
   top: -32px;
   float: right;
@@ -1308,6 +1308,7 @@ footer li {
     }
 
     .item {
+        display: none;
         margin-left: 0;
         margin-bottom: 20px;
     }

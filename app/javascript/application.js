@@ -895,31 +895,32 @@ document.addEventListener('DOMContentLoaded', function() {
   var contenus = document.querySelectorAll('[id^="content"]');
   let jumpers = document.querySelectorAll('[id^="jumper"]');
   let svgs = document.querySelectorAll('[id^="svg"]');
-  let items = document.querySelectorAll('.item');
+  // let items = document.querySelectorAll('.item');
 
 
 
   // Fonction pour vérifier si l'écran est un mobile
   function estMobile() {
-  return window.innerWidth <= 768; // Vous pouvez ajuster cette valeur en fonction de vos besoins
+    return window.innerWidth <= 768; // Vous pouvez ajuster cette valeur en fonction de vos besoins
   }
-
+  
   // Fonction à appliquer uniquement en mode mobile
   function fonctionMobile() {
     // ITEM MOBILE SLIDE FUNCTION
-
-    let left = document.querySelector('.arrow-left');
-    let right = document.querySelector('.arrow-right');
+  
+    let left = document.querySelector('#arrow-left');
+    let right = document.querySelector('#arrow-right');
+    let items = document.querySelectorAll('.item'); // Sélectionnez les éléments avec la classe .item
     let indexItem = 0;
     displayItem(indexItem); // Move this line after the displayItem function definition
-
+  
     function displayItem(indexItem) {
       items.forEach((item) => {
-        item.classList.display = 'none';
+        item.style.display = 'none'; // Utilisez style.display au lieu de classList.display
       });
       items[indexItem].style.display = 'flex';
     }
-
+  
     function nextItem() {
       indexItem++;
       if (indexItem > items.length - 1) {
@@ -927,7 +928,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
       displayItem(indexItem);
     }
-
+  
     function prevItem() {
       indexItem--;
       if (indexItem < 0) {
@@ -935,17 +936,26 @@ document.addEventListener('DOMContentLoaded', function() {
       }
       displayItem(indexItem);
     }
-
-    right.addEventListener('click', nextItem);
-    left.addEventListener('click', prevItem);
-
-      console.log("Ceci s'exécute uniquement sur mobile");
+  
+    right.addEventListener('click', function() {
+      console.log('Clic droit');
+      nextItem();
+    });
+  
+    left.addEventListener('click', function() {
+      console.log('Clic gauche');
+      prevItem();
+    });
+  
+    console.log("Ceci s'exécute uniquement sur mobile");
   }
-
+  
   // Vérifier si l'écran est un mobile avant d'exécuter la fonction
   if (estMobile()) {
-  fonctionMobile();
+    fonctionMobile();
   }
+  
+  
 
 
   // Ajoutez des gestionnaires d'événements pour chaque rubrique
