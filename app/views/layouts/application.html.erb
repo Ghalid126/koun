@@ -8,7 +8,8 @@
     <%= csp_meta_tag %>
     <meta name="turbo-visit-control" content="reload">
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload', as: 'style'%>
+
 
     <%= javascript_importmap_tags %>
     
