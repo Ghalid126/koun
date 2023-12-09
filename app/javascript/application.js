@@ -8,6 +8,7 @@ import "controllers"
  *   commented out for now.
  */
 
+
 //Converting colors to proper format
 function normalizeColor(hexCode) {
   return [
@@ -1117,6 +1118,7 @@ display(index);
 function display(index) {
   slides.forEach((slide) => {
     slide.style.display = 'none';
+    console.log("charged");
   });
   slides[index].style.display ='flex';
 }
