@@ -1750,6 +1750,33 @@ footer li {
     display: block;
   }
 
+  /* QUOTE LANDSCAPE MOBILE  */
+  .header-quote {
+    height: inherit;
+  }
+  .header-quote h1 {
+    font-size: 28pt;
+  }
+  .quote-svg {
+    width: 320px;
+  }
+  .choice-container {
+    height: inherit;
+    margin-top: 0.8rem;
+  }
+  .choice {
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
+    height: 125px;
+    padding: .8rem;
+  }
+  .choice-svg {
+    width: 75px;
+  }
+  #webdesign {
+    width: 57px;
+    padding-bottom: 16px;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -1957,6 +1984,13 @@ footer li {
   }
   .df {
     display: block;
+  }
+
+  .choice-container {
+    margin-top: 1rem;
+  }
+  #gradient-canvas-quote {
+    height: 57vh;
   }
   
 }
