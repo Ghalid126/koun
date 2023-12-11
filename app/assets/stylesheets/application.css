@@ -1419,7 +1419,7 @@ footer li {
 /* ... (Your existing CSS goes here) ... */
 
 /* Add responsive styles at the end of your existing CSS */
-@media screen and (max-width: 820px) and (orientation: portrait){
+@media screen and (max-width: 844px) and (orientation: portrait){
   #gradient-canvas {
     height: 100vh;
   }
@@ -1456,8 +1456,11 @@ footer li {
     }
 
     .process-headers h1 {
+      font-size: 28pt;
       padding-bottom: 0;
       padding-top: 1rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
     .process-text {
         order: 2; /* Make text appear after the image on small screens */
@@ -1503,7 +1506,8 @@ footer li {
       padding-top: 0rem !important;
     }
     .technology-stack_container h1 {
-      padding-top: 6rem !important;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
     }
 }
 
