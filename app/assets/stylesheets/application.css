@@ -968,7 +968,7 @@ footer li {
 .mobileShow {
   display: none !important;
 }
-@media only screen and (min-device-width : 320px) and (max-device-width : 800px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 800px) and (orientation: portrait){
   .mobileHide {
     display: none;
   }
@@ -1023,7 +1023,7 @@ footer li {
     margin-top: 3rem;
     width: fit-content;
 }
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 820px) and (orientation: portrait){
     .logo {
         width: 184px; /* Smaller size */
     }
@@ -1146,9 +1146,9 @@ footer li {
 }
 
 /* Mobile specific styles */
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 820px) and (orientation: portrait) {
   .logo {
-    width: 160px; /* Smaller logo on mobile */
+    width: 160px;
   }
 
   .menu-toggle {
@@ -1305,7 +1305,7 @@ footer li {
 
 /* PORTFOLIO MOBILE */
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 820px) and (orientation: portrait){
   .portfolio-container {
     flex-direction: column;
     margin-left: 0;
@@ -1401,7 +1401,7 @@ footer li {
 /* ... (Your existing CSS goes here) ... */
 
 /* Add responsive styles at the end of your existing CSS */
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 820px) and (orientation: portrait){
     .process-logo {
       top: 65px;
         flex-direction: column;
@@ -1539,50 +1539,115 @@ footer li {
 
   /* HOME PAGE STYLES */
   .header-hero {
-    height: 120vh;
+    /* display: flex;
+    flex-direction: column; */
+  }
+  .logo { 
+    transform: scale(0.8);
   }
   .header-logo {
-    padding: 1.5rem 1.5rem;
+    padding: 1.5rem .5rem;
     transform: scale(0.8);
   }
   .menu {
-    color: white;
-    padding: 3.5rem 2rem;
-    width: auto;
-    z-index: 1;
-    font-size: 1.5rem;
-    box-sizing: border-box;
-    font-size: 16pt;
-  }
-  
-  .menu li {
-    display: inline;
-    list-style: none;
-  }
-  
-  .menu li ~ li {
-    padding-left: 1rem;
-  }
-  
-  .menu .quote-button {
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 0.4rem 2.2rem;
-    border-radius: 25px;
-    margin-left: 1rem;
-    width: fit-content;
-  }
-  
-  .menu-toggle {
-    display: none;
-  }
-  .menu {
-    transform: scale(0.8);
-    padding: 2.5rem 0rem;
+    padding: 2.5rem 1rem;
   } 
+  .menu ul {
+    font-size: .9rem;
+  }
+  .menu li ~li {
+    padding-left: .7rem;
+  }
   .navbar {
     height: 20vh;
   }
   #gradient-canvas {
     height: inherit;
+  }
+  .hero-mobile {
+    display: none;
+  }
+  .hero-text {
+    transform: scale(0.8);
+    left: 20px;
+  }
+  .hero-text h1 {
+    font-size: 24pt;
+  }
+  .hero-text h2 {
+    font-size: 18pt;
+    width: 100%;
+  }
+  .hero-text .quote-button {
+    font-size: 18pt;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+  .hero-carrousel {
+    margin-right: 1rem;
+    margin-left: 3rem;
+  }
+
+  .process-headers h1 {
+    font-size: 28pt;
+    padding-bottom: 0;
+  }
+  .process-logo {
+    transform: scale(0.7);
+    top: 57px;
+  }
+  .process-logo .item {
+    margin-left: 30px;
+  }
+  .process-content {
+    margin-left: 4rem;
+    height: inherit;
+  }
+  .process-text {
+    min-width: 30vw;
+    margin-right: 0;
+    top: 90px;
+  }
+  .process-img {
+    top: 65px;
+    margin-left: 4rem;
+  }
+  .process-image {
+    width: 325px;
+  }
+  .technology-stack_container {
+    margin-bottom: 2rem;
+  }
+  .technology-stack_container h1 {
+    font-size: 28pt;
+    padding-bottom: 1rem;
+  }
+  .technology {
+    padding: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: 75vh;
+    width: 108vh;
+  }
+  .technology-text h2 {
+    font-size: 18pt;
+  }
+  .technology-text p {
+    font-size: 14pt;
+  }
+  .technology-logo {
+    margin-right: .6rem;
+    margin-left: .6rem;
+  }
+  .bottom-arrow {
+    right: 15px;
+    top: 115px;
+  }
+  footer {
+    height: 22vh;
+    font-size: 12pt;
+  }
+  #gradient-canvas-footer {
+    height: 22vh;
   }
 }

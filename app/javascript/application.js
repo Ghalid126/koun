@@ -903,7 +903,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Fonction pour vérifier si l'écran est un mobile
 // Fonction pour vérifier si l'écran est un mobile
 function estMobile() {
-  return window.innerWidth <= 768; // Vous pouvez ajuster cette valeur en fonction de vos besoins
+  return window.matchMedia("(max-width: 767px) and (orientation: portrait)").matches  ; // Vous pouvez ajuster cette valeur en fonction de vos besoins
 }
 
 // Fonction à appliquer uniquement en mode mobile
