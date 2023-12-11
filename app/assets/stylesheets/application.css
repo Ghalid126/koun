@@ -907,11 +907,11 @@ footer li {
   height: 60vh;
 }
 .header-quote {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  display: block;
+  /* flex-direction: row;
+  align-items: center; */
   height: 45vh;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
 }
 .header-quote h1 {
   color: #fff;
@@ -919,11 +919,22 @@ footer li {
   font-size: 32pt;
   padding: 0;
   text-align: left;
+  left: 300px;
+  top: 100px;
+  position: relative;
 }
 .quote-svg-container {
-  display: flex;
-  align-items: flex-end;
+  /* display: flex;
+  align-items: flex-end; */
   height: 100%;
+  background-image: url('quote-hero-image.svg');
+  background-repeat: no-repeat;
+  background-position: center right;
+  right: 190px;
+  position: relative;
+  bottom: 75px;
+  background-size: 660px;
+
 }
 .quote-svg {
   bottom: 0;
@@ -1015,7 +1026,8 @@ footer li {
 }
 .hero-text-mobile h2 {
     margin-top: 1.5rem;
-    width: 70%;
+    margin-bottom: 2rem;
+    width: 90%;
     font-size: 18pt;
     font-weight: 300;
 }
@@ -1391,6 +1403,45 @@ footer li {
   #gradient-canvas-portfolio {
     height: 100vh;
   }
+
+  /* QUOTE STYLES */
+
+  .header-quote h1 {
+    font-size: 28pt;
+    left: 0;
+    top: 0;
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+
+  .quote-svg-container{
+    bottom: 16vh;
+    position: relative;
+    background-size: 360px;
+    right: 0;
+    background-position: bottom right;
+  }
+  .choice-container{
+    flex-direction: column;
+    justify-content: flex-start;
+    height: auto;
+  }
+  .choice:first-child {
+    margin-top: 0;
+  }
+  .choice {
+    height: auto;
+    width: 74vw;
+    padding: 2rem;
+    margin: 1rem 0.7rem;
+  }
+  .choice:last-child {
+    margin-bottom: 1.5rem;
+  }
+  #webdesign {
+    height: 96px;
+  }
+    
 }
 
 /* ABOUT STYLES */
@@ -1527,7 +1578,7 @@ footer li {
     .process-headers h1 {
       font-size: 28pt;
       padding-bottom: 0;
-      padding-top: 1rem;
+      padding-top: 2rem;
       padding-left: 1rem;
       padding-right: 1rem;
     }
