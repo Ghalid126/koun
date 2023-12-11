@@ -1145,4 +1145,15 @@ prev.addEventListener('click', prevSlide);
 
 
 
+// Fonction pour recharger la page lors du changement d'orientation
+function rechargerPageSurChangementOrientation() {
+  window.addEventListener('orientationchange', function() {
+    // Rechargez la page lorsque le changement d'orientation est détecté
+    location.reload();
+  });
+}
 
+// Vérifier si l'écran est un mobile avant d'exécuter la fonction
+if (estMobile()) {
+  rechargerPageSurChangementOrientation();
+}
