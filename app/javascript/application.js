@@ -1134,6 +1134,7 @@ if (estMobile()) {
         indexItem = items.length - 1;
         right.classList.add('arrow-opacity');
       }
+      left.classList.remove('arrow-opacity');
       displayItem(indexItem);
     }
 
@@ -1143,6 +1144,8 @@ if (estMobile()) {
         indexItem = 0;
         left.classList.add('arrow-opacity');
       }
+      right.classList.remove('arrow-opacity');
+      
       displayItem(indexItem);
     
     }
