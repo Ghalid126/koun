@@ -979,10 +979,12 @@ footer li {
   .mobileShow {display: flex !important;}
 }
 .hero-text-mobile {
+  display: flex;
+  flex-direction: column;
   padding-left: 2rem;
   position: relative;
   box-sizing: border-box;
-  margin-top: 2rem;
+  margin-top: 6vh;
 }
 .hero-mobile {
   color: #fff;
@@ -997,6 +999,7 @@ footer li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 2rem;
 }
 .rounded-video-mobile {
   overflow: hidden;
@@ -1024,7 +1027,7 @@ footer li {
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     font-size: 18pt;
-    margin-top: 2rem;
+    margin-top: 4vh;
     width: fit-content;
 }
 @media screen and (max-width: 820px) and (orientation: portrait){
@@ -1417,6 +1420,13 @@ footer li {
 
 /* Add responsive styles at the end of your existing CSS */
 @media screen and (max-width: 820px) and (orientation: portrait){
+  #gradient-canvas {
+    height: 100vh;
+  }
+  .process {
+    position: static;
+  }
+  
     .process-logo {
       top: 65px;
         flex-direction: column;
@@ -1446,7 +1456,8 @@ footer li {
     }
 
     .process-headers h1 {
-      padding-bottom: 0px !important;
+      padding-bottom: 0;
+      padding-top: 1rem;
     }
     .process-text {
         order: 2; /* Make text appear after the image on small screens */
@@ -1786,6 +1797,15 @@ footer li {
   }
 }
 
+/* MEDIA QUERY LONG PHONE */
+@media only screen and (min-height: 820px) and (max-height: 1023px) and (orientation: portrait) {
+  .rounded-video-mobile {
+    margin-top: 5rem;
+  }
+  .hero-carrousel-mobile .quote-button {
+    margin-top: 10vh;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
 
   /* HOME PAGE STYLES */
