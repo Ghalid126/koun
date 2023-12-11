@@ -1376,7 +1376,7 @@ footer li {
   --gradient-color-1: #0E21A0;
   --gradient-color-2: #EC53B0;
   z-index:-1;
-  height: 100vh;
+  height: 105vh;
 }
 
  .about-container {
@@ -1384,6 +1384,9 @@ footer li {
   height: 84vh;
   align-items: flex-start;
   justify-content: center;
+ }
+ .aboutus-container h1 {
+  padding-bottom: 1rem;
  }
  .hero-about {
   height: 60vh;
@@ -1393,7 +1396,12 @@ footer li {
   width: 100%;
   height: 60vh;
  }
-
+ .aboutus-photo {
+  height: 360px;
+ }
+ .text-about p {
+  font-size: 1.2rem;
+ }
 
 
 
@@ -1628,15 +1636,16 @@ footer li {
   .technology-stack_container .row {
     margin: 0 auto;
     box-sizing: border-box;
-    justify-content: normal;
+    justify-content: center;
     width: 100%;
   }
   .technology {
+    box-sizing: border-box;
     padding: 0;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
     height: 75vh;
-    width: 108vh;
+    min-width: 82vh;
   }
   .technology-text h2 {
     font-size: 18pt;
@@ -1662,4 +1671,83 @@ footer li {
   #gradient-canvas-footer {
     height: 18vh;
   }
+  footer ul {
+    line-height: 1.4;
+  }
+
+  /* PORTFOLIO LANDSCAPE STYLE */
+  .portfolio-container {
+    height: inherit;
+    flex-direction: column;
+  }
+  .thumb-col {
+    flex-direction: row;
+    width: 100%;
+    height: inherit;
+  }
+  .thumb {
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+  }
+  .thumb-portfolio {
+    width: 145px;
+  }
+  .center {
+    width: 100%;
+  }
+  .center-portfolio {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    width: 540px;
+  }
+  .right-col {
+    margin-top: 0rem;
+    padding-top: 0rem;
+    max-width: 100%;
+    height: inherit;
+  }
+  #gradient-canvas-portfolio {
+    height: 160vh;
+  }
+
+  /* ABOUT US LANDSCAPE MOBILE */
+
+  .aboutus {
+    margin-bottom: 0;
+  }
+  .photo-about{
+    padding: .5rem;
+    width: auto;
+    height: 170px;
+    float: left;
+    margin-bottom: 1rem;
+  }
+  .aboutus-photo {
+    height: 170px;
+    float: left;
+    padding: .5rem;
+  }
+  .aboutus-container h1 {
+    font-size: 28pt;
+    padding-bottom: .5rem;
+    padding-top: 1rem;
+  }
+  .text-about {
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+  }
+  .text-about p {
+    font-size: 8pt;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+  #gradient-canvas-about {
+    height: 155vh;
+  }
+  .df {
+    display: block;
+  }
+
 }
