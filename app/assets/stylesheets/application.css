@@ -774,7 +774,7 @@ jumper::after {
 
 /* TESTIMONIALS DESKTOP VIEW */
 
-@media (min-width: 768px) {
+@media (min-width: 820px) {
 
   .testimonials-container {
     align-items: flex-start;
@@ -1543,7 +1543,7 @@ footer li {
 
 /* MEDIA QUERY LANDSCAPE */
 
-@media only screen and (max-device-width: 844px) and (orientation: landscape) {
+@media only screen and (max-device-width: 768px) and (orientation: landscape) {
 
   /* HOME PAGE STYLES */
   .header-hero {
@@ -1750,4 +1750,213 @@ footer li {
     display: block;
   }
 
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+  /* HOME PAGE STYLES */
+  .header-hero {
+    /* display: flex;
+    flex-direction: column; */
+  }
+  .logo { 
+    transform: scale(0.8);
+  }
+  .header-logo {
+    padding: 1.5rem .5rem;
+    transform: scale(0.8);
+  }
+  .menu {
+    padding: 2.5rem 1rem;
+  } 
+  .menu ul {
+    font-size: .9rem;
+  }
+  .menu li ~li {
+    padding-left: .7rem;
+  }
+  .navbar {
+    height: 20vh;
+  }
+  #gradient-canvas {
+    height: inherit;
+  }
+  .hero-mobile {
+    display: none;
+  }
+  .hero-text {
+    transform: scale(0.8);
+    left: 20px;
+  }
+  .hero-text h1 {
+    font-size: 24pt;
+  }
+  .hero-text h2 {
+    font-size: 18pt;
+    width: 100%;
+  }
+  .hero-text .quote-button {
+    font-size: 18pt;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+  .hero-carrousel {
+    margin-right: 1rem;
+    margin-left: .5rem;
+  }
+
+  .process-headers h1 {
+    font-size: 28pt;
+    padding-bottom: 0;
+  }
+  .process-logo {
+    transform: scale(0.7);
+    top: 57px;
+  }
+  .process-logo .item {
+    margin-left: 30px;
+  }
+  .process-content {
+    margin-left: 4rem;
+    height: inherit;
+  }
+  .process-text {
+    min-width: 30vw;
+    margin-right: 0;
+    top: 90px;
+  }
+  .process-img {
+    top: 65px;
+    margin-left: 4rem;
+  }
+  .process-image {
+    width: 300px;
+  }
+  .technology-stack_container {
+    margin-bottom: 2rem;
+  }
+  .technology-stack_container h1 {
+    font-size: 28pt;
+    padding-bottom: 1rem;
+  }
+  .elements-container {
+    width: 100%;
+  }
+  .technology-stack_container .row {
+    margin: 0 auto;
+    box-sizing: border-box;
+    justify-content: center;
+    width: 100%;
+  }
+  .technology {
+    box-sizing: border-box;
+    padding: 0;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    height: 75vh;
+    min-width: 82vh;
+  }
+  .technology-text h2 {
+    font-size: 18pt;
+  }
+  .technology-text p {
+    font-size: 14pt;
+  }
+  .technology-logo {
+    margin-right: .6rem;
+    margin-left: .6rem;
+  }
+  .bottom-arrow {
+    right: 15px;
+    top: 115px;
+  }
+  footer {
+    height: 18vh;
+    font-size: 12pt;
+  }
+  .footer-logo {
+    width: 150px;
+  }
+  #gradient-canvas-footer {
+    height: 18vh;
+  }
+  footer ul {
+    line-height: 1.4;
+  }
+
+  /* PORTFOLIO LANDSCAPE STYLE */
+  .portfolio-container {
+    height: inherit;
+    flex-direction: column;
+  }
+  .thumb-col {
+    flex-direction: row;
+    width: 100%;
+    height: inherit;
+  }
+  .thumb {
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+  }
+  .thumb-portfolio {
+    width: 145px;
+  }
+  .center {
+    width: 100%;
+  }
+  .center-portfolio {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    width: 540px;
+  }
+  .right-col {
+    margin-top: 0rem;
+    padding-top: 0rem;
+    max-width: 100%;
+    height: inherit;
+  }
+  #gradient-canvas-portfolio {
+    height: 160vh;
+  }
+
+  /* ABOUT US LANDSCAPE MOBILE */
+
+  .aboutus {
+    margin-bottom: 0;
+  }
+  .photo-about{
+    padding: .5rem;
+    width: auto;
+    height: 170px;
+    float: left;
+    margin-bottom: 1rem;
+  }
+  .aboutus-photo {
+    height: 170px;
+    float: left;
+    padding: .5rem;
+  }
+  .aboutus-container h1 {
+    font-size: 28pt;
+    padding-bottom: .5rem;
+    padding-top: 1rem;
+  }
+  .text-about {
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+  }
+  .text-about p {
+    font-size: 8pt;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+  #gradient-canvas-about {
+    height: 140vh;
+  }
+  .df {
+    display: block;
+  }
+  
 }
