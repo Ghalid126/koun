@@ -435,8 +435,9 @@ jumper::after {
   background-color: #fff;
   display: flex;
   flex-direction: row;
-  height: 550px;
+  height: auto;
   margin-left: 15.5rem;
+  margin-bottom: 5rem;
 }
 [id^="rubrique"] {
   cursor: pointer;
@@ -495,6 +496,9 @@ jumper::after {
   top: -32px;
   float: right;
   margin-right: 5vw;
+}
+arrow-opacity {
+  opacity: 0.4;
 }
 
 .slide-bottom {

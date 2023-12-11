@@ -1210,6 +1210,7 @@ if (estMobile()) {
       indexItem++;
       if (indexItem > items.length - 1) {
         indexItem = items.length - 1;
+        right.classList.add('arrow-opacity');
       }
       displayItem(indexItem);
     }
@@ -1218,6 +1219,7 @@ if (estMobile()) {
       indexItem--;
       if (indexItem < 0) {
         indexItem = 0;
+        left.classList.add('arrow-opacity');
       }
       displayItem(indexItem);
     
