@@ -901,9 +901,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 // Fonction pour vérifier si l'écran est un mobile
-// Fonction pour vérifier si l'écran est un mobile
 function estMobile() {
-  return window.matchMedia("(max-width: 767px) and (orientation: portrait)").matches  ; // Vous pouvez ajuster cette valeur en fonction de vos besoins
+  return window.matchMedia("(max-width: 820px) and (orientation: portrait)").matches  ; // Vous pouvez ajuster cette valeur en fonction de vos besoins
 }
 
 // Fonction à appliquer uniquement en mode mobile
@@ -946,18 +945,18 @@ function fonctionMobile() {
 
   function nextItem() {
     indexItem++;
-    if (indexItem > items.length - 1) {
-      return; // Réinitialisez l'index si nécessaire
+    if (indexItem <= items.length - 1) {
+      displayItem(indexItem);
     }
-    displayItem(indexItem);
+    
   }
 
   function prevItem() {
     indexItem--;
-    if (indexItem < 0) {
-      return;
+    if (indexItem > 0) {
+      displayItem(indexItem);
     }
-    displayItem(indexItem);
+    
   }
 
   right.addEventListener('click', function() {
