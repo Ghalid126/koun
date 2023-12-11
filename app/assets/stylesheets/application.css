@@ -497,7 +497,7 @@ jumper::after {
   float: right;
   margin-right: 5vw;
 }
-arrow-opacity {
+.arrow-opacity {
   opacity: 0.4;
 }
 
