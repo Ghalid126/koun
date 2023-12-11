@@ -1052,14 +1052,29 @@ footer li {
     }
     .bottom-arrow {
       position: relative;
-      right: 9px;
-      top: 105px;
+      right: -133px;
+      top: 10px;
     }
     footer {
-      display: block;
+      flex-direction: column;
+      font-size: 12pt;
+      justify-content: inherit;
+      height: 30vh;
+    }
+    .footer-logo {
+      width: 150px;
     }
     #gradient-canvas-footer {
       height: 30vh;
+    }
+    .testimonials .slide-img {
+      padding: 40px 20px;
+    }
+    .footer:nth-child(2) {
+      align-self: center; /* Pour aligner cet élément en bas à l'intérieur du conteneur flexible */
+    }
+    .footer-center {
+      flex: 0 1 25%;
     }
 
 }
@@ -1509,6 +1524,17 @@ footer li {
       padding-top: 3rem;
       padding-bottom: 3rem;
     }
+    .technology {
+      flex-direction: column;
+      padding: 1rem;
+    }
+    .technology-logo {
+      margin-bottom: 1rem;
+  }
+  .technology-text h2 {
+    text-align: center;
+  }
+  
 }
 
 /* Additional styles for very small screens, if needed */
