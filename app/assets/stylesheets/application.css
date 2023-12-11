@@ -1585,7 +1585,7 @@ footer li {
   }
   .hero-carrousel {
     margin-right: 1rem;
-    margin-left: 3rem;
+    margin-left: .5rem;
   }
 
   .process-headers h1 {
@@ -1613,7 +1613,7 @@ footer li {
     margin-left: 4rem;
   }
   .process-image {
-    width: 325px;
+    width: 300px;
   }
   .technology-stack_container {
     margin-bottom: 2rem;
@@ -1621,6 +1621,15 @@ footer li {
   .technology-stack_container h1 {
     font-size: 28pt;
     padding-bottom: 1rem;
+  }
+  .elements-container {
+    width: 100%;
+  }
+  .technology-stack_container .row {
+    margin: 0 auto;
+    box-sizing: border-box;
+    justify-content: normal;
+    width: 100%;
   }
   .technology {
     padding: 0;
@@ -1644,10 +1653,13 @@ footer li {
     top: 115px;
   }
   footer {
-    height: 22vh;
+    height: 18vh;
     font-size: 12pt;
   }
+  .footer-logo {
+    width: 150px;
+  }
   #gradient-canvas-footer {
-    height: 22vh;
+    height: 18vh;
   }
 }
