@@ -403,9 +403,10 @@
   function fonctionMobile() {
       // ITEM MOBILE SLIDE FUNCTION
 
-    let contenus = document.querySelectorAll('.contenu');
-    let jumpers = document.querySelectorAll('.jumper');
-    let svgs = document.querySelectorAll('.svg-active');
+    var rubriques = document.querySelectorAll('[id^="rubrique"]');
+    var contenus = document.querySelectorAll('[id^="content"]');
+    let jumpers = document.querySelectorAll('[id^="jumper"]');
+    let svgs = document.querySelectorAll('[id^="svg"]');
 
     let left = document.querySelector('#arrow-left');
     let right = document.querySelector('#arrow-right');
