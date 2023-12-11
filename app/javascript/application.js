@@ -888,6 +888,46 @@ gradientPortfolio.initGradient("#gradient-canvas-footer");
 var gradientPortfolio= new Gradient ();
 gradientPortfolio.initGradient("#gradient-canvas-about");
 
+// CODE POUR PORTFOLIO 
+let thumbs = document.querySelectorAll('[id^="thumb-"]');
+let mains = document.querySelectorAll('[id^="main-image-"]');
+let texts = document.querySelectorAll('[id^="portfolio-text-"]');
+
+console.log('Thumbs:', thumbs);
+console.log('Mains:', mains);
+
+thumbs.forEach(function(thumb, index) {
+  thumb.addEventListener('click', function() {
+    console.log('Thumb cliqué :', index);
+
+    // Retirez la classe "thumb-active" de tous les thumbs
+    thumbs.forEach(function(t) {
+      t.classList.remove('thumb-active');
+    });
+
+    // Ajoutez la classe "thumb-active" à l'élément cliqué
+    thumb.classList.add('thumb-active');
+
+    // Retirez la classe "main-active" de tous les contenus
+    mains.forEach(function(main) {
+      main.classList.remove('main-active');
+    });
+
+    // Ajoutez la classe "main-active" à l'élément correspondant
+    if (mains[index]) {
+      mains[index].classList.add('main-active');
+      console.log('Main activé :', mains[index]);
+    }
+    texts.forEach(function(text) {
+      text.classList.remove('portfolio-text-active');
+    });
+
+    if (texts[index]) {
+      texts[index].classList.add('portfolio-text-active');
+    }
+  });
+});
+
 
 // Fonction pour process rubrique apparition
 document.addEventListener('DOMContentLoaded', function() {
@@ -900,82 +940,83 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-// Fonction pour vérifier si l'écran est un mobile
-function estMobile() {
-  return window.matchMedia("(max-width: 820px) and (orientation: portrait)").matches  ; // Vous pouvez ajuster cette valeur en fonction de vos besoins
-}
+  // Fonction pour vérifier si l'écran est un mobile
+  function estMobile() {
+    return window.matchMedia("(max-width: 820px) and (orientation: portrait)").matches  ; // Vous pouvez ajuster cette valeur en fonction de vos besoins
+  }
 
-// Fonction à appliquer uniquement en mode mobile
-function fonctionMobile() {
-  // ITEM MOBILE SLIDE FUNCTION
+  // Fonction à appliquer uniquement en mode mobile
+  function fonctionMobile() {
+      // ITEM MOBILE SLIDE FUNCTION
 
-  let left = document.querySelector('#arrow-left');
-  let right = document.querySelector('#arrow-right');
-  let items = document.querySelectorAll('.item'); // Sélectionnez les éléments avec la classe .item
-  let indexItem = 0;
-  displayItem(indexItem); // Move this line after the displayItem function definition
+    let left = document.querySelector('#arrow-left');
+    let right = document.querySelector('#arrow-right');
+    let items = document.querySelectorAll('.item'); // Sélectionnez les éléments avec la classe .item
+    let indexItem = 0;
+    displayItem(indexItem); // Move this line after the displayItem function definition
 
-  function displayItem(indexItem) {
-    items.forEach((item) => {
-      item.style.display = 'none';
-    });
-    items[indexItem].style.display = 'flex';
-    contenus.forEach(function(contenu) {
-      contenu.classList.remove('active');
-    });
+    function displayItem(indexItem) {
+      items.forEach((item) => {
+        item.style.display = 'none';
+      });
+      items[indexItem].style.display = 'flex';
+      contenus.forEach(function(contenu) {
+        contenu.classList.remove('active');
+      });
 
-    // Vérifiez si l'index est valide avant d'ajouter la classe "active"
-    if (contenus[indexItem]) {
-      contenus[indexItem].classList.add('active');
-      contenus[indexItem].classList.add('contenu');
-    }
-    jumpers.forEach(function(jumper) {
-      jumper.classList.remove('jumper');
-    });
-    svgs.forEach(function(svg) {
-      svg.classList.remove('svg-active');
-    });
-    jumpers.forEach(function(jumper, index) {
-      if (contenus[indexItem].classList.contains("active")) {
-        jumpers[indexItem].classList.add("jumper");
-        svgs[indexItem].classList.add('svg-active');
+      // Vérifiez si l'index est valide avant d'ajouter la classe "active"
+      if (contenus[indexItem]) {
+        contenus[indexItem].classList.add('active');
+        contenus[indexItem].classList.add('contenu');
       }
+      jumpers.forEach(function(jumper) {
+        jumper.classList.remove('jumper');
+      });
+      svgs.forEach(function(svg) {
+        svg.classList.remove('svg-active');
+      });
+      jumpers.forEach(function(jumper, indexItem) {
+        if (contenus[indexItem].classList.contains("active")) {
+          jumpers[indexItem].classList.add("jumper");
+          svgs[indexItem].classList.add('svg-active');
+        }
+      });
+    }
+
+    function nextItem() {
+      indexItem++;
+      if (indexItem > items.length - 1) {
+        indexItem = items.length - 1;
+      }
+      displayItem(indexItem);
+    }
+
+    function prevItem() {
+      indexItem--;
+      if (indexItem < 0) {
+        indexItem = 0;
+      }
+      displayItem(indexItem);
+    
+    }
+
+    right.addEventListener('click', function() {
+      console.log('Clic droit');
+      nextItem();
     });
+
+    left.addEventListener('click', function() {
+      console.log('Clic gauche');
+      prevItem();
+    });
+
+    console.log("Ceci s'exécute uniquement sur mobile");
   }
 
-  function nextItem() {
-    indexItem++;
-    if (indexItem <= items.length - 1) {
-      displayItem(indexItem);
-    }
-    
+  // Vérifier si l'écran est un mobile avant d'exécuter la fonction
+  if (estMobile()) {
+    fonctionMobile();
   }
-
-  function prevItem() {
-    indexItem--;
-    if (indexItem > 0) {
-      displayItem(indexItem);
-    }
-    
-  }
-
-  right.addEventListener('click', function() {
-    console.log('Clic droit');
-    nextItem();
-  });
-
-  left.addEventListener('click', function() {
-    console.log('Clic gauche');
-    prevItem();
-  });
-
-  console.log("Ceci s'exécute uniquement sur mobile");
-}
-
-// Vérifier si l'écran est un mobile avant d'exécuter la fonction
-if (estMobile()) {
-  fonctionMobile();
-}
 
   // Ajoutez des gestionnaires d'événements pour chaque rubrique
   rubriques.forEach(function(rubrique, index) {
@@ -1009,45 +1050,6 @@ if (estMobile()) {
   });
 
 
-  // CODE POUR PORTFOLIO 
-  let thumbs = document.querySelectorAll('[id^="thumb-"]');
-  let mains = document.querySelectorAll('[id^="main-image-"]');
-  let texts = document.querySelectorAll('[id^="portfolio-text-"]');
-  
-  console.log('Thumbs:', thumbs);
-  console.log('Mains:', mains);
-  
-  thumbs.forEach(function(thumb, index) {
-    thumb.addEventListener('click', function() {
-      console.log('Thumb cliqué :', index);
-  
-      // Retirez la classe "thumb-active" de tous les thumbs
-      thumbs.forEach(function(t) {
-        t.classList.remove('thumb-active');
-      });
-  
-      // Ajoutez la classe "thumb-active" à l'élément cliqué
-      thumb.classList.add('thumb-active');
-  
-      // Retirez la classe "main-active" de tous les contenus
-      mains.forEach(function(main) {
-        main.classList.remove('main-active');
-      });
-  
-      // Ajoutez la classe "main-active" à l'élément correspondant
-      if (mains[index]) {
-        mains[index].classList.add('main-active');
-        console.log('Main activé :', mains[index]);
-      }
-      texts.forEach(function(text) {
-        text.classList.remove('portfolio-text-active');
-      });
-
-      if (texts[index]) {
-        texts[index].classList.add('portfolio-text-active');
-      }
-    });
-  });
   // NAVBAR CODE
     var menuToggle = document.querySelector('.menu-toggle');
     var menu = document.querySelector('.menu');
