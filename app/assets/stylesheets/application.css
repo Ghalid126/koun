@@ -837,11 +837,12 @@ jumper::after {
 .faq {
   height: auto;
   margin-bottom: 3rem;
+  box-sizing: border-box;
 }
 #gradient-canvas-bottom {
   position: absolute;
   width:100%;
-  height: auto;
+  height: 100vh;
   --gradient-color-1: #0E21A0; 
   --gradient-color-2: #EC53B0;
   /* --gradient-color-3: #EC53B0; 
@@ -852,6 +853,50 @@ jumper::after {
   color: #fff;
   position: relative;
   z-index: 1;
+  padding-bottom: 2rem;
+}
+.accordion-item {
+  padding: 10px;
+  padding-bottom: 0;
+  margin-bottom: 10px;
+}
+.accordion-header {
+  position: relative;
+  border-radius: 10px;
+  background-color: #eee;
+  padding: 20px;
+  cursor: pointer;
+  opacity: 0.8;
+  font-size: 14pt;
+}
+.accordion-item .accordion-header::before {
+  content: "+";
+  position:absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  font-size: 1.8rem;
+  font-weight: lighter;
+  transition: all 0.5s ease-in-out;
+}
+.accordion-item.active .accordion-header::before {
+  content: "-";
+}
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease;
+}
+.accordion-content p {
+  margin: 0;
+  padding: 20px;
+  color: #FFF;
+  font-size: 14pt;
+  font-weight: lighter;
+
+}
+.accordion-item.active .accordion-content {
+  max-height: 200px;
 }
 
 /* FOOTER STYLES */
