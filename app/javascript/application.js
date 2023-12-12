@@ -995,7 +995,8 @@ document.addEventListener('DOMContentLoaded', function() {
     var menu = document.querySelector('.menu');
   
     menuToggle.addEventListener('click', function() {
-      menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+      menu.classList.toggle('active');
+      // menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
     });
   
 });

@@ -1302,6 +1302,9 @@ footer li {
     color: #FFF;
     padding-top: 2rem;
   }
+  .menu.active {
+    display: block;
+  }
   .menu .quote-button {
     display:none;
   }
