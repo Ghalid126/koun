@@ -928,6 +928,16 @@ thumbs.forEach(function(thumb, index) {
   });
 });
 
+  // NAVBAR CODE
+  var menuContainer = document.querySelector(".menu-container");
+  var menuToggle = document.querySelector('.menu-toggle');
+  var menu = document.querySelector('.menu');
+
+  menuContainer.addEventListener('click', function() {
+    menu.classList.toggle('active');
+    // menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+  });
+
 
 // Fonction pour process rubrique apparition
 document.addEventListener('DOMContentLoaded', function() {
@@ -986,21 +996,8 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   });
 
-
-
-
-
-  // NAVBAR CODE
-    var menuContainer = document.querySelector(".menu-container");
-    var menuToggle = document.querySelector('.menu-toggle');
-    var menu = document.querySelector('.menu');
-  
-    menuContainer.addEventListener('click', function() {
-      menu.classList.toggle('active');
-      // menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
-    });
-  
 });
+
 
 
 
