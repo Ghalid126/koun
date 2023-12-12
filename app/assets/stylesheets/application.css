@@ -1247,7 +1247,7 @@ footer li {
 }
 .menu-container {
   position: relative; /* Set relative positioning for the container */
-  z-index:1;
+  z-index:5;
 }
 .menu li {
   display: inline;
