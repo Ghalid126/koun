@@ -1342,7 +1342,7 @@ footer li {
 
 /* PORTFOLIO MOBILE */
 
-@media screen and (max-width: 820px) and (orientation: portrait){
+@media screen and (max-width: 430px) and (orientation: portrait){
   .portfolio-container {
     flex-direction: column;
     margin-left: 0;
@@ -1415,7 +1415,7 @@ footer li {
   }
 
   .quote-svg-container{
-    bottom: 16vh;
+    bottom: 11vh;
     position: relative;
     background-size: 360px;
     right: 0;
@@ -1442,6 +1442,17 @@ footer li {
     height: 96px;
   }
     
+}
+@media screen and (max-width: 410px) and (orientation: portrait){
+  .quote-svg-container{
+    bottom: 14vh;
+  }
+}
+@media screen and (max-width: 390px) and (orientation: portrait){
+  .quote-svg-container{
+    bottom: 19vh;
+  }
+
 }
 
 /* ABOUT STYLES */
