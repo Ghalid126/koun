@@ -1503,7 +1503,7 @@ footer li {
     height: 120vh;
   }
   .accordion-header {
-    font-size: 12pt;
+    font-size: 14pt;
     padding-left: 20px;
     padding-right: 30px;
     height: auto;
@@ -1517,10 +1517,16 @@ footer li {
   .quote-svg-container{
     bottom: 14vh;
   }
+  #gradient-canvas-bottom  {
+    height: 155vh;
+  }
 }
 @media screen and (max-width: 390px) and (orientation: portrait){
   .quote-svg-container{
     bottom: 19vh;
+  }
+  #gradient-canvas-bottom  {
+    height: 184vh;
   }
 }
 
