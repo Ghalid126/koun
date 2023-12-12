@@ -1277,12 +1277,13 @@ footer li {
   }
 
   .menu-toggle {
+    position: relative;
     display: block;
     color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    z-index: 4;
+    z-index: 9;
     background: none;
     padding-top: 2.8rem;
     margin-right: 1rem;
@@ -1292,6 +1293,8 @@ footer li {
   }
 
   .menu {
+    top: 0;
+    font-size: 24pt;
     opacity: 0.8;
     width: 100vw;
     display: none;
@@ -1300,10 +1303,11 @@ footer li {
     background-color: #222;
     z-index: 5;
     color: #FFF;
-    padding-top: 2rem;
+    padding-top: 8rem;
+    height: 100vh;
   }
   .menu.active {
-    display: block;
+    display: block !important;
   }
   .menu .quote-button {
     display:none;
