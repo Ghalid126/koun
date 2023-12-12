@@ -991,10 +991,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
   // NAVBAR CODE
+    var menuContainer = document.querySelector(".menu-container");
     var menuToggle = document.querySelector('.menu-toggle');
     var menu = document.querySelector('.menu');
   
-    menuToggle.addEventListener('click', function() {
+    menuContainer.addEventListener('click', function() {
       menu.classList.toggle('active');
       // menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
     });
