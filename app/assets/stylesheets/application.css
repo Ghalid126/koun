@@ -1452,8 +1452,8 @@ footer li {
   .quote-svg-container{
     bottom: 19vh;
   }
-
 }
+
 
 /* ABOUT STYLES */
 #gradient-canvas-about{
@@ -1863,10 +1863,12 @@ footer li {
 
   /* QUOTE LANDSCAPE MOBILE  */
   .header-quote {
-    height: inherit;
+    height: 40vh;
   }
   .header-quote h1 {
     font-size: 28pt;
+    left: 3rem;
+    top: 2rem;
   }
   .quote-svg {
     width: 320px;
@@ -1883,6 +1885,10 @@ footer li {
   }
   .choice-svg {
     width: 75px;
+  }
+  .quote-svg-container{
+    background-size: 300px;
+    right: 35px;
   }
   #webdesign {
     width: 57px;
