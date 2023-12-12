@@ -1271,7 +1271,7 @@ footer li {
 }
 
 /* Mobile specific styles */
-@media screen and (max-width: 820px) and (orientation: portrait) {
+@media screen and (max-width: 840px) and (orientation: portrait) {
   .logo {
     width: 150px;
   }
