@@ -842,13 +842,14 @@ jumper::after {
 #gradient-canvas-bottom {
   position: absolute;
   width:100%;
-  height: 100vh;
+  height: 115vh;
   --gradient-color-1: #0E21A0; 
   --gradient-color-2: #EC53B0;
   /* --gradient-color-3: #EC53B0; 
   --gradient-color-4: #7C3AA8;   */
   z-index:-1;
 }
+
 .faq h1 {
   color: #fff;
   position: relative;
@@ -889,14 +890,14 @@ jumper::after {
 }
 .accordion-content p {
   margin: 0;
-  padding: 20px;
+  padding: 20px 20px 10px;
   color: #FFF;
   font-size: 14pt;
   font-weight: lighter;
 
 }
 .accordion-item.active .accordion-content {
-  max-height: 200px;
+  max-height: 190px;
 }
 
 /* FOOTER STYLES */

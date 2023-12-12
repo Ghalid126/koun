@@ -1172,13 +1172,17 @@ if (estMobile()) {
   const accordionItem = document.querySelectorAll('.accordion-item');
 
   accordionItem.forEach(item => {
-      item.classList.remove('active');
+
+    item.classList.remove('active');
   });
 
 
   accordionItem.forEach(item => {
     const header = item.querySelector(".accordion-header");
     header.addEventListener('click', () => {
+      accordionItem.forEach(otherItem => {
+        otherItem.classList.remove('active');
+      });
       item.classList.toggle('active');
     });
   });
