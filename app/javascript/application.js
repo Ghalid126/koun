@@ -972,6 +972,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 
+
   // NAVBAR CODE
     var menuToggle = document.querySelector('.menu-toggle');
     var menu = document.querySelector('.menu');
@@ -984,6 +985,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 // Fonction pour slider du contenu depuis le bas
+
+
 
 function slideBottomElements(entries, observer) {
   entries.forEach(entry => {
@@ -1089,7 +1092,6 @@ if (estMobile()) {
   function fonctionMobile() {
       // ITEM MOBILE SLIDE FUNCTION
 
-    var rubriques = document.querySelectorAll('[id^="rubrique"]');
     var contenus = document.querySelectorAll('[id^="content"]');
     let jumpers = document.querySelectorAll('[id^="jumper"]');
     let svgs = document.querySelectorAll('[id^="svg"]');
@@ -1172,18 +1174,21 @@ if (estMobile()) {
   const accordionItem = document.querySelectorAll('.accordion-item');
 
   accordionItem.forEach(item => {
-
-    item.classList.remove('active');
-  });
-
-
-  accordionItem.forEach(item => {
     const header = item.querySelector(".accordion-header");
     header.addEventListener('click', () => {
+      // Vérifier si l'élément actuellement cliqué est actif
+      const isActive = item.classList.contains('active');
+  
+      // Retirer la classe 'active' de tous les éléments
       accordionItem.forEach(otherItem => {
         otherItem.classList.remove('active');
       });
-      item.classList.toggle('active');
+  
+      // Si l'élément cliqué n'était pas actif, l'activer
+      if (!isActive) {
+        item.classList.add('active');
+      }
     });
   });
+  
 

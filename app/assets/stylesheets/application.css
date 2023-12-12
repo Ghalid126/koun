@@ -1499,6 +1499,18 @@ footer li {
   #webdesign {
     height: 96px;
   }
+  #gradient-canvas-bottom  {
+    height: 120vh;
+  }
+  .accordion-header {
+    font-size: 12pt;
+    padding-left: 20px;
+    padding-right: 30px;
+    height: auto;
+  }
+  .accordion-item .accordion-header::before {
+    right: 10px;
+  }
     
 }
 @media screen and (max-width: 410px) and (orientation: portrait){
