@@ -1559,6 +1559,43 @@ footer li {
     height: 184vh;
   }
 }
+@media screen and (max-height: 430px) and (orientation: landscape) {
+  #gradient-canvas-bottom  {
+    height: 215vh;
+  }
+  .accordion-header {
+    font-size: 12pt;
+  }
+  .accordion-item .accordion-header::before {
+    right: 10px;
+  }
+  .accordion-content p {
+    font-size: 11pt !important;
+  }
+  .accordion-item.active .accordion-content {
+    max-height: 160px;
+  }
+}
+@media screen and (max-height: 410px) and (orientation: landscape){
+  #gradient-canvas-bottom  {
+    height: 240vh;
+  }
+  footer {
+    position: relative;
+    top: 15px;
+  }
+  .faq {
+    margin-bottom: 1rem;
+  }
+  .accordion-item.active .accordion-content {
+    max-height: 160px;
+  }
+}
+@media screen and (max-height: 390px) and (orientation: landscape){
+  #gradient-canvas-bottom  {
+    height: 250vh;
+  }
+}
 
 
 /* ABOUT STYLES */
@@ -1877,6 +1914,9 @@ footer li {
     right: 15px;
     top: 115px;
   }
+  /* #gradient-canvas-bottom  {
+    height: 250vh;
+  } */
   footer {
     height: 18vh;
     font-size: 12pt;
@@ -2010,6 +2050,7 @@ footer li {
   .hero-carrousel-mobile .quote-button {
     margin-top: 10vh;
   }
+  
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
 
