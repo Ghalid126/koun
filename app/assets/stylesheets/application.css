@@ -1298,7 +1298,7 @@ footer li {
     position: absolute;
     right: 0;
     background-color: #222;
-    z-index: 1;
+    z-index: 5;
     color: #FFF;
     padding-top: 2rem;
   }
