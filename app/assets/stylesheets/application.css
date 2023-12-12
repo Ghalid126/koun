@@ -1621,7 +1621,7 @@ footer li {
 }
 .aboutus {
   position: relative;
-  z-index: 1;
+  z-index: 0;
   color: white;
   margin-bottom: 2rem;
 }
