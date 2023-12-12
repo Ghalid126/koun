@@ -20,6 +20,18 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'BAHNSCHRIFT';
+  src: url('BAHNSCHRIFT 7.TTF') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BAHNSCHRIFT';
+  src: url('BAHNSCHRIFT 1.TTF') format('truetype');
+  font-weight: lighter;
+  font-style: normal;
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -621,7 +633,7 @@ jumper::after {
 .technology-text p {
   /* color: #0E21A0; */
   font-size: 16pt;
-  font-weight: 500;
+  font-weight: lighter;
 }
 .bottom-arrow {
   position: relative;
