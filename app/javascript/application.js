@@ -936,40 +936,57 @@ document.addEventListener('DOMContentLoaded', function() {
   var contenus = document.querySelectorAll('[id^="content"]');
   let jumpers = document.querySelectorAll('[id^="jumper"]');
   let svgs = document.querySelectorAll('[id^="svg"]');
-  // let items = document.querySelectorAll('.item');
-
-
+  var currentIndex = -1; // pour garder la trace de l'index actuel
 
   // Ajoutez des gestionnaires d'événements pour chaque rubrique
   rubriques.forEach(function(rubrique, index) {
-    rubrique.addEventListener('click', function() {
-      console.log('Rubrique cliquée :', index);
+      rubrique.addEventListener('click', function() {
+          console.log('Rubrique cliquée :', index);
 
+          // Ajouter des classes d'animation
+          var processText = contenus[index].querySelector('.process-text');
+          var processImg = contenus[index].querySelector('.process-img');
 
-      // Retirez la classe "active" de tous les contenus
-      contenus.forEach(function(contenu) {
-        contenu.classList.remove('active');
-      });
+          if (processText && processImg) {
+              processText.classList.remove('slide-left', 'slide-right', 'slide-bottom');
+              if (index > currentIndex) {
+                  processText.classList.add('slide-left');
+              } else {
+                  processText.classList.add('slide-right');
+              }
+              processImg.classList.add('slide-bottom');
+          }
 
-      // Vérifiez si l'index est valide avant d'ajouter la classe "active"
-      if (contenus[index]) {
-        contenus[index].classList.add('active');
-        contenus[index].classList.add('contenu');
-      }
-      jumpers.forEach(function(jumper) {
-        jumper.classList.remove('jumper');
+          currentIndex = index; // Mise à jour de l'index actuel
+
+          // Retirez la classe "active" de tous les contenus
+          contenus.forEach(function(contenu) {
+              contenu.classList.remove('active');
+          });
+
+          // Ajouter la classe "active" au contenu cliqué
+          if (contenus[index]) {
+              contenus[index].classList.add('active');
+              contenus[index].classList.add('contenu');
+          }
+
+          // Mettre à jour les jumpers et svgs
+          jumpers.forEach(function(jumper) {
+              jumper.classList.remove('jumper');
+          });
+
+          svgs.forEach(function(svg) {
+              svg.classList.remove('svg-active');
+          });
+
+          if (contenus[index].classList.contains("active")) {
+              jumpers[index].classList.add("jumper");
+              svgs[index].classList.add('svg-active');
+          }
       });
-      svgs.forEach(function(svg) {
-        svg.classList.remove('svg-active');
-      });
-      jumpers.forEach(function(jumper, index) {
-        if (contenus[index].classList.contains("active")) {
-          jumpers[index].classList.add("jumper");
-          svgs[index].classList.add('svg-active');
-        }
-      });
-    });
   });
+
+
 
 
 
@@ -984,54 +1001,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-// Fonction pour slider du contenu depuis le bas
 
-
-
-function slideBottomElements(entries, observer) {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('active-bottom'); // Ajoutez la classe 'active-bottom' pour l'animation
-    } else {
-        entry.target.classList.remove('active-bottom'); // Supprimez la classe 'active-bottom' si l'élément sort de la vue
-      }
-  });
-}
-
-// Fonction pour animer les éléments de la gauche
-function slideLeftElements(entries, observer) {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('active-left'); // Ajoutez la classe 'active-left' pour l'animation
-    } else {
-        entry.target.classList.remove('active-left'); // Supprimez la classe 'active-left' si l'élément sort de la vue
-      }
-  });
-}
-
-// Options pour les observateurs Intersection Observer
-const options = {
-  root: null,
-  rootMargin: '0px',
-  threshold: 0.2 // Ajustez ceci pour définir quand les éléments devraient apparaître
-};
-
-// Créez un observateurs, pour le bas et pour la gauche
-const observerBottom = new IntersectionObserver(slideBottomElements, options);
-const observerLeft = new IntersectionObserver(slideLeftElements, options);
-
-// Sélectionnez les éléments avec les classes 'slide-bottom' et 'slide-left'
-const elementsBottom = document.querySelectorAll('.slide-bottom');
-const elementsLeft = document.querySelectorAll('.slide-left');
-
-// Enregistrez chaque élément pour observer, en utilisant le bon observateur
-elementsBottom.forEach(element => {
-  observerBottom.observe(element);
-});
-
-elementsLeft.forEach(element => {
-  observerLeft.observe(element);
-});
 
 // TESTIMONIAL SLIDER 
 

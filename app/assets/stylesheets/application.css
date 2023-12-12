@@ -513,26 +513,56 @@ jumper::after {
   opacity: 0.4;
 }
 
-.slide-bottom {
-  opacity: 0;
-  transform: translateY(100px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+/* Animation pour le déplacement vers la gauche */
+@keyframes slideLeft {
+  from {
+      opacity: 0;
+      transform: translateX(-50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
 }
 
-.slide-bottom.active-bottom {
-  opacity: 1;
-  transform: translateY(0);
+/* Animation pour le déplacement vers le bas */
+@keyframes slideBottom {
+  from {
+      opacity: 0;
+      transform: translateY(-50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }
-/* Animation pour les éléments de la gauche */
+
+/* Animation pour le déplacement vers la droite */
+@keyframes slideRight {
+  from {
+      opacity: 0;
+      transform: translateX(50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+.slide-right {
+  animation: slideRight 0.5s ease forwards;
+}
+
+
+/* Classes pour appliquer les animations */
 .slide-left {
-  opacity: 0;
-  transform: translateX(-100px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  animation: slideLeft 0.5s ease forwards;
 }
-.slide-left.active-left {
-  opacity: 1;
-  transform: translateX(0);
+
+.slide-bottom {
+  animation: slideBottom 0.5s ease forwards;
 }
+
 /* TECHNOLOGY-STACK STYLES */
 
 .technology-stack_container {
