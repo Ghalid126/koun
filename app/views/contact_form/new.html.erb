@@ -11,7 +11,11 @@
 <%= render 'layouts/navbar' %>
 
 <div class="contact-container">
-  <h1>Let us know about your project</h1>
+  <div class="contact-title">
+      <h1>Let us know about your project</h1>
+      <%= image_tag 'contact-image.jpg', alt: 'image contact', class: 'contact-image' %>
+  </div>
+
   <div class="form-container">
     <%= form_with scope: :contact_form, url: contact_form_index_path, method: :post, local: true, class: "container" do |form| %>
       <div class="form-group">
