@@ -932,9 +932,9 @@ thumbs.forEach(function(thumb, index) {
 });
 
   // NAVBAR CODE
-  var menuContainer = document.querySelector(".menu-container");
+  // var menuContainer = document.querySelector(".menu-container");
   const getQuoteMobile = document.querySelector('.get-quote-mobile');
-  // var menuToggle = document.querySelector('.menu-toggle');
+  var menuToggler = document.querySelector('.menu-toggle');
   var menu = document.querySelector('.menu');
 
   function menuToggle() {
@@ -943,7 +943,7 @@ thumbs.forEach(function(thumb, index) {
     // menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
   }
 
-  menuContainer.addEventListener('click', menuToggle);
+  menuToggler.addEventListener('click', menuToggle);
 
 
 // Fonction pour process rubrique apparition
