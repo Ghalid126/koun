@@ -1126,18 +1126,18 @@ if (estMobile() || estMobileLandscape()) {
     
     }
 
-    let startX; // Position de départ X
+    let processLogo = document.querySelector('.process-logo '); // Sélectionnez la première div par sa classe
+    let contenuScrolls = document.querySelectorAll('.contenu'); // Sélectionnez la deuxième div par sa classe
+    let startX;
 
-    // Gestionnaire pour le début du toucher
-    window.addEventListener('touchstart', function(e) {
+    // Fonction pour gérer le début du toucher
+    function handleTouchStart(e) {
         startX = e.touches[0].clientX;
-    }, false);
+    }
 
-    // Gestionnaire pour la fin du toucher
-    window.addEventListener('touchend', function(e) {
+    // Fonction pour gérer la fin du toucher
+    function handleTouchEnd(e) {
         let endX = e.changedTouches[0].clientX;
-
-        // Calcul de la différence
         let diffX = startX - endX;
 
         if (diffX > 30) {
@@ -1147,7 +1147,16 @@ if (estMobile() || estMobileLandscape()) {
             // Glisser vers la droite
             prevItem();
         }
-    }, false);
+    }
+
+    // Attacher les écouteurs d'événements aux deux divs
+    processLogo.addEventListener('touchstart', handleTouchStart, false);
+    processLogo.addEventListener('touchend', handleTouchEnd, false);
+    
+    contenuScrolls.forEach(contenuScroll => {
+      contenuScroll.addEventListener('touchstart', handleTouchStart, false);
+      contenuScroll.addEventListener('touchend', handleTouchEnd, false);
+    });
 
     right.addEventListener('click', function() {
       console.log('Clic droit');
