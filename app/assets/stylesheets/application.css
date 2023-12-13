@@ -517,7 +517,7 @@ jumper::after {
 @keyframes slideLeft {
   from {
       opacity: 0;
-      transform: translateX(-50px);
+      transform: translateX(-250px);
   }
   to {
       opacity: 1;
@@ -541,7 +541,7 @@ jumper::after {
 @keyframes slideRight {
   from {
       opacity: 0;
-      transform: translateX(50px);
+      transform: translateX(250px);
   }
   to {
       opacity: 1;
@@ -1177,6 +1177,11 @@ footer li {
       flex: 0 1 25%;
     }
 
+  /* Contact styles mobile */
+  .contact-container {
+    flex-direction: column;
+  }
+
 }
 /* Existing CSS */
 /* ... */
@@ -1497,6 +1502,8 @@ footer li {
   .accordion-item .accordion-header::before {
     right: 10px;
   }
+
+
     
 }
 @media screen and (max-width: 410px) and (orientation: portrait){
