@@ -1227,3 +1227,27 @@ resizeObserver.observe(faq);
 // Mise à jour initiale de la hauteur du canvas
 updateCanvasHeight();
 
+// About canvas height
+
+const wrapper = document.querySelector('.wrapper-us');
+const canvasAbout = document.getElementById('gradient-canvas-about');
+
+const updateCanvasBottomHeight = () => {
+  // Mettez à jour la valeur de bodyHeight ici
+  const wrapperHeight = wrapper.offsetHeight;
+  canvasAbout.style.height = `${wrapperHeight}px`;
+}
+
+// Créez un ResizeObserver pour surveiller les changements de taille de l'élément body
+const resizeObserverAbout = new ResizeObserver(entries => {
+  for (let entry of entries) {
+    // Mise à jour de la hauteur du canvas à chaque changement de taille
+    updateCanvasBottomHeight();
+  }
+});
+
+// Commencez à observer l'élément body
+resizeObserverAbout.observe(wrapper);
+
+// Mise à jour initiale de la hauteur du canvas
+updateCanvasBottomHeight();
