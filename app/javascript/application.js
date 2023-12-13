@@ -940,7 +940,7 @@ thumbs.forEach(function(thumb, index) {
 
 
 // Fonction pour process rubrique apparition
-document.addEventListener('DOMContentLoaded', function() {
+
   // Sélectionnez tous les éléments de rubrique et de contenu
   var rubriques = document.querySelectorAll('[id^="rubrique"]');
   var contenus = document.querySelectorAll('[id^="content"]');
@@ -996,7 +996,6 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   });
 
-});
 
 
 
@@ -1197,4 +1196,27 @@ if (estMobile() || estMobileLandscape()) {
     });
   });
   
+// Ajuster hauteur Faq canvas en fonction de hauteur faq
 
+// Sélectionnez l'élément canvas et l'élément faq
+const canvas = document.getElementById('gradient-canvas-bottom');
+const faq = document.querySelector('.faq');
+
+// Créez une fonction pour mettre à jour la hauteur du canvas
+const updateCanvasHeight = () => {
+  canvas.style.height = `${faq.offsetHeight}px + 3rem`;
+};
+
+// Créez un ResizeObserver pour surveiller les changements de taille de l'élément faq
+const resizeObserver = new ResizeObserver(entries => {
+  for (let entry of entries) {
+    // Mise à jour de la hauteur du canvas à chaque changement de taille
+    updateCanvasHeight();
+  }
+});
+
+// Commencez à observer l'élément faq
+resizeObserver.observe(faq);
+
+// Mise à jour initiale de la hauteur du canvas
+updateCanvasHeight();
