@@ -1201,10 +1201,16 @@ if (estMobile() || estMobileLandscape()) {
 // Sélectionnez l'élément canvas et l'élément faq
 const canvas = document.getElementById('gradient-canvas-bottom');
 const faq = document.querySelector('.faq');
+const faqStyle = window.getComputedStyle(faq);
+
+// Convertissez la marge inférieure en valeur numérique
+const faqMarginBottom = parseInt(faqStyle.marginBottom);
 
 // Créez une fonction pour mettre à jour la hauteur du canvas
 const updateCanvasHeight = () => {
-  canvas.style.height = `${faq.offsetHeight}px + 3rem`;
+  // Ajoutez la hauteur de faq et sa marge inférieure
+  const totalHeight = faq.offsetHeight + faqMarginBottom;
+  canvas.style.height = `${totalHeight}px`;
 };
 
 // Créez un ResizeObserver pour surveiller les changements de taille de l'élément faq
@@ -1220,3 +1226,4 @@ resizeObserver.observe(faq);
 
 // Mise à jour initiale de la hauteur du canvas
 updateCanvasHeight();
+
