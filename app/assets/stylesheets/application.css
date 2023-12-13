@@ -2319,10 +2319,25 @@ footer li {
   flex-direction: column;
   display: flex;
 }
+.contact-title h1 {
+  background: linear-gradient(to right, #0E21A0, #51C2EF);
+  background-clip: text;
+  -webkit-background-clip: text; /* Pour la compatibilité avec certains navigateurs WebKit */
+  color: transparent;
+  padding-bottom: 2rem;
+  padding-top: 0;
+}
+.contact-title h2 {
+  font-size: 20pt;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2rem;
+}
 .contact-image {
   width: 300px;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 2rem;
 }
 
 /* BOOTSTRAP EQUIVALENT CSS for FORM */
