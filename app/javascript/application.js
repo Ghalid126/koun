@@ -1126,6 +1126,29 @@ if (estMobile() || estMobileLandscape()) {
     
     }
 
+    let startX; // Position de départ X
+
+    // Gestionnaire pour le début du toucher
+    window.addEventListener('touchstart', function(e) {
+        startX = e.touches[0].clientX;
+    }, false);
+
+    // Gestionnaire pour la fin du toucher
+    window.addEventListener('touchend', function(e) {
+        let endX = e.changedTouches[0].clientX;
+
+        // Calcul de la différence
+        let diffX = startX - endX;
+
+        if (diffX > 30) {
+            // Glisser vers la gauche
+            nextItem();
+        } else if (diffX < -30) {
+            // Glisser vers la droite
+            prevItem();
+        }
+    }, false);
+
     right.addEventListener('click', function() {
       console.log('Clic droit');
       nextItem();
