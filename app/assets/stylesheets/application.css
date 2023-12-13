@@ -2288,3 +2288,123 @@ footer li {
   z-index: 25;
   color: #FFF;
 }
+/* STYLES CONTACT */
+
+#gradient-canvas-contact {
+  position: absolute;
+  width:100%;
+  height:100%;
+  --gradient-color-1: #0E21A0; 
+  --gradient-color-2: #EC53B0; 
+  z-index:-1;
+}
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: .5vw;
+  margin-right: .5vw;
+  margin-top: 1vh;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 2;
+  height: 83vh;
+  border-radius: 15px;
+}
+.form_container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* BOOTSTRAP EQUIVALENT CSS for FORM */
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+}
+.form-container {
+  width: 40%;
+  margin-left: 50px;
+}
+.form-group {
+  margin-bottom: 1rem;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.btn {
+  margin-top: 2rem;
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+
+/* Style flash message */
+
+.flash {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.flash-notice {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+
+.flash-alert {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+}
+

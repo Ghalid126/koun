@@ -888,6 +888,9 @@ gradientPortfolio.initGradient("#gradient-canvas-footer");
 var gradientPortfolio= new Gradient ();
 gradientPortfolio.initGradient("#gradient-canvas-about");
 
+var gradientPortfolio= new Gradient ();
+gradientPortfolio.initGradient("#gradient-canvas-contact");
+
 // CODE POUR PORTFOLIO 
 let thumbs = document.querySelectorAll('[id^="thumb-"]');
 let mains = document.querySelectorAll('[id^="main-image-"]');
@@ -1251,3 +1254,14 @@ function handleScroll() {
 
 // Ajouter l'écouteur d'événement de scroll
 window.addEventListener('scroll', handleScroll);
+
+
+// Comportement flash 
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.flash').forEach(function(flashMessage) {
+    flashMessage.addEventListener('click', function() {
+      flashMessage.style.display = 'none';
+    });
+  });
+});
