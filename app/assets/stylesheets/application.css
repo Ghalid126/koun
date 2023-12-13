@@ -1695,6 +1695,7 @@ label {
   .contact-container {
     height: auto;
     justify-content: flex-start;
+    align-items: flex-start;
   }
   .contact-title {
     margin-left: 1rem;
@@ -1703,18 +1704,35 @@ label {
   .contact-title h1 {
     font-size: 28pt;
     padding-top: 1rem;
+    padding-bottom: 1rem;
   }
   .contact-title h2 {
     font-size: 16pt;
+    padding-bottom: .5rem;
+  }
+  .contact-image {
+    width: 160px;
+  }
+  .form-control {
+    line-height: 1.1;
   }
   .form-container {
     margin-left: 0;
   }
+  .form-group {
+    margin-bottom: 0rem;
+  }
+  .btn {
+    width: 48vw;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+  }
   .container {
-    margin-left: 55px;
+    margin-left: 35px;
+    margin-top: 10px;
   }
   #gradient-canvas-contact {
-    height: 180vh;
+    height: 140vh;
   }
 }
 @media screen and (max-height: 410px) and (orientation: landscape){
@@ -1732,7 +1750,7 @@ label {
     max-height: 160px;
   }
   #gradient-canvas-contact {
-    height: 165vh;
+    height: 135vh;
   }
 }
 @media screen and (max-height: 390px) and (orientation: landscape){
@@ -1945,7 +1963,16 @@ label {
     }
     .contact-title h1 {
       padding-top: 1rem;
+      padding-bottom: 1rem;
     }
+    .contact-title h2 {
+      padding-top: 1rem;
+      padding-bottom: .5rem;
+    }
+    .contact-image { 
+      width: 160px;
+    }
+
     .form-container {
       margin-left: 0;
       width: 100%;
