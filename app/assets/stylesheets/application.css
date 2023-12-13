@@ -57,6 +57,25 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1.08;
   overflow-x: hidden;
+  -ms-overflow-style: none; 
+  overflow: -moz-scrollbars-none; 
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+/* Pour Firefox */
+body {
+  scrollbar-width: none;
+}
+
+/* Pour Internet Explorer et les anciens navigateurs */
+body {
+  -ms-overflow-style: none;
+}
+
+/* Assurer le défilement même avec les barres de défilement masquées */
+body {
+  overflow-y: scroll;
 }
 blockquote, q {
   quotes: none;
@@ -695,7 +714,7 @@ jumper::after {
 .testimonials h1 {
   padding-bottom: 0;
   padding-top: 0;
-  background: linear-gradient(to right, #0E21A0, #51C2EF);
+  background: linear-gradient(to right, #51C2EF, #0E21A0 );
   background-clip: text;
   -webkit-background-clip: text; /* Pour la compatibilité avec certains navigateurs WebKit */
   color: transparent;
