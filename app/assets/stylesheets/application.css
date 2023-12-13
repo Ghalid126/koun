@@ -2274,3 +2274,17 @@ footer li {
     padding-left: 0;
   }
 }
+
+.get-quote-mobile {
+  justify-content: center;
+  padding: 1rem 0;
+  text-align: center;
+  display: none;
+  position: fixed;
+  bottom: 0;
+  font-size: 24pt;
+  width: 100vw;
+  background-color: rgba(5, 5, 5, 0.8);
+  z-index: 25;
+  color: #FFF;
+}

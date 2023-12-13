@@ -930,13 +930,17 @@ thumbs.forEach(function(thumb, index) {
 
   // NAVBAR CODE
   var menuContainer = document.querySelector(".menu-container");
+  const getQuoteMobile = document.querySelector('.get-quote-mobile');
   // var menuToggle = document.querySelector('.menu-toggle');
   var menu = document.querySelector('.menu');
 
-  menuContainer.addEventListener('click', function() {
+  function menuToggle() {
     menu.classList.toggle('active');
+    getQuoteMobile.style.display = 'block';
     // menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
-  });
+  }
+
+  menuContainer.addEventListener('click', menuToggle);
 
 
 // Fonction pour process rubrique apparition
@@ -1227,27 +1231,23 @@ resizeObserver.observe(faq);
 // Mise à jour initiale de la hauteur du canvas
 updateCanvasHeight();
 
-// About canvas height
+// Fonction d'apparition du CTA en mobile
 
-// const wrapper = document.querySelector('.wrapper-us');
-// const canvasAbout = document.getElementById('gradient-canvas-about');
 
-// const updateCanvasBottomHeight = () => {
-//   // Mettez à jour la valeur de bodyHeight ici
-//   const wrapperHeight = wrapper.offsetHeight;
-//   canvasAbout.style.height = `${wrapperHeight}px`;
-// }
+// Fonction de gestion du scroll
+function handleScroll() {
+  // const getQuoteMobile = document.querySelector('.get-quote-mobile');
 
-// // Créez un ResizeObserver pour surveiller les changements de taille de l'élément body
-// const resizeObserverAbout = new ResizeObserver(entries => {
-//   for (let entry of entries) {
-//     // Mise à jour de la hauteur du canvas à chaque changement de taille
-//     updateCanvasBottomHeight();
-//   }
-// });
+  if (!getQuoteMobile) return; // Si l'élément n'existe pas, ne faites rien
 
-// // Commencez à observer l'élément body
-// resizeObserverAbout.observe(wrapper);
+  if (estMobile()) {
+    // Ajoute 'display: block' quand l'utilisateur fait défiler vers le bas
+    getQuoteMobile.style.display = 'block';
+  } else {
+    // Réinitialise le style si ce n'est pas un écran mobile
+    getQuoteMobile.style.display = 'none';
+  }
+}
 
-// // Mise à jour initiale de la hauteur du canvas
-// updateCanvasBottomHeight();
+// Ajouter l'écouteur d'événement de scroll
+window.addEventListener('scroll', handleScroll);
