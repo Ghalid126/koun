@@ -967,9 +967,9 @@ thumbs.forEach(function(thumb, index) {
           if (processText && processImg) {
               processText.classList.remove('slide-left', 'slide-right', 'slide-bottom');
               if (index > currentIndex) {
-                  processText.classList.add('slide-left');
-              } else {
                   processText.classList.add('slide-right');
+              } else {
+                  processText.classList.add('slide-left');
               }
               processImg.classList.add('slide-bottom');
           }
