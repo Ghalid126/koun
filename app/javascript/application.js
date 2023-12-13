@@ -930,7 +930,7 @@ thumbs.forEach(function(thumb, index) {
 
   // NAVBAR CODE
   var menuContainer = document.querySelector(".menu-container");
-  var menuToggle = document.querySelector('.menu-toggle');
+  // var menuToggle = document.querySelector('.menu-toggle');
   var menu = document.querySelector('.menu');
 
   menuContainer.addEventListener('click', function() {
@@ -1038,7 +1038,15 @@ next.addEventListener('click', nextSlide);
 prev.addEventListener('click', prevSlide); 
 
 
+// Fonction pour vérifier si l'écran est un mobile
+function estMobile() {
+  return window.matchMedia("(max-width: 844px) and (orientation: portrait)").matches  ; // Vous pouvez ajuster cette valeur en fonction de vos besoins
+}
 
+// Fonction pour vérifier si l'écran est un mobile
+function estMobileLandscape() {
+  return window.matchMedia("(max-width: 844px) and (orientation: landscape)").matches  ; // Vous pouvez ajuster cette valeur en fonction de vos besoins
+}
 // Fonction pour recharger la page lors du changement d'orientation
 function rechargerPageSurChangementOrientation() {
   window.addEventListener('orientationchange', function() {
@@ -1048,14 +1056,11 @@ function rechargerPageSurChangementOrientation() {
 }
 
 // Vérifier si l'écran est un mobile avant d'exécuter la fonction
-if (estMobile()) {
+if (estMobile() || estMobileLandscape()) {
   rechargerPageSurChangementOrientation();
 }
 
-  // Fonction pour vérifier si l'écran est un mobile
-  function estMobile() {
-    return window.matchMedia("(max-width: 820px) and (orientation: portrait)").matches  ; // Vous pouvez ajuster cette valeur en fonction de vos besoins
-  }
+
 
   // Fonction à appliquer uniquement en mode mobile
   function fonctionMobile() {
