@@ -91,3 +91,17 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 end
+
+config.action_mailer.delivery_method = :smtp
+config.action_mailer.smtp_settings = {
+  address: 'smtp.postmarkapp.com',
+  port: 587,
+  domain: 'www.koun.online',          # Remplacez par votre nom de domaine
+  user_name: ENV['POSTMARK_API_TOKEN'],  # Utilisez une variable d'environnement pour votre token API
+  password: ENV['POSTMARK_API_TOKEN'],    # Le même token API que pour user_name
+  authentication: 'plain',
+  enable_starttls_auto: true
+}
+
+config.action_mailer.default_url_options = { host: 'www.koun.online' } # Remplacez avec votre domaine
+config.action_mailer.raise_delivery_errors = true
