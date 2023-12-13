@@ -2551,5 +2551,6 @@ label {
   background-color: rgba(19, 39, 97, 0.95);
   z-index: 25;
   color: #FFF;
+  text-transform: uppercase;
 }
 
