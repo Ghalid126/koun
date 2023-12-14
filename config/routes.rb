@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get 'about', to: 'pages#about'
   get 'faq', to: 'pages#faq'
   get 'contact', to: 'contacts#new'
+  post 'contact', to: 'contacts#create'
 
 
   resources :contact_form, only: [:new, :create]
