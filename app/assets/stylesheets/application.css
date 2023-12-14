@@ -1210,7 +1210,7 @@ footer li {
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     font-size: 18pt;
-    margin-top: 4vh;
+    margin-top: 3.2vh;
     width: fit-content;
 }
 @media screen and (max-width: 820px) and (orientation: portrait){
