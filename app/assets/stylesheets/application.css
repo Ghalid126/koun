@@ -1167,7 +1167,7 @@ footer li {
   padding-left: 2rem;
   position: relative;
   box-sizing: border-box;
-  margin-top: 6vh;
+  margin-top: 5rem;
 }
 .hero-mobile {
   color: #fff;
@@ -1198,7 +1198,6 @@ footer li {
 }
 .hero-text-mobile h2 {
     margin-top: 1.5rem;
-    margin-bottom: 2rem;
     width: 90%;
     font-size: 18pt;
     font-weight: 300;
@@ -1558,7 +1557,6 @@ footer li {
   width: 40%;
   margin-left: 50px;
   margin-top: 93px;
-
 }
 .form-group {
   margin-bottom: 1rem;
@@ -1606,6 +1604,7 @@ footer li {
   height: 100px;
 }
 .submit-btn{
+  box-sizing: border-box;
   margin: 1rem auto;
   width: 220px;
 }
@@ -1792,6 +1791,9 @@ label {
   #gradient-canvas-contact {
     height: 160vh;
   }
+  .cta-link {
+    font-size: 22pt;
+  }
 }
 @media screen and (max-height: 430px) and (orientation: landscape) {
   #gradient-canvas-bottom  {
@@ -1827,8 +1829,9 @@ label {
     font-size: 16pt;
     padding-bottom: .5rem;
   }
+
   .contact-image {
-    width: 160px;
+    width: 320px;
   }
   .form-control {
     line-height: 1.1;
@@ -1850,6 +1853,9 @@ label {
   }
   #gradient-canvas-contact {
     height: 140vh;
+  }
+  .contact-title p {
+    margin-left: 20px;
   }
 }
 @media screen and (max-height: 410px) and (orientation: landscape){
@@ -1971,6 +1977,47 @@ label {
   color: white;
   margin-bottom: 2rem;
 }
+.get-quote-mobile {
+  box-sizing: border-box;
+  padding: 1rem;
+  padding-bottom: .6rem;
+  text-align: left;
+  display: none;
+  position: fixed;
+  bottom: 0;
+  font-size: 24pt;
+  width: 100vw;
+  background-color: rgba(19, 39, 97, 0.95);
+  z-index: 25;
+  color: #FFF;
+  text-transform: uppercase;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.floating-whatsap{
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: rgba(19, 39, 97, 0.90);
+  padding: 10px;
+  left: px;
+  bottom: 90px;
+  position: fixed;
+}
+.floating-whatsap:hover {
+  cursor: pointer;
+}
+.floating-whatsap .social-icon{
+  margin-right: 5px;
+}
+.cta-mobile-arrow {
+  width: 30px;
+  margin-left: 50px;
+}
+.cta-link {
+  display:flex;
+}
 /* Add responsive styles at the end of your existing CSS */
 @media screen and (max-width: 844px) and (orientation: portrait){
   #gradient-canvas {
@@ -2086,20 +2133,24 @@ label {
       padding-top: 1rem;
       padding-bottom: .5rem;
     }
+    .contact-title p {
+      margin-left: 50px;
+    }
     .contact-image { 
-      width: 160px;
+      width: 320px;
     }
 
     .form-container {
       margin-left: 0;
       width: 100%;
+      margin-top: 0;
     }
     .container {
+      box-sizing: border-box;
       justify-content: center;
       align-items: flex-start;
       padding-right: 0;
-      padding-left: 0;
-      margin-left: 30px;
+      padding-left: 30px;
     }
     .form-control {
       width: 80vw;
@@ -2107,7 +2158,9 @@ label {
     .btn {
       margin-top: 0;
       margin-bottom: 1rem;
-      width: 80vw;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 80vw;
     }
 
 }
@@ -2362,10 +2415,10 @@ label {
 /* MEDIA QUERY LONG PHONE */
 @media only screen and (min-height: 820px) and (max-height: 1023px) and (orientation: portrait) {
   .rounded-video-mobile {
-    margin-top: 5rem;
+    margin-top: 4rem;
   }
   .hero-carrousel-mobile .quote-button {
-    margin-top: 10vh;
+    margin-top: 4rem;
   }
   
 }
@@ -2660,44 +2713,4 @@ label {
   }
 }
 
-.get-quote-mobile {
-  justify-content: center;
-  padding: 1rem;
-  padding-bottom: .6rem;
-  text-align: left;
-  display: none;
-  position: fixed;
-  bottom: 0;
-  font-size: 24pt;
-  width: 100vw;
-  background-color: rgba(19, 39, 97, 0.95);
-  z-index: 25;
-  color: #FFF;
-  text-transform: uppercase;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
 
-}
-.floating-whatsap{
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  background-color: rgba(19, 39, 97, 0.90);
-  padding: 10px;
-  left: px;
-  bottom: 90px;
-  position: fixed;
-}
-.floating-whatsap:hover {
-  cursor: pointer;
-}
-.floating-whatsap .social-icon{
-  margin-right: 5px;
-}
-.cta-mobile-arrow {
-  width: 30px;
-  margin-left: 50px;
-}
-.cta-link {
-  display:flex;
-}
