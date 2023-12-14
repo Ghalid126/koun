@@ -1220,6 +1220,9 @@ footer li {
   .logo {
         width: 150px; /* Smaller size */
     }
+    .nav-logo, .nav-menu {
+      padding-left: 1rem;
+    }
     .elements-container {
       width: 100%;
     }
