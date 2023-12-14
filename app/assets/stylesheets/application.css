@@ -1522,20 +1522,24 @@ footer li {
   background-clip: text;
   -webkit-background-clip: text; /* Pour la compatibilité avec certains navigateurs WebKit */
   color: transparent;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   padding-top: 0;
 }
 .contact-title h2 {
   font-size: 20pt;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
+  color: #212529;
+}
+.contact-title {
+  color: #5f6568;
 }
 .contact-image {
   width: 540px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 2rem;
+  padding-bottom: .5rem;
   filter: grayscale(100%);
 }
 
@@ -1553,6 +1557,8 @@ footer li {
 .form-container {
   width: 40%;
   margin-left: 50px;
+  margin-top: 93px;
+
 }
 .form-group {
   margin-bottom: 1rem;
