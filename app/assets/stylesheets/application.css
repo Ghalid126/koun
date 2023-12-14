@@ -1764,7 +1764,7 @@ label {
   }
 
   #gradient-canvas-contact {
-    height: 120vh;
+    height: 140vh;
   }
 
     
@@ -1776,11 +1776,11 @@ label {
   #gradient-canvas-bottom  {
     /* height: 155vh; */
   }
-  #gradient-canvas-contact {
+  /* #gradient-canvas-contact {
     height: 172vh;
-  }
+  } */
   #gradient-canvas-contact {
-    height: 140vh;
+    height: 155vh;
   }
 }
 @media screen and (max-width: 390px) and (orientation: portrait){
@@ -1791,7 +1791,7 @@ label {
     /* height: 184vh; */
   }
   #gradient-canvas-contact {
-    height: 160vh;
+    height: 170vh;
   }
   .cta-link {
     font-size: 22pt;
