@@ -1216,7 +1216,7 @@ const faqMarginBottom = parseInt(faqStyle.marginBottom);
 // Créez une fonction pour mettre à jour la hauteur du canvas
 const updateCanvasHeight = () => {
   // Ajoutez la hauteur de faq et sa marge inférieure
-  const totalHeight = faq.offsetHeight + faqMarginBottom + 20;
+  const totalHeight = faq.offsetHeight + faqMarginBottom;
   canvas.style.height = `${totalHeight}px`;
 };
 

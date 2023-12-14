@@ -1838,10 +1838,10 @@ label {
   #gradient-canvas-bottom  {
     height: 240vh;
   }
-  footer {
+  /* footer {
     position: relative;
     top: 15px;
-  }
+  } */
   .faq {
     margin-bottom: 1rem;
   }
@@ -2217,7 +2217,6 @@ label {
     height: 250vh;
   } */
   footer {
-    height: 18vh;
     font-size: 12pt;
   }
   .footer-logo {
@@ -2471,7 +2470,6 @@ label {
     top: 115px;
   }
   footer {
-    height: 18vh;
     font-size: 12pt;
   }
   .footer-logo {
