@@ -22,7 +22,12 @@
     </div>
     <%= render 'layouts/footer' %>
     <div class="get-quote-mobile">
-     <%= link_to quote_step1_path do %> Request a quote <% end %>
+    <%= link_to quote_step1_path, class: "cta-link" do %> 
+      Request a quote
+      <div class="cta-arrow">
+        <%= image_tag 'white-arrow.svg', class:'cta-mobile-arrow', alt: 'white arrow'%> 
+     </div>
+    <% end %>
     </div>
   </body>
 </html>

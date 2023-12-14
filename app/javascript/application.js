@@ -956,7 +956,7 @@ thumbs.forEach(function(thumb, index) {
 
     if (estMobile()) {
       // Ajoute 'display: block' quand l'utilisateur fait défiler vers le bas
-      getQuoteMobile.style.display = 'block';
+      getQuoteMobile.style.display = 'flex';
     } else {
       // Réinitialise le style si ce n'est pas un écran mobile
       getQuoteMobile.style.display = 'none';
