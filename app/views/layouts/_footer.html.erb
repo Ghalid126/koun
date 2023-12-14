@@ -7,7 +7,7 @@
       <%= link_to root_path do %><%= image_tag "Koun-logo.svg", class: "footer-logo", alt: "Logo koun.online" %> <% end %>
     </div>
     <div class="footer-links">
-    <%# <div class="footer-left"> %>
+
       <div class="link-col"><ul><li><%= link_to 'Portfolio', portfolio_path %></li></ul></div>
       <div class="link-col"><ul><li><%= link_to 'Technologies', root_path(anchor: 'technology-id') %></li></ul></div>
       <div class="link-col"><ul><li><%= link_to 'About Us', about_path %></li></ul></div>
@@ -17,11 +17,13 @@
           <li><%= link_to quote_step1_path do %> Contact <% end %></li>
         </ul>
         <div class="socials">
-          
+          <%= link_to(image_tag("instagram-icon.svg", alt: "Instagram", class: "social-icon"), "https://www.instagram.com/koun.online?igshid=YzAwZjE1ZTI0Zg==", target: "_blank") %>
+          <%= link_to image_tag("whatsapp-icon.svg", alt: "WhatsApp", class:"social-icon"), 'https://wa.me/212620302294', target: '_blank' %>
+
         </div>
       </div>
 
-    <%# </div> %>
+
     </div>
     <div class="footer-bottom">
       <div class="bottom-col">
