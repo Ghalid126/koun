@@ -1,4 +1,4 @@
-class ContactFormsController < ApplicationController
+class ContactFormController < ApplicationController
   def new
     # This action will render your form
   end
