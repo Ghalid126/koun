@@ -891,6 +891,9 @@ gradientPortfolio.initGradient("#gradient-canvas-about");
 var gradientPortfolio= new Gradient ();
 gradientPortfolio.initGradient("#gradient-canvas-contact");
 
+var gradientPortfolio= new Gradient ();
+gradientPortfolio.initGradient("#gradient-canvas-faq");
+
 // CODE POUR PORTFOLIO 
 let thumbs = document.querySelectorAll('[id^="thumb-"]');
 let mains = document.querySelectorAll('[id^="main-image-"]');

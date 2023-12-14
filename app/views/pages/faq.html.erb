@@ -1,5 +1,5 @@
 <% provide(:title, "FAQ") %>
-<canvas id="gradient-canvas-contact" height="900">
+<canvas id="gradient-canvas-bottom" height="900">
 </canvas>
 <%= render 'layouts/navbar' %>
 <div class="faq">
@@ -78,6 +78,7 @@
   const canvas = document.getElementById('gradient-canvas-bottom');
   const faq = document.querySelector('.faq');
   const faqStyle = window.getComputedStyle(faq);
+  const navbar = document.querySelector('.navbar');
 
   // Convertissez la marge inférieure en valeur numérique
   const faqMarginBottom = parseInt(faqStyle.marginBottom);
@@ -85,7 +86,7 @@
   // Créez une fonction pour mettre à jour la hauteur du canvas
   const updateCanvasHeight = () => {
     // Ajoutez la hauteur de faq et sa marge inférieure
-    const totalHeight = faq.offsetHeight + faqMarginBottom;
+    const totalHeight = faq.offsetHeight + faqMarginBottom + navbar.offsetHeight;
     canvas.style.height = `${totalHeight}px`;
   };
 
