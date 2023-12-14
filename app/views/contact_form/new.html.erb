@@ -17,7 +17,7 @@
   </div>
 
   <div class="form-container">
-    <%= form_with scope: :contacts, url: contact_form_path, method: :post, local: true, class: "container" do |form| %>
+    <%= form_with scope: :contacts, url: contact_form_index_path, method: :post, local: true, class: "container" do |form| %>
       <div class="form-group">
         <%= form.label :name %>
         <%= form.text_field :name, class: "form-control" %>
