@@ -1858,11 +1858,11 @@ label {
 #gradient-canvas-about{
   position: absolute;
   width:100%;
-  height:105vh;
+
   --gradient-color-1: #0E21A0;
   --gradient-color-2: #EC53B0;
   z-index:-1;
-  /* height: 105vh; */
+  height: 105vh;
 }
 
  .about-container {
