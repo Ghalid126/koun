@@ -8,5 +8,5 @@ Rails.application.routes.draw do
   get 'faq', to: 'pages#faq'
   get 'contact', to: 'contact_form#new'
 
-  resources :contact_forms, only: [:new, :create]
+  resources :contact_form, only: [:new, :create]
 end
