@@ -642,7 +642,7 @@ jumper::after {
   border-radius: 12px;
 }
 .technology:hover {
-  cursor: pointer;
+  /* cursor: pointer; */
   transform: scale(1.05);
   transition: all 0.5s ease-in-out;
 }
