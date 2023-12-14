@@ -6,19 +6,18 @@
   </div>
 <% end %>
 
-<canvas id="gradient-canvas-contact">
-</canvas>
+<canvas id="gradient-canvas-contact"></canvas>
 <%= render 'layouts/navbar' %>
 
 <div class="contact-container">
   <div class="contact-title">
-      <h1>Tell us about your project</h1>
-      <h2>Let's have a discussion</h2>
-      <%= image_tag 'contact-image.jpg', alt: 'image contact', class: 'contact-image' %>
+    <h1>Tell us about your project</h1>
+    <h2>Let's have a discussion</h2>
+    <%= image_tag 'contact-image.jpg', alt: 'image contact', class: 'contact-image' %>
   </div>
 
   <div class="form-container">
-    <%= form_with scope: :contacts, url: contact_path, method: :post, local: true, class: "container" do |form| %>
+    <%= form_with scope: :contacts, url: contact_forms_path, method: :post, local: true, class: "container" do |form| %>
       <div class="form-group">
         <%= form.label :name %>
         <%= form.text_field :name, class: "form-control" %>

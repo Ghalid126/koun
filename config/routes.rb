@@ -1,8 +1,4 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
   root "pages#home"
 
   get 'home', to: 'pages#home'
@@ -10,8 +6,7 @@ Rails.application.routes.draw do
   get 'portfolio', to: 'pages#portfolio'
   get 'about', to: 'pages#about'
   get 'faq', to: 'pages#faq'
-  get 'contact', to: 'contacts#new'
+  get 'contact', to: 'contact_forms#new'
 
-
-  resources :contact_form, only: [:new, :create]
+  resources :contact_forms, only: [:new, :create]
 end
