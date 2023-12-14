@@ -1,15 +1,18 @@
 <div class="navbar">
-    <div class="header-logo">
-        <%= link_to root_path do %> <%= image_tag 'Koun-logo.svg', class: 'logo', alt: 'logo KOUN Website' %> <% end %>
+    <div class="nav-logo">
+        <%= link_to root_path do %>
+            <%= image_tag 'Koun-logo.svg', alt: 'logo KOUN Website' %>
+        <% end %>
     </div>
     <div class="menu-container">
-        <button class="menu-toggle"><%= image_tag 'menu.svg', class: 'menu-svg'%></button> <!-- Button for toggling menu -->
+        <button class="menu-toggle">
+            <%= image_tag 'menu.svg', class: 'menu-svg' %>
+        </button>
         <div class="menu">
             <ul>
-                <li><%= link_to "Portfolio", portfolio_path%></li>
-                <li><%= link_to 'Technologies', root_path(anchor: 'technology-id') %></li>
-                <li><%= link_to about_path do %>About Us<% end %></li>
-                <li class="quote-button"><%= link_to quote_step1_path do %> Get a quote <% end %> </li>
+                <li><%= link_to "Portfolio", portfolio_path %></li>
+                <li><%= link_to "About Us", about_path %></li>
+                <li class="quote-button"><%= link_to "Request a quote", quote_step1_path %></li>
             </ul>
         </div>
     </div>
