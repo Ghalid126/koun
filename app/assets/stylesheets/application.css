@@ -1021,6 +1021,7 @@ footer {
 }
 .mobile-bottom-row{
   display: flex;
+  align-items: flex-end;
 }
 footer li {
   display: block;
