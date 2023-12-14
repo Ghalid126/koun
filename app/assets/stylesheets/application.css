@@ -548,7 +548,7 @@ jumper::after {
 @keyframes slideBottom {
   from {
       opacity: 0;
-      transform: translateY(-50px);
+      transform: translateY(50px);
   }
   to {
       opacity: 1;
@@ -969,7 +969,7 @@ footer {
   align-items: center;
   /* position: fixed;
   bottom: 0; */
-  height: 12vh;
+  /* height: 12vh; */
   justify-content: space-evenly;
   width: 100%;
   font-size: 14pt;
@@ -977,6 +977,32 @@ footer {
   line-height: 1.6;
   text-align: center;
   box-sizing: border-box;
+  background-color: rgba(19, 39, 97, 1);
+}
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 30px;
+  align-items: flex-start;
+}
+.footer-links {
+  font-weight: lighter;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+}
+.link-col {
+  margin-right: 15px;
+  text-align: left;
+  width: 23vw;
+  font-size: 16pt;
+  
+}
+.link-col li {
+  border-bottom: white solid 1px;
+  margin-bottom: 100px;
 }
 .footer-left {
   flex: 1 1 0%;

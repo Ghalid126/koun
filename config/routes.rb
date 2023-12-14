@@ -9,8 +9,10 @@ Rails.application.routes.draw do
   get 'quote_step1', to: 'pages#quote_step1'
   get 'portfolio', to: 'pages#portfolio'
   get 'about', to: 'pages#about'
-  get 'contact', to: 'contact_form#new'
+  get 'faq', to: 'pages#faq'
+  get 'contact', to: 'contacts#new'
 
-  resources :contact_form, only: %i[new create]
+
+  resources :contacts, only: %i[new create]
 
 end
