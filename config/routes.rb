@@ -13,6 +13,5 @@ Rails.application.routes.draw do
   get 'contact', to: 'contacts#new'
 
 
-  resources :contacts, only: %i[new create]
-
+  resources :contact_form, only: [:new, :create]
 end

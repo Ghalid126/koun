@@ -1,11 +1,7 @@
-class Contact < ApplicationRecord
+class Contact
+  include ActiveModel::Model
+  attr_accessor :name, :email, :message
 
-    include ActiveModel::Model
-    attr_accessor :name, :email, :message
-
-    validates :name, presence: true
-    validates :email, presence: true, format: { with: URI::MailTo::EMAIL_REGEXP }
-    validates :message, presence: true
-
-
+  # Validations if needed
+  validates :name, :email, :message, presence: true
 end
