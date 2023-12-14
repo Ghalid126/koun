@@ -905,6 +905,9 @@ jumper::after {
   height: auto;
   margin-bottom: 3rem;
   box-sizing: border-box;
+  background: white;
+  opacity: .8;
+  color: #0E21A0;
 }
 #gradient-canvas-bottom {
   position: absolute;
@@ -918,7 +921,7 @@ jumper::after {
 }
 
 .faq h1 {
-  color: #fff;
+  color: #0E21A0;
   position: relative;
   z-index: 1;
   padding-bottom: 2rem;
@@ -958,7 +961,7 @@ jumper::after {
 .accordion-content p {
   margin: 0;
   padding: 20px 20px 10px;
-  color: #FFF;
+  color: #0E21A0;
   font-size: 14pt;
   font-weight: lighter;
 
