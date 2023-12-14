@@ -540,7 +540,7 @@ jumper::after {
 @keyframes slideLeft {
   from {
       opacity: 0;
-      transform: translateX(-250px);
+      transform: translateX(-350px);
   }
   to {
       opacity: 1;
@@ -552,7 +552,7 @@ jumper::after {
 @keyframes slideBottom {
   from {
       opacity: 0;
-      transform: translateY(-50px);
+      transform: translateY(50px);
   }
   to {
       opacity: 1;
@@ -564,7 +564,7 @@ jumper::after {
 @keyframes slideRight {
   from {
       opacity: 0;
-      transform: translateX(250px);
+      transform: translateX(350px);
   }
   to {
       opacity: 1;
@@ -973,7 +973,7 @@ footer {
   align-items: center;
   /* position: fixed;
   bottom: 0; */
-  height: 12vh;
+  /* height: 12vh; */
   justify-content: space-evenly;
   width: 100%;
   font-size: 14pt;
@@ -981,21 +981,64 @@ footer {
   line-height: 1.6;
   text-align: center;
   box-sizing: border-box;
+  background-color: rgba(19, 39, 97, 1);
 }
-.footer-left {
-  flex: 1 1 0%;
-  z-index: 1;
-  box-sizing: border-box;
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 30px;
+  align-items: flex-start;
+}
+.footer-links {
+  font-weight: lighter;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  height: 40vh;
+}
+.link-col {
+  margin-right: 15px;
+  text-align: left;
+  width: 23vw;
+  font-size: 16pt;
+}
+.footer-bottom {
+  font-weight: lighter;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  align-items: flex-end;
+}
+.bottom-col {
+  margin-right: 15px;
+  width: 23vw;
+}
+.link-col li {
+  border-bottom: white solid 1px;
+  margin-bottom: 100px;
+}
+.footer-row-mobile {
+  display: flex;
+}
+.mobile-bottom-row{
+  display: flex;
+  align-items: flex-end;
 }
 footer li {
   display: block;
   list-style: none;
 }
-.footer-center {
-  flex: 1 1 0%;
-  z-index: 1;
-  box-sizing: border-box;
+.link-col li:last-child {
+  margin-bottom: 25px;
 }
+.social-icon {
+  width: 35px;
+  margin-right: 20px;
+}
+
 .footer-logo {
   width: 180px;
 }
@@ -1182,10 +1225,23 @@ footer li {
       flex-direction: column;
       font-size: 12pt;
       justify-content: inherit;
-      height: 30vh;
     }
     .footer-logo {
       width: 150px;
+    }
+    .footer-logo-wrapper {
+      margin-left: 15px;
+    }
+    .footer-links {
+      flex-direction: column;
+    }
+    .footer-row-mobile {
+      display: flex;
+      flex-direction: row;
+    }
+    .link-col {
+      margin-left: 15px;
+      width: 40vw;
     }
     #gradient-canvas-footer {
       height: 30vh;
@@ -1193,12 +1249,39 @@ footer li {
     .testimonials .slide-img {
       padding: 40px 20px;
     }
-    .footer:nth-child(2) {
-      align-self: center; /* Pour aligner cet élément en bas à l'intérieur du conteneur flexible */
+    .footer-links {
+      margin-bottom: 20px;
+      height: auto;
     }
-    .footer-center {
-      flex: 0 1 25%;
+    .footer-bottom {
+      margin-top: 0;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 15px;
     }
+    .mobile-bottom-row:first-child {
+      margin-bottom: 60px;
+    }
+    .mobile-bottom-row:last-child {
+      margin-bottom: 50px;
+    }
+    .bottom-col {
+      width: auto;
+    }
+    #footer-infos {
+      font-size: 18pt;
+      font-weight: normal;
+    }
+    .mobile-bottom-row {
+      align-items: flex-end;
+    }
+    /* .footer:nth-child(2) { */
+      /* align-self: center; Pour aligner cet élément en bas à l'intérieur du conteneur flexible */
+    /* } */
+    
+
+
+
 }
 /* Existing CSS */
 /* ... */
@@ -1740,10 +1823,10 @@ label {
   #gradient-canvas-bottom  {
     height: 240vh;
   }
-  footer {
+  /* footer {
     position: relative;
     top: 15px;
-  }
+  } */
   .faq {
     margin-bottom: 1rem;
   }
@@ -2119,7 +2202,6 @@ label {
     height: 250vh;
   } */
   footer {
-    height: 18vh;
     font-size: 12pt;
   }
   .footer-logo {
@@ -2373,7 +2455,6 @@ label {
     top: 115px;
   }
   footer {
-    height: 18vh;
     font-size: 12pt;
   }
   .footer-logo {
@@ -2500,15 +2581,41 @@ label {
     background-color: rgba(19, 39, 97, 0.95);
     z-index: 5;
     color: #FFF;
-    padding-top: 8rem;
+    padding-top: 6rem;
     height: 100vh;
   }
   .menu.active {
-    display: block !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .menu .quote-button {
     display:none;
   }
+  .menu-socials {
+    display: flex;
+    text-align: center;
+    font-size: 14pt;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .menu .logo {
+    padding-bottom: 55px;
+    position: static;
+  }
+  .menu-socials::before {
+  content: " ";
+  display: flex;
+  background-color: #01AFE9;
+  position: relative;
+  height: 1px;
+  width: 60px;
+  margin-right: 15px;
+}
+.menu-socials .social-icon {
+  margin-left: 15px;
+}
   .menu li {
     display: block;
     text-align: center;
@@ -2522,8 +2629,8 @@ label {
 
 .get-quote-mobile {
   justify-content: center;
-  padding: 1rem 0;
-  text-align: center;
+  padding: 1rem 0 1rem 15px;
+  text-align: left;
   display: none;
   position: fixed;
   bottom: 0;

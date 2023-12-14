@@ -945,6 +945,24 @@ thumbs.forEach(function(thumb, index) {
 
   menuToggler.addEventListener('click', menuToggle);
 
+  // Fonction de gestion du scroll
+  function handleScroll() {
+    const getQuoteMobile = document.querySelector('.get-quote-mobile');
+
+    if (!getQuoteMobile) return; // Si l'élément n'existe pas, ne faites rien
+
+    if (estMobile()) {
+      // Ajoute 'display: block' quand l'utilisateur fait défiler vers le bas
+      getQuoteMobile.style.display = 'block';
+    } else {
+      // Réinitialise le style si ce n'est pas un écran mobile
+      getQuoteMobile.style.display = 'none';
+    }
+  }
+
+// Ajouter l'écouteur d'événement de scroll
+window.addEventListener('scroll', handleScroll);
+
 
 // Fonction pour process rubrique apparition
 
@@ -1216,7 +1234,7 @@ const faqMarginBottom = parseInt(faqStyle.marginBottom);
 // Créez une fonction pour mettre à jour la hauteur du canvas
 const updateCanvasHeight = () => {
   // Ajoutez la hauteur de faq et sa marge inférieure
-  const totalHeight = faq.offsetHeight + faqMarginBottom + 20;
+  const totalHeight = faq.offsetHeight + faqMarginBottom;
   canvas.style.height = `${totalHeight}px`;
 };
 
@@ -1237,23 +1255,7 @@ updateCanvasHeight();
 // Fonction d'apparition du CTA en mobile
 
 
-// Fonction de gestion du scroll
-function handleScroll() {
-  // const getQuoteMobile = document.querySelector('.get-quote-mobile');
 
-  if (!getQuoteMobile) return; // Si l'élément n'existe pas, ne faites rien
-
-  if (estMobile()) {
-    // Ajoute 'display: block' quand l'utilisateur fait défiler vers le bas
-    getQuoteMobile.style.display = 'block';
-  } else {
-    // Réinitialise le style si ce n'est pas un écran mobile
-    getQuoteMobile.style.display = 'none';
-  }
-}
-
-// Ajouter l'écouteur d'événement de scroll
-window.addEventListener('scroll', handleScroll);
 
 
 // Comportement flash 
