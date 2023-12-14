@@ -1245,6 +1245,8 @@ footer li {
       flex-direction: column;
       font-size: 12pt;
       justify-content: inherit;
+      z-index: 6;
+      position: relative;
     }
     .footer-logo {
       width: 150px;
@@ -1856,6 +1858,7 @@ label {
   }
   .contact-title p {
     margin-left: 20px;
+    padding-bottom: 25px;
   }
 }
 @media screen and (max-height: 410px) and (orientation: landscape){
@@ -2126,7 +2129,7 @@ label {
 
     }
     .contact-title h1 {
-      padding-top: 1rem;
+      padding-top: 3rem;
       padding-bottom: 1rem;
     }
     .contact-title h2 {
@@ -2134,6 +2137,7 @@ label {
       padding-bottom: .5rem;
     }
     .contact-title p {
+      margin-bottom: 2rem;
       margin-left: 50px;
     }
     .contact-image { 
@@ -2148,9 +2152,9 @@ label {
     .container {
       box-sizing: border-box;
       justify-content: center;
-      align-items: flex-start;
+      align-items: center;
       padding-right: 0;
-      padding-left: 30px;
+      padding-left: 0;
     }
     .form-control {
       width: 80vw;
@@ -2158,9 +2162,7 @@ label {
     .btn {
       margin-top: 0;
       margin-bottom: 1rem;
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 80vw;
+      width: 80%;
     }
 
 }
