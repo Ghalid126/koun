@@ -2598,15 +2598,41 @@ label {
     background-color: rgba(19, 39, 97, 0.95);
     z-index: 5;
     color: #FFF;
-    padding-top: 8rem;
+    padding-top: 6rem;
     height: 100vh;
   }
   .menu.active {
-    display: block !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .menu .quote-button {
     display:none;
   }
+  .menu-socials {
+    display: flex;
+    text-align: center;
+    font-size: 14pt;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .menu .logo {
+    padding-bottom: 55px;
+    position: static;
+  }
+  .menu-socials::before {
+  content: " ";
+  display: flex;
+  background-color: #01AFE9;
+  position: relative;
+  height: 1px;
+  width: 60px;
+  margin-right: 15px;
+}
+.menu-socials .social-icon {
+  margin-left: 15px;
+}
   .menu li {
     display: block;
     text-align: center;
