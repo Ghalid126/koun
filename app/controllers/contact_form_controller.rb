@@ -15,6 +15,6 @@ class ContactFormController < ApplicationController
 
     # Set a flash message and redirect
     flash[:success] = "Your message has been sent successfully."
-    redirect_to new_contact_form_path
+    redirect_to contact_path
   end
 end
