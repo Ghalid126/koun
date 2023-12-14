@@ -1020,97 +1020,121 @@ window.addEventListener('scroll', handleScroll);
           }
       });
   });
+  function fonctionMobile() {
+    // ITEM MOBILE SLIDE FUNCTION
 
+  var contenus = document.querySelectorAll('[id^="content"]');
+  let jumpers = document.querySelectorAll('[id^="jumper"]');
+  let svgs = document.querySelectorAll('[id^="svg"]');
 
-  // FONCTION ACCORDEON FAQ
-  const accordionItem = document.querySelectorAll('.accordion-item');
+  let left = document.querySelector('#arrow-left');
+  let right = document.querySelector('#arrow-right');
+  let items = document.querySelectorAll('.item'); // Sélectionnez les éléments avec la classe .item
+  let indexItem = 0;
+  displayItem(indexItem); // Move this line after the displayItem function definition
 
-  accordionItem.forEach(item => {
-    const header = item.querySelector(".accordion-header");
-    header.addEventListener('click', () => {
-      // Vérifier si l'élément actuellement cliqué est actif
-      const isActive = item.classList.contains('active');
-  
-      // Retirer la classe 'active' de tous les éléments
-      accordionItem.forEach(otherItem => {
-        otherItem.classList.remove('active');
-      });
-  
-      // Si l'élément cliqué n'était pas actif, l'activer
-      if (!isActive) {
-        item.classList.add('active');
+  function displayItem(indexItem) {
+    items.forEach((item) => {
+      item.style.display = 'none';
+    });
+    items[indexItem].style.display = 'flex';
+    contenus.forEach(function(contenu) {
+      contenu.classList.remove('active');
+    });
+
+    // Vérifiez si l'index est valide avant d'ajouter la classe "active"
+    if (contenus[indexItem]) {
+      contenus[indexItem].classList.add('active');
+      contenus[indexItem].classList.add('contenu');
+    }
+    jumpers.forEach(function(jumper) {
+      jumper.classList.remove('jumper');
+    });
+    svgs.forEach(function(svg) {
+      svg.classList.remove('svg-active');
+    });
+    jumpers.forEach(function(jumper, indexItem) {
+      if (contenus[indexItem].classList.contains("active")) {
+        jumpers[indexItem].classList.add("jumper");
+        svgs[indexItem].classList.add('svg-active');
       }
     });
-  });
+  }
+
+  function nextItem() {
+    indexItem++;
+    if (indexItem > items.length - 1) {
+      indexItem = items.length - 1;
+      right.classList.add('arrow-opacity');
+    }
+    left.classList.remove('arrow-opacity');
+    displayItem(indexItem);
+  }
+
+  function prevItem() {
+    indexItem--;
+    if (indexItem < 0) {
+      indexItem = 0;
+      left.classList.add('arrow-opacity');
+    }
+    right.classList.remove('arrow-opacity');
+    
+    displayItem(indexItem);
   
-  // Ajuster hauteur Faq canvas en fonction de hauteur faq
-
-// Sélectionnez l'élément canvas et l'élément faq
-const canvas = document.getElementById('gradient-canvas-bottom');
-const faq = document.querySelector('.faq');
-const faqStyle = window.getComputedStyle(faq);
-
-// Convertissez la marge inférieure en valeur numérique
-const faqMarginBottom = parseInt(faqStyle.marginBottom);
-
-// Créez une fonction pour mettre à jour la hauteur du canvas
-const updateCanvasHeight = () => {
-  // Ajoutez la hauteur de faq et sa marge inférieure
-  const totalHeight = faq.offsetHeight + faqMarginBottom;
-  canvas.style.height = `${totalHeight}px`;
-};
-
-// Créez un ResizeObserver pour surveiller les changements de taille de l'élément faq
-const resizeObserver = new ResizeObserver(entries => {
-  for (let entry of entries) {
-    // Mise à jour de la hauteur du canvas à chaque changement de taille
-    updateCanvasHeight();
   }
-});
 
-// Commencez à observer l'élément faq
-resizeObserver.observe(faq);
+  let processLogo = document.querySelector('.process-logo '); // Sélectionnez la première div par sa classe
+  let contenuScrolls = document.querySelectorAll('.contenu'); // Sélectionnez la deuxième div par sa classe
+  let startX;
 
-// Mise à jour initiale de la hauteur du canvas
-updateCanvasHeight();
+  // Fonction pour gérer le début du toucher
+  function handleTouchStart(e) {
+      startX = e.touches[0].clientX;
+  }
 
+  // Fonction pour gérer la fin du toucher
+  function handleTouchEnd(e) {
+      let endX = e.changedTouches[0].clientX;
+      let diffX = startX - endX;
 
+      if (diffX > 30) {
+          // Glisser vers la gauche
+          nextItem();
+      } else if (diffX < -30) {
+          // Glisser vers la droite
+          prevItem();
+      }
+  }
 
-
-// TESTIMONIAL SLIDER 
-
-const next = document.querySelector('.next');
-const prev = document.querySelector('.prev');
-const slides = document.querySelectorAll('.slide');
-
-let index = 0;
-display(index);
-function display(index) {
-  slides.forEach((slide) => {
-    slide.style.display = 'none';
-    console.log("charged");
+  // Attacher les écouteurs d'événements aux deux divs
+  processLogo.addEventListener('touchstart', handleTouchStart, false);
+  processLogo.addEventListener('touchend', handleTouchEnd, false);
+  
+  contenuScrolls.forEach(contenuScroll => {
+    contenuScroll.addEventListener('touchstart', handleTouchStart, false);
+    contenuScroll.addEventListener('touchend', handleTouchEnd, false);
   });
-  slides[index].style.display ='flex';
+
+  right.addEventListener('click', function() {
+    console.log('Clic droit');
+    nextItem();
+  });
+
+  left.addEventListener('click', function() {
+    console.log('Clic gauche');
+    prevItem();
+  });
+
+  console.log("Ceci s'exécute uniquement sur mobile");
 }
 
-function nextSlide() {
-  index++;
-  if (index > slides.length - 1) {
-    index = 0;
-  }
-  display(index);
+// Vérifier si l'écran est un mobile avant d'exécuter la fonction
+if (estMobile()) {
+  fonctionMobile();
 }
 
-function prevSlide() {
-  index--;
-  if (index < 0) {
-    index = slides.length - 1; 
-  }
-  display(index);
-}
+    // Ajuster hauteur Faq canvas en fonction de hauteur faq
 
-next.addEventListener('click', nextSlide); 
-prev.addEventListener('click', prevSlide); 
 
 
 // Fonction pour vérifier si l'écran est un mobile
@@ -1130,141 +1154,133 @@ function rechargerPageSurChangementOrientation() {
   });
 }
 
+
 // Vérifier si l'écran est un mobile avant d'exécuter la fonction
 if (estMobile() || estMobileLandscape()) {
   rechargerPageSurChangementOrientation();
 }
-
-
-
   // Fonction à appliquer uniquement en mode mobile
-  function fonctionMobile() {
-      // ITEM MOBILE SLIDE FUNCTION
+  // function fonctionMobile() {
+  //     // ITEM MOBILE SLIDE FUNCTION
 
-    var contenus = document.querySelectorAll('[id^="content"]');
-    let jumpers = document.querySelectorAll('[id^="jumper"]');
-    let svgs = document.querySelectorAll('[id^="svg"]');
+  //   var contenus = document.querySelectorAll('[id^="content"]');
+  //   let jumpers = document.querySelectorAll('[id^="jumper"]');
+  //   let svgs = document.querySelectorAll('[id^="svg"]');
 
-    let left = document.querySelector('#arrow-left');
-    let right = document.querySelector('#arrow-right');
-    let items = document.querySelectorAll('.item'); // Sélectionnez les éléments avec la classe .item
-    let indexItem = 0;
-    displayItem(indexItem); // Move this line after the displayItem function definition
+  //   let left = document.querySelector('#arrow-left');
+  //   let right = document.querySelector('#arrow-right');
+  //   let items = document.querySelectorAll('.item'); // Sélectionnez les éléments avec la classe .item
+  //   let indexItem = 0;
+  //   displayItem(indexItem); // Move this line after the displayItem function definition
 
-    function displayItem(indexItem) {
-      items.forEach((item) => {
-        item.style.display = 'none';
-      });
-      items[indexItem].style.display = 'flex';
-      contenus.forEach(function(contenu) {
-        contenu.classList.remove('active');
-      });
+  //   function displayItem(indexItem) {
+  //     items.forEach((item) => {
+  //       item.style.display = 'none';
+  //     });
+  //     items[indexItem].style.display = 'flex';
+  //     contenus.forEach(function(contenu) {
+  //       contenu.classList.remove('active');
+  //     });
 
-      // Vérifiez si l'index est valide avant d'ajouter la classe "active"
-      if (contenus[indexItem]) {
-        contenus[indexItem].classList.add('active');
-        contenus[indexItem].classList.add('contenu');
-      }
-      jumpers.forEach(function(jumper) {
-        jumper.classList.remove('jumper');
-      });
-      svgs.forEach(function(svg) {
-        svg.classList.remove('svg-active');
-      });
-      jumpers.forEach(function(jumper, indexItem) {
-        if (contenus[indexItem].classList.contains("active")) {
-          jumpers[indexItem].classList.add("jumper");
-          svgs[indexItem].classList.add('svg-active');
-        }
-      });
-    }
+  //     // Vérifiez si l'index est valide avant d'ajouter la classe "active"
+  //     if (contenus[indexItem]) {
+  //       contenus[indexItem].classList.add('active');
+  //       contenus[indexItem].classList.add('contenu');
+  //     }
+  //     jumpers.forEach(function(jumper) {
+  //       jumper.classList.remove('jumper');
+  //     });
+  //     svgs.forEach(function(svg) {
+  //       svg.classList.remove('svg-active');
+  //     });
+  //     jumpers.forEach(function(jumper, indexItem) {
+  //       if (contenus[indexItem].classList.contains("active")) {
+  //         jumpers[indexItem].classList.add("jumper");
+  //         svgs[indexItem].classList.add('svg-active');
+  //       }
+  //     });
+  //   }
 
-    function nextItem() {
-      indexItem++;
-      if (indexItem > items.length - 1) {
-        indexItem = items.length - 1;
-        right.classList.add('arrow-opacity');
-      }
-      left.classList.remove('arrow-opacity');
-      displayItem(indexItem);
-    }
+  //   function nextItem() {
+  //     indexItem++;
+  //     if (indexItem > items.length - 1) {
+  //       indexItem = items.length - 1;
+  //       right.classList.add('arrow-opacity');
+  //     }
+  //     left.classList.remove('arrow-opacity');
+  //     displayItem(indexItem);
+  //   }
 
-    function prevItem() {
-      indexItem--;
-      if (indexItem < 0) {
-        indexItem = 0;
-        left.classList.add('arrow-opacity');
-      }
-      right.classList.remove('arrow-opacity');
+  //   function prevItem() {
+  //     indexItem--;
+  //     if (indexItem < 0) {
+  //       indexItem = 0;
+  //       left.classList.add('arrow-opacity');
+  //     }
+  //     right.classList.remove('arrow-opacity');
       
-      displayItem(indexItem);
+  //     displayItem(indexItem);
     
-    }
+  //   }
 
-    let processLogo = document.querySelector('.process-logo '); // Sélectionnez la première div par sa classe
-    let contenuScrolls = document.querySelectorAll('.contenu'); // Sélectionnez la deuxième div par sa classe
-    let startX;
+  //   let processLogo = document.querySelector('.process-logo '); // Sélectionnez la première div par sa classe
+  //   let contenuScrolls = document.querySelectorAll('.contenu'); // Sélectionnez la deuxième div par sa classe
+  //   let startX;
 
-    // Fonction pour gérer le début du toucher
-    function handleTouchStart(e) {
-        startX = e.touches[0].clientX;
-    }
+  //   // Fonction pour gérer le début du toucher
+  //   function handleTouchStart(e) {
+  //       startX = e.touches[0].clientX;
+  //   }
 
-    // Fonction pour gérer la fin du toucher
-    function handleTouchEnd(e) {
-        let endX = e.changedTouches[0].clientX;
-        let diffX = startX - endX;
+  //   // Fonction pour gérer la fin du toucher
+  //   function handleTouchEnd(e) {
+  //       let endX = e.changedTouches[0].clientX;
+  //       let diffX = startX - endX;
 
-        if (diffX > 30) {
-            // Glisser vers la gauche
-            nextItem();
-        } else if (diffX < -30) {
-            // Glisser vers la droite
-            prevItem();
-        }
-    }
+  //       if (diffX > 30) {
+  //           // Glisser vers la gauche
+  //           nextItem();
+  //       } else if (diffX < -30) {
+  //           // Glisser vers la droite
+  //           prevItem();
+  //       }
+  //   }
 
-    // Attacher les écouteurs d'événements aux deux divs
-    processLogo.addEventListener('touchstart', handleTouchStart, false);
-    processLogo.addEventListener('touchend', handleTouchEnd, false);
+  //   // Attacher les écouteurs d'événements aux deux divs
+  //   processLogo.addEventListener('touchstart', handleTouchStart, false);
+  //   processLogo.addEventListener('touchend', handleTouchEnd, false);
     
-    contenuScrolls.forEach(contenuScroll => {
-      contenuScroll.addEventListener('touchstart', handleTouchStart, false);
-      contenuScroll.addEventListener('touchend', handleTouchEnd, false);
-    });
+  //   contenuScrolls.forEach(contenuScroll => {
+  //     contenuScroll.addEventListener('touchstart', handleTouchStart, false);
+  //     contenuScroll.addEventListener('touchend', handleTouchEnd, false);
+  //   });
 
-    right.addEventListener('click', function() {
-      console.log('Clic droit');
-      nextItem();
-    });
+  //   right.addEventListener('click', function() {
+  //     console.log('Clic droit');
+  //     nextItem();
+  //   });
 
-    left.addEventListener('click', function() {
-      console.log('Clic gauche');
-      prevItem();
-    });
+  //   left.addEventListener('click', function() {
+  //     console.log('Clic gauche');
+  //     prevItem();
+  //   });
 
-    console.log("Ceci s'exécute uniquement sur mobile");
-  }
+  //   console.log("Ceci s'exécute uniquement sur mobile");
+  // }
 
-  // Vérifier si l'écran est un mobile avant d'exécuter la fonction
-  if (estMobile()) {
-    fonctionMobile();
-  }
-
-
-
-// Fonction d'apparition du CTA en mobile
+  // // Vérifier si l'écran est un mobile avant d'exécuter la fonction
+  // if (estMobile()) {
+  //   fonctionMobile();
+  // }
 
 
 
+// // Comportement flash 
 
-
-// Comportement flash 
-
-document.addEventListener('DOMContentLoaded', function() {
-  document.querySelectorAll('.flash').forEach(function(flashMessage) {
-    flashMessage.addEventListener('click', function() {
-      flashMessage.style.display = 'none';
-    });
-  });
-});
+// document.addEventListener('DOMContentLoaded', function() {
+//   document.querySelectorAll('.flash').forEach(function(flashMessage) {
+//     flashMessage.addEventListener('click', function() {
+//       flashMessage.style.display = 'none';
+//     });
+//   });
+// });

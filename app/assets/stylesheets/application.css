@@ -2571,7 +2571,7 @@ label {
   }
 
   .menu {
-    top: 0;
+    top: -20px;
     font-size: 24pt;
     /* opacity: 0.8; */
     width: 100vw;

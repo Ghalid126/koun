@@ -339,8 +339,8 @@
                 Working with Koun to develop our marketplace website was a great experience. Their team’s expertise in e-commerce platforms, combined with their understanding of our unique needs, resulted in a stunning and effective online presence for Hellodarb.
               </p>
               <p class="author-text">
-                Driss Sekkat
-                <span>Owner</span>
+                Amine Lahlou
+                <span>Sales</span>
                 </p>
             </div>
             <div class="slide-img">
@@ -370,3 +370,41 @@
   </div>
 
 
+<script>
+    // TESTIMONIAL SLIDER 
+
+const next = document.querySelector('.next');
+const prev = document.querySelector('.prev');
+const slides = document.querySelectorAll('.slide');
+
+let index = 0;
+display(index);
+function display(index) {
+  slides.forEach((slide) => {
+    slide.style.display = 'none';
+    console.log("charged");
+  });
+  slides[index].style.display ='flex';
+}
+
+function nextSlide() {
+  index++;
+  if (index > slides.length - 1) {
+    index = 0;
+  }
+  display(index);
+}
+
+function prevSlide() {
+  index--;
+  if (index < 0) {
+    index = slides.length - 1; 
+  }
+  display(index);
+}
+
+next.addEventListener('click', nextSlide); 
+prev.addEventListener('click', prevSlide); 
+
+  
+</script>
