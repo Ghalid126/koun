@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get 'portfolio', to: 'pages#portfolio'
   get 'about', to: 'pages#about'
   get 'faq', to: 'pages#faq'
-  get 'contact', to: 'contact_forms#new'
+  get 'contact', to: 'contact_form#new'
 
   resources :contact_forms, only: [:new, :create]
 end
