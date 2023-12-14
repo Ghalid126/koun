@@ -90,14 +90,16 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  config.action_mailer.delivery_method = :postmark
+  config.action_mailer.postmark_settings = { api_token: "96d9d028-4187-45cf-b455-0f3096cc0617" }
 end
 
-config.action_mailer.delivery_method = :postmark
-config.action_mailer.postmark_settings = { api_token: "96d9d028-4187-45cf-b455-0f3096cc0617" }
+
 
 
 # config.action_mailer.default_url_options = { host: 'www.koun.online' } # Remplacez avec votre domaine
 # config.action_mailer.raise_delivery_errors = true
 
-config.action_mailer.delivery_method = :postmark
-config.action_mailer.postmark_settings = { :api_token => "96d9d028-4187-45cf-b455-0f3096cc0617" }
+# config.action_mailer.delivery_method = :postmark
+# config.action_mailer.postmark_settings = { :api_token => "96d9d028-4187-45cf-b455-0f3096cc0617" }

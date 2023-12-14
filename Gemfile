@@ -82,5 +82,3 @@ gem "sentry-ruby", "~> 5.15"
 gem "sentry-rails", "~> 5.15"
 
 gem 'dotenv-rails', groups: [:development, :test]
-
-gem 'postmark-rails'
