@@ -2657,6 +2657,7 @@ label {
 .get-quote-mobile {
   justify-content: center;
   padding: 1rem;
+  padding-bottom: .6rem;
   text-align: left;
   display: none;
   position: fixed;
