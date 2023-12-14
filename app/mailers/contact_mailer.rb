@@ -1,10 +1,10 @@
 class ContactMailer < ApplicationMailer
+  default from: 'contact@koun.online'
 
-    default to: 'votre@email.com' # Adresse email où les messages seront envoyés
-
-    def contact_email(contact)
-      @contact = contact
-      mail(from: @contact.email, subject: 'Nouveau Message du Formulaire de Contact')
-    end
-
+  def contact_email(name, email, message, phone_number)
+    @name = name
+    @message = message
+    @phone_number = phone_number
+    mail(to: 'contact@koun.online', subject: 'New Contact Message')
+  end
 end
