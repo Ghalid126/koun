@@ -966,6 +966,7 @@ window.addEventListener('scroll', handleScroll);
 
 // Fonction pour process rubrique apparition
 
+
   // Sélectionnez tous les éléments de rubrique et de contenu
   var rubriques = document.querySelectorAll('[id^="rubrique"]');
   var contenus = document.querySelectorAll('[id^="content"]');
@@ -973,6 +974,8 @@ window.addEventListener('scroll', handleScroll);
   let svgs = document.querySelectorAll('[id^="svg"]');
   var currentIndex = -1; // pour garder la trace de l'index actuel
 
+
+  
   // Ajoutez des gestionnaires d'événements pour chaque rubrique
   rubriques.forEach(function(rubrique, index) {
       rubrique.addEventListener('click', function() {

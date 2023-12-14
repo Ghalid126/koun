@@ -15,8 +15,8 @@
         <div class="link-col"><ul><li><%= link_to 'About Us', about_path %></li></ul></div>
         <div class="link-col">
           <ul>
-            <li>FAQ</li>
-            <li><%= link_to quote_step1_path do %> Contact <% end %></li>
+            <li><%= link_to "FAQ", faq_path %></li>
+            <li><%= link_to contact_path do %> Contact <% end %></li>
           </ul>
           <div class="socials">
             <%= link_to(image_tag("instagram-icon.svg", alt: "Instagram", class: "social-icon"), "https://www.instagram.com/koun.online?igshid=YzAwZjE1ZTI0Zg==", target: "_blank") %>

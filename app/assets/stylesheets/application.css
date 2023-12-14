@@ -571,6 +571,20 @@ jumper::after {
       transform: translateX(0);
   }
 }
+@keyframes slideOutLeft {
+  from {
+      opacity: 1;
+      transform: translateX(0);
+  }
+  to {
+      opacity: 0;
+      transform: translateX(-350px);
+  }
+}
+
+.slide-out-left {
+  animation: slideOutLeft 0.5s ease forwards;
+}
 
 .slide-right {
   animation: slideRight 0.5s ease forwards;
@@ -1483,13 +1497,9 @@ footer li {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-left: .5vw;
-  margin-right: .5vw;
-  margin-top: 1vh;
   background-color: rgba(255, 255, 255, 0.8);
   z-index: 2;
   height: 83vh;
-  border-radius: 15px;
   justify-content: center;
 }
 .form_container {
