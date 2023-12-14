@@ -908,6 +908,7 @@ jumper::after {
   background: white;
   opacity: .8;
   color: #0E21A0;
+  padding-bottom: 10px;
 }
 #gradient-canvas-bottom {
   position: absolute;
