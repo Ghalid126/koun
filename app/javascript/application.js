@@ -1022,6 +1022,57 @@ window.addEventListener('scroll', handleScroll);
   });
 
 
+  // FONCTION ACCORDEON FAQ
+  const accordionItem = document.querySelectorAll('.accordion-item');
+
+  accordionItem.forEach(item => {
+    const header = item.querySelector(".accordion-header");
+    header.addEventListener('click', () => {
+      // Vérifier si l'élément actuellement cliqué est actif
+      const isActive = item.classList.contains('active');
+  
+      // Retirer la classe 'active' de tous les éléments
+      accordionItem.forEach(otherItem => {
+        otherItem.classList.remove('active');
+      });
+  
+      // Si l'élément cliqué n'était pas actif, l'activer
+      if (!isActive) {
+        item.classList.add('active');
+      }
+    });
+  });
+  
+  // Ajuster hauteur Faq canvas en fonction de hauteur faq
+
+// Sélectionnez l'élément canvas et l'élément faq
+const canvas = document.getElementById('gradient-canvas-bottom');
+const faq = document.querySelector('.faq');
+const faqStyle = window.getComputedStyle(faq);
+
+// Convertissez la marge inférieure en valeur numérique
+const faqMarginBottom = parseInt(faqStyle.marginBottom);
+
+// Créez une fonction pour mettre à jour la hauteur du canvas
+const updateCanvasHeight = () => {
+  // Ajoutez la hauteur de faq et sa marge inférieure
+  const totalHeight = faq.offsetHeight + faqMarginBottom;
+  canvas.style.height = `${totalHeight}px`;
+};
+
+// Créez un ResizeObserver pour surveiller les changements de taille de l'élément faq
+const resizeObserver = new ResizeObserver(entries => {
+  for (let entry of entries) {
+    // Mise à jour de la hauteur du canvas à chaque changement de taille
+    updateCanvasHeight();
+  }
+});
+
+// Commencez à observer l'élément faq
+resizeObserver.observe(faq);
+
+// Mise à jour initiale de la hauteur du canvas
+updateCanvasHeight();
 
 
 
@@ -1200,57 +1251,7 @@ if (estMobile() || estMobileLandscape()) {
     fonctionMobile();
   }
 
-  // FONCTION ACCORDEON FAQ
-  const accordionItem = document.querySelectorAll('.accordion-item');
 
-  accordionItem.forEach(item => {
-    const header = item.querySelector(".accordion-header");
-    header.addEventListener('click', () => {
-      // Vérifier si l'élément actuellement cliqué est actif
-      const isActive = item.classList.contains('active');
-  
-      // Retirer la classe 'active' de tous les éléments
-      accordionItem.forEach(otherItem => {
-        otherItem.classList.remove('active');
-      });
-  
-      // Si l'élément cliqué n'était pas actif, l'activer
-      if (!isActive) {
-        item.classList.add('active');
-      }
-    });
-  });
-  
-// Ajuster hauteur Faq canvas en fonction de hauteur faq
-
-// Sélectionnez l'élément canvas et l'élément faq
-const canvas = document.getElementById('gradient-canvas-bottom');
-const faq = document.querySelector('.faq');
-const faqStyle = window.getComputedStyle(faq);
-
-// Convertissez la marge inférieure en valeur numérique
-const faqMarginBottom = parseInt(faqStyle.marginBottom);
-
-// Créez une fonction pour mettre à jour la hauteur du canvas
-const updateCanvasHeight = () => {
-  // Ajoutez la hauteur de faq et sa marge inférieure
-  const totalHeight = faq.offsetHeight + faqMarginBottom;
-  canvas.style.height = `${totalHeight}px`;
-};
-
-// Créez un ResizeObserver pour surveiller les changements de taille de l'élément faq
-const resizeObserver = new ResizeObserver(entries => {
-  for (let entry of entries) {
-    // Mise à jour de la hauteur du canvas à chaque changement de taille
-    updateCanvasHeight();
-  }
-});
-
-// Commencez à observer l'élément faq
-resizeObserver.observe(faq);
-
-// Mise à jour initiale de la hauteur du canvas
-updateCanvasHeight();
 
 // Fonction d'apparition du CTA en mobile
 

@@ -56,3 +56,27 @@
       </div>
     </div>
   </div>
+
+  <%# <script>
+      // FONCTION ACCORDEON FAQ
+  const accordionItem = document.querySelectorAll('.accordion-item');
+
+  accordionItem.forEach(item => {
+    const header = item.querySelector(".accordion-header");
+    header.addEventListener('click', () => {
+      // Vérifier si l'élément actuellement cliqué est actif
+      const isActive = item.classList.contains('active');
+  
+      // Retirer la classe 'active' de tous les éléments
+      accordionItem.forEach(otherItem => {
+        otherItem.classList.remove('active');
+      });
+  
+      // Si l'élément cliqué n'était pas actif, l'activer
+      if (!isActive) {
+        item.classList.add('active');
+      }
+    });
+  });
+  
+  </script> %>
