@@ -5,6 +5,7 @@ class ContactMailer < ApplicationMailer
     @name = name
     @message = message
     @phone_number = phone_number
+    @email = email
     mail(to: 'contact@koun.online', subject: 'New Contact Message')
   end
 end
