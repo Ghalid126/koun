@@ -1210,7 +1210,8 @@ footer li {
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     font-size: 18pt;
-    margin-top: 3.2vh;
+    margin-top: 2.5vh;
+
     width: fit-content;
 }
 @media screen and (max-width: 820px) and (orientation: portrait){
@@ -1799,7 +1800,9 @@ label {
   .cta-link {
     font-size: 22pt;
   }
+
 }
+
 @media screen and (max-height: 430px) and (orientation: landscape) {
   #gradient-canvas-bottom  {
     /* height: 215vh; */
@@ -1863,6 +1866,7 @@ label {
     margin-left: 20px;
     padding-bottom: 25px;
   }
+
 }
 @media screen and (max-height: 410px) and (orientation: landscape){
   #gradient-canvas-bottom  {
@@ -2027,10 +2031,13 @@ label {
 /* Add responsive styles at the end of your existing CSS */
 @media screen and (max-width: 844px) and (orientation: portrait){
   #gradient-canvas {
-    height: 100vh;
+    height: 105vh;
   }
   .process {
     position: static;
+  }
+  .header-hero {
+    height: 102vh;
   }
   
     .process-logo {
@@ -2717,5 +2724,6 @@ label {
     padding-left: 0;
   }
 }
+
 
 
