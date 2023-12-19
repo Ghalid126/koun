@@ -2031,7 +2031,7 @@ label {
 /* Add responsive styles at the end of your existing CSS */
 @media screen and (max-width: 844px) and (orientation: portrait){
   #gradient-canvas {
-    height: 105vh;
+    height: 103vh;
   }
   .process {
     position: static;
