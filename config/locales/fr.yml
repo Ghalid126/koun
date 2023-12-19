@@ -1,4 +1,10 @@
 fr:
+  contacts:
+    form:
+      name: "Nom"
+      email: "E-mail"
+      phone_number: "Numéro de Téléphone"
+      message: "Informations complémentaires"
   global:
     forms:
       submit: "Envoyer"
