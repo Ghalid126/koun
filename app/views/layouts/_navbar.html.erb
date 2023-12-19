@@ -18,6 +18,17 @@
                 <li class="mobileShow" style="justify-content: center;"><%= link_to "Contact", contact_path%></li>
                 <li class="quote-button"><%= link_to quote_step1_path do %> <%= t 'global.quote' %> <% end %> </li>
             </ul>
+            <ul>
+                <% I18n.available_locales.each do |locale| %>
+                <li>
+                    <% if I18n.locale == locale %>
+                    <%= t(locale, scope: 'locales') %>
+                    <% else %>
+                    <%= link_to t(locale, scope: 'locales'), url_for(locale: locale) %>
+                    <% end %>
+                </li>
+                <% end %>
+            </ul>
             <div class="menu-socials mobileShow"><%= t 'global.menu.follow' %>  <%= link_to(image_tag("instagram-icon.svg", alt: "Instagram", class: "social-icon"), "https://www.instagram.com/koun.online?igshid=YzAwZjE1ZTI0Zg==", target: "_blank") %></div>
         </div>
     </div>
