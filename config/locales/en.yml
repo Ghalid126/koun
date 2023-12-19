@@ -30,13 +30,19 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
+  activerecord:
+    attributes:
+    
   global:
+    forms:
+      submit: "Submit"
     videoText: "Your browser does not support the video tag."
     quote: "Request a quote"
     menu:
       about: "About Us"
       follow: "Follow us"
     footer:
+
 
   home:
     catchphrase_html: "Offline is silent,<br> Online is loud."
@@ -125,5 +131,7 @@ en:
     subtitle2_html: "Static<br>Website"
     subtitle3_html: "E-commerce<br>Website"
     subtitle4_html: "Website Design"
-    
+  contact:
+    title_html: "<h1>Tell us about your project</h1>
+    <h2>Débutons ensemble cette aventure</h2>"    
 

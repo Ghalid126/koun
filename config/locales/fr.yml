@@ -1,5 +1,7 @@
 fr:
   global:
+    forms:
+      submit: "Envoyer"
     videoText: "Your browser does not support the video tag."
     quote: "Request a quote"
     menu:
@@ -104,3 +106,6 @@ fr:
     subtitle2_html: "Site<br>vitrine"
     subtitle3_html: "Site<br>E-commerce"
     subtitle4_html: "Design de Site Web"
+  contact:
+    title_html: "<h1>Parlez nous de votre projet</h1>
+    <h2>Contactez nous pour en savoir d'avantage</h2>"
