@@ -2011,7 +2011,6 @@ label {
   border-bottom-right-radius: 5px;
   background-color: rgba(19, 39, 97, 0.90);
   padding: 10px;
-  left: px;
   bottom: 90px;
   position: fixed;
 }
@@ -2173,6 +2172,11 @@ label {
       margin-top: 0;
       margin-bottom: 1rem;
       width: 80%;
+    }
+
+    .floating-whatsap {
+      top: 118px;
+      bottom: inherit;
     }
 
 }
