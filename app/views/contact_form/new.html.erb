@@ -225,3 +225,19 @@
     <% end %>
   </div>
 </div>
+
+<div class="calendar-container">
+  <div id="calendar">
+  </div>
+
+</div>
+<%# CALENDLY CODE  %>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+<script>
+  Calendly.initInlineWidget({
+ url: 'https://calendly.com/koun-online',
+ parentElement: document.getElementById('calendar'),
+ prefill: {},
+ utm: {}
+});
+</script>
