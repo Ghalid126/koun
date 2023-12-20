@@ -1,6 +1,6 @@
 fr:
   locales:
-    en: "Anglais"
+    en: "English"
     fr: "Français"
   contacts:
     form:
@@ -12,7 +12,7 @@ fr:
     forms:
       submit: "Envoyer"
     videoText: "Your browser does not support the video tag."
-    quote: "Request a quote"
+    quote: "Demandez un devis"
     menu:
       about: "À propos"
       follow: "Suivez nous"
@@ -20,7 +20,7 @@ fr:
 
   home:
     catchphrase_html: "Soyez visible,<br> Soyez en ligne."
-    subtitle: "Partner with us to create a tailored website."
+    subtitle: "Pour un site sur mesure, qui vous ressemble."
     process: 
       title: "Le Processus de Création de Votre Site Web"
       subtitle1_html: "Stratégie<br>Web"
