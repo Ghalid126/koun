@@ -882,17 +882,19 @@ gradientBottom.initGradient("#gradient-canvas-quote");
 var gradientPortfolio= new Gradient ();
 gradientPortfolio.initGradient("#gradient-canvas-portfolio");
 
-var gradientPortfolio= new Gradient ();
-gradientPortfolio.initGradient("#gradient-canvas-footer");
+var gradientFooter= new Gradient ();
+gradientFooter.initGradient("#gradient-canvas-footer");
 
-var gradientPortfolio= new Gradient ();
-gradientPortfolio.initGradient("#gradient-canvas-about");
+var gradientAbout= new Gradient ();
+gradientAbout.initGradient("#gradient-canvas-about");
 
-var gradientPortfolio= new Gradient ();
-gradientPortfolio.initGradient("#gradient-canvas-contact");
+var gradientContact= new Gradient ();
+gradientContact.initGradient("#gradient-canvas-contact");
 
-var gradientPortfolio= new Gradient ();
-gradientPortfolio.initGradient("#gradient-canvas-faq");
+var gradientFaq= new Gradient ();
+gradientFaq.initGradient("#gradient-canvas-faq");
+
+
 
 // CODE POUR PORTFOLIO 
 let thumbs = document.querySelectorAll('[id^="thumb-"]');

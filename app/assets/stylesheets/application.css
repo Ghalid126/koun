@@ -1715,7 +1715,7 @@ label {
     height: 6.5rem;
   }
   #gradient-canvas-portfolio {
-    height: 100vh;
+    height: 104vh;
   }
 
   /* QUOTE STYLES */
@@ -1840,7 +1840,7 @@ label {
   }
 
   .contact-image {
-    width: 320px;
+    width: 275px;
   }
   .form-control {
     line-height: 1.1;
@@ -1884,7 +1884,7 @@ label {
     max-height: 160px;
   }
   #gradient-canvas-contact {
-    height: 135vh;
+    height: 160vh;
   }
 }
 @media screen and (max-height: 390px) and (orientation: landscape){
