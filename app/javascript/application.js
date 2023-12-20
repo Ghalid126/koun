@@ -894,6 +894,9 @@ gradientContact.initGradient("#gradient-canvas-contact");
 var gradientFaq= new Gradient ();
 gradientFaq.initGradient("#gradient-canvas-faq");
 
+var gradientFaq= new Gradient ();
+gradientFaq.initGradient("#gradient-canvas-calendar");
+
 
 
 // CODE POUR PORTFOLIO 

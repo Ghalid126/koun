@@ -1653,6 +1653,32 @@ label {
   border-color: #faebcc;
 }
 
+/* CALENDAR STYLES */
+
+.calendar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+  width: 100%;
+  flex-direction: column;
+}
+.calendar-container h1 {
+  padding-top: 1rem;
+  padding-bottom: 0;
+}
+#gradient-canvas-calendar {
+  position: absolute;
+  width:100%;
+  height:100%;
+  --gradient-color-1: #0E21A0; 
+  --gradient-color-2: #EC53B0;
+  z-index:-1;
+}
+#calendar {
+  height: 100%;
+  width: 100%;
+}
 
 /* PORTFOLIO MOBILE */
 
@@ -2748,8 +2774,6 @@ label {
 
 .lang-icon {
   width: 36px !important;
-  position: relative;
-  bottom: -11px;
 }
 .lang-icon-mobile {
   width: 36px !important;
@@ -2759,4 +2783,9 @@ label {
 .lang-list {
   position: relative;
   top: -50px;
+}
+.lang-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

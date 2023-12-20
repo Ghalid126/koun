@@ -1,4 +1,20 @@
 <% provide(:title, "Calendar") %>
 
-
+<canvas id="gradient-canvas-calendar"></canvas>
 <%= render 'layouts/navbar' %>
+<div class="calendar-container">
+  <h1>Ready to book a meeting with us ?</h1>
+  <div id="calendar">
+
+  </div>
+</div>
+
+
+<script>
+  Calendly.initInlineWidget({
+ url: 'https://calendly.com/koun-online',
+ parentElement: document.getElementById('calendar'),
+ prefill: {},
+ utm: {}
+});
+</script>

@@ -10,7 +10,7 @@
         </button>
         <div class="menu">
             <%= link_to root_path do %><%= image_tag 'Koun-logo.svg', class: 'logo mobileShow', alt: 'logo KOUN Website' %><%end%>
-            <ul>
+            <ul  class="lang-link">
                 <li><%= link_to "Portfolio", portfolio_path%></li>
                 <li><%= link_to 'Technologies', root_path(anchor: 'technology-id') %></li>
                 <li><%= link_to t("global.menu.about") ,about_path %></li>
@@ -18,7 +18,7 @@
                 <li class="mobileShow" style="justify-content: center;"><%= link_to "Contact", contact_path%></li>
 
                 <% I18n.available_locales.each do |locale| %>
-                    <li>
+                    <li  class= "lang-link">
                         <% if I18n.locale == locale %>
                             <%= image_tag "#{locale}.svg", class: "lang-icon mobileHide", alt: t(locale, scope: 'locales') %>
                         <% else %>
