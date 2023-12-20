@@ -232,6 +232,7 @@ h1 {
 .hero-carrousel {
   position: relative;
   margin-left: 4rem;
+  flex-shrink: 1;
 }
 .rounded-video {
   border-radius: 15px; /* Adjust the radius as per your design */
