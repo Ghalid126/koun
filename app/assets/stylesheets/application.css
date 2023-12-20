@@ -1846,6 +1846,7 @@ label {
     line-height: 1.1;
   }
   .form-container {
+    margin-top: 40px;
     margin-left: 0;
   }
   .form-group {
@@ -1866,6 +1867,11 @@ label {
   .contact-title p {
     margin-left: 20px;
     padding-bottom: 25px;
+  }
+  .menu .quote-button {
+    left: 43px;
+    top: 10px;
+    position: relative;
   }
 
 }
@@ -1890,6 +1896,11 @@ label {
 @media screen and (max-height: 390px) and (orientation: landscape){
   #gradient-canvas-bottom  {
     /* height: 250vh; */
+  }
+  .menu .quote-button {
+    left: 43px;
+    top: 10px;
+    position: relative;
   }
 }
 
@@ -2211,7 +2222,7 @@ label {
     padding-left: .7rem;
   }
   .navbar {
-    height: 20vh;
+    height: 25vh;
   }
   #gradient-canvas {
     height: inherit;
@@ -2458,6 +2469,7 @@ label {
     transform: scale(0.8);
   }
   .menu {
+    max-width: 430px;
     padding: 2.5rem 1rem;
   } 
   .menu ul {
