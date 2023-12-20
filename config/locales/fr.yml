@@ -1,0 +1,120 @@
+fr:
+  locales:
+    en: "English"
+    fr: "Français"
+  contacts:
+    form:
+      name: "Nom"
+      email: "E-mail"
+      phone_number: "Numéro de Téléphone"
+      message: "Informations complémentaires"
+  global:
+    forms:
+      submit: "Envoyer"
+    videoText: "Your browser does not support the video tag."
+    quote: "Demandez un devis"
+    menu:
+      about: "À propos"
+      follow: "Suivez nous"
+    footer:
+
+  home:
+    catchphrase_html: "Soyez visible,<br> Soyez en ligne."
+    subtitle: "Pour un site sur mesure, qui vous ressemble."
+    process: 
+      title: "Le Processus de Création de Votre Site Web"
+      subtitle1_html: "Stratégie<br>Web"
+      subtitle2_html: "Planification &<br>Architecture"
+      subtitle3_html: "Design<br>Créatif"
+      subtitle4_html: "Développement<br>Responsif"
+      subtitle5_html: "Assurance<br>Qualité"
+      subtitle6_html: "Lancement &<br>Optimisation"
+      content:
+        title1: "Stratégie Web"
+        text1: "Au cœur de chaque site web réussi se trouve une stratégie robuste, où nous alignons votre vision avec les tendances du marché pour créer un plan de succès numérique" 
+        title2: "Planification & Architecture"
+        text2: "Notre phase minutieuse de planification et d'architecture jette les bases solides, assurant un parcours utilisateur sans faille et une structure intuitive pour votre site web."
+        title3: "Design Créatif"
+        text3: "Lors de la phase de design créatif, nous donnons vie à votre marque avec une esthétique unique qui capte votre essence, garantissant que chaque pixel reflète votre identité et s'adresse à votre public"
+        title4: "Développement Responsif"
+        text4: "Notre processus de développement est centré sur la responsivité, garantissant une expérience utilisateur fluide et engageante sur tous les appareils et plateformes."
+        title5: "Assurance Qualité"
+        text5: "La qualité est notre priorité absolue ; nous testons rigoureusement chaque aspect de votre site pour assurer des performances optimales, une sécurité à toute épreuve, et une expérience utilisateur impeccable."
+        title6: "Lancement & Optimisation"
+        text6: "Le lancement de votre site web n'est que le début ; nous continuons à optimiser et à affiner, assurant que votre présence numérique évolue avec votre entreprise et reste à la pointe de la technologie."
+    technologies:
+      title: "Nos Technologies"
+      content:
+        title1_html: "Développement<br>Ruby on Rails"
+        text1: "Construisez une application web belle et évolutive basée sur des processus prévisibles et évolutifs."
+        title2_html: "Développement<br>ReactJS"
+        text2: "Création d'interfaces utilisateur interactives et dynamiques avec des composants efficaces et réutilisables pour une expérience web sans faille"
+        title3_html: "Intégration API<br>ChatGPT"
+        text3: "Exploitez la puissance de l'IA avancée avec l'intégration de l'API ChatGPT, créant des applications innovantes et intelligentes."
+        title4_html: "Shopify & Wordpress"
+        text4: "Experts en Shopify et WordPress, offrant des solutions efficaces de commerce électronique et de sites web."
+    testimonials:
+      title: "Témoignages"
+      text1: "Collaborer avec Koun pour notre site de service d'impression 3D a été un véritable tournant. Leur expertise dans la création d'une plateforme à la fois esthétiquement agréable et fonctionnellement efficace a dépassé nos attentes. L'engagement et la communication claire de l'équipe ont assuré un produit final qui représente parfaitement notre marque."
+      author1_html: "Julien Dhobb<span>Co-fondateur</span>"
+      text2: "Pour notre festival du film, Koun a conçu un site internet au Maroc qui a non seulement capturé l'esprit d'Esther & Selma, mais a également offert une expérience utilisateur intuitive. Leur équipe a saisi l'essence de notre festival et a communiqué ses idées et progrès de manière efficace, aboutissant à un site qui a été un véritable succès auprès de notre public."
+      author2_html: "Catherine Becker<span>Fondatrice</span>"
+      text3: "L'expérience de notre restaurant & bar sur le toit chez 360 a été brillamment capturée dans le site internet réalisé par Koun au Maroc. Leur capacité à allier design esthétique et fonctionnalité a donné vie à notre vision en ligne. Le professionnalisme de l'équipe et sa communication fluide ont rendu tout le processus très agréable."
+      author3_html: "Ghali Lazrak<span>Propriétaire</span>"
+      text4: "Travailler avec Koun pour développer notre site de marketplace a été une excellente expérience. Leur expertise des plateformes e-commerce, combinée à une compréhension de nos besoins uniques, a abouti à une présence en ligne impressionnante et efficace pour Hellodarb au Maroc."
+      author4_html: "Amine Lahlou<span>Commercial</span>"
+      text5: "Nous sommes vraiment satisfaits du site internet que Koun a créé au Maroc. Il est simple et élégant. L'équipe a été facile à travailler, a rapidement compris nos besoins et a fourni exactement ce que nous recherchions. Un excellent travail sur le design et la fonctionnalité, sans complications inutiles"
+      author5_html: "Driss Sekkat<span>Propriétaire</span>"
+  portfolio:
+    text1: "Développement d'un site web pour un festival de cinéma à Essaouira - Maroc"
+    text2: "Conception et développement web avec système de mailing pour un projet résidentiel à Bouskoura - Maroc"
+    text3: "Design et développement d'un site internet pour un restaurant à Casablanca - Maroc"
+    text4: "Conception et développement d'un site internet pour un site d'annonces en ligne à Dar Bouazza - Maroc"
+    text5: "Design et deéveloppement d'un site web pour un centre d'impression 3D à Casablanca - Maroc"
+    text6: "Conception et développement d'un site internet pour un marché d'impression 3D connecté à un réseau d'imprimantes mondial"
+  about:
+    title: "À propos de nous"
+    text_html: "<b>Bienvenue dans l'Univers Innovant de Koun.online !</b><br><br>
+
+              Plongez dans l'aventure Koun.online, une agence web pas comme les autres, née d'une amitié indéfectible entre trois amis d'enfance. Notre histoire commence à la maternelle et s'épanouit à travers des aventures internationales au Canada, en France, aux USA, en Chine et en Amérique du Sud. Ces voyages n'ont pas seulement enrichi nos vies, mais ont aussi affûté notre vision du design, mêlant influences globales et créativité sans frontières.
+
+              <br><br>
+
+              <b>Une Mosaïque d'Expériences, Un Talent Unique</b><br>br>
+
+              Chez Koun.online, nous fusionnons nos expériences éclectiques – des startups vibrantes, de l'hospitalité chaleureuse, aux projets en freelance – pour tisser une agence web hors du commun. Notre force ? Créer des sites web qui ne se contentent pas d'éblouir visuellement, mais qui sont aussi intuitivement fonctionnels. Chaque projet est une toile vierge, une histoire passionnante à raconter, un défi excitant à relever.
+
+              <br><br>
+
+              <b>Plus qu'une Agence Web : Une Source d'Innovation et de Création</b><br><br>
+
+              Nous sommes des alchimistes du web, mélangeant habilement storytelling, design et innovation. Notre passion pour un design raffiné et notre attention méticuleuse aux détails nous motivent à concevoir des sites web non seulement performants mais aussi envoûtants. Chez Koun.online, votre vision devient réalité, nourrie par notre créativité débordante et notre dévouement sans faille.
+              <br><br>
+              Rejoignez-nous dans cette aventure numérique où votre rêve rencontre notre expertise et notre passion. Ensemble, façonnons le web de demain, un site à la fois !"
+  faq:
+    title: "FAQ"
+    q1: "Quels services proposez-vous ?"
+    a1: "Nous sommes spécialisés dans les solutions web complètes, incluant le développement Ruby on Rails, ReactJS, le développement front-end (HTML, CSS, JavaScript), ainsi que le développement avec WordPress et Shopify. Nos services couvrent tous les aspects essentiels pour un site internet performant et moderne."
+    q2: "Quel est votre processus de développement web ?"
+    a2: "Notre processus inclut une consultation initiale, des phases de conception et de développement, des tests rigoureux et un déploiement final, garantissant un site web ou une application de haute qualité et sans faille. Nous nous assurons que chaque étape est menée avec précision et professionnalisme."
+    q3: "Pouvez-vous personnaliser les sites WordPress et Shopify ?"
+    a3: "Absolument ! Nous offrons des solutions sur mesure pour WordPress et Shopify, les personnalisant pour répondre aux besoins spécifiques et à l'identité de marque de votre entreprise. Notre expertise nous permet de créer des sites web uniques et adaptés."
+    q4: "Comment garantissez-vous l'aspect User friendly de mon site web ?"
+    a4: "Nous privilégions un design responsif, une navigation intuitive et un contenu engageant, assurant une excellente expérience utilisateur sur tous les appareils. Notre objectif est de rendre votre site facile à utiliser et agréable pour vos visiteurs."
+    q5: "Quelle est votre approche du SEO dans le développement web ?"
+    a5: "Notre processus de développement intègre un design et un contenu optimisés pour le SEO, avec un accent sur l'amélioration de la visibilité de votre site et de son classement dans les résultats des moteurs de recherche. Nous adoptons des stratégies SEO avancées pour maximiser votre présence en ligne."
+    q6: "Combien de temps faut-il pour développer un site web ?"
+    a6: "Le délai varie en fonction de la complexité du projet, mais nous nous efforçons d'être efficaces sans compromettre la qualité. Nous vous fournirons une estimation de temps après avoir compris vos besoins spécifiques."
+    q7: "Offrez-vous un support et une maintenance continus ?"
+    a7: "Oui, nous proposons des services de support et de maintenance continus pour assurer que votre site web reste à jour, sécurisé et fonctionne de manière optimale. Notre engagement envers votre succès est continu."
+    q8: "Qu'est-ce qui rend votre agence unique dans le développement web ?"
+    a8: "Notre engagement envers la qualité, notre expertise dans diverses technologies et notre approche personnalisée de chaque projet nous distinguent dans la fourniture de solutions web exceptionnelles. Nous ne sommes pas juste des développeurs, mais des partenaires dans votre réussite numérique."
+  quote:
+    title_html: "Parlez nous<br>de votre projet" 
+    subtitle1_html: "Développement Web<br>customisé"
+    subtitle2_html: "Site<br>vitrine"
+    subtitle3_html: "Site<br>E-commerce"
+    subtitle4_html: "Design de Site Web"
+  contact:
+    title_html: "<h1>Parlez nous de votre projet</h1>
+    <h2>Contactez nous pour en savoir d'avantage</h2>"

@@ -2030,7 +2030,7 @@ label {
 /* Add responsive styles at the end of your existing CSS */
 @media screen and (max-width: 844px) and (orientation: portrait){
   #gradient-canvas {
-    height: 105vh;
+    height: 103vh;
   }
   .process {
     position: static;
@@ -2172,6 +2172,10 @@ label {
       margin-top: 0;
       margin-bottom: 1rem;
       width: 80%;
+    }
+    .floating-whatsap {
+      top: 115px;
+      bottom: inherit;
     }
 
     .floating-whatsap {
@@ -2684,7 +2688,7 @@ label {
     z-index: 5;
     color: #FFF;
     padding-top: 6rem;
-    height: 100vh;
+    height: 103vh;
   }
   .menu.active {
     display: flex;
@@ -2700,7 +2704,7 @@ label {
     font-size: 14pt;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: -45px;
   }
   .menu .logo {
     padding-bottom: 55px;
@@ -2729,5 +2733,17 @@ label {
   }
 }
 
-
-
+.lang-icon {
+  width: 36px !important;
+  position: relative;
+  bottom: -11px;
+}
+.lang-icon-mobile {
+  width: 36px !important;
+  position: relative;
+  bottom: inherit;
+}
+.lang-list {
+  position: relative;
+  top: -50px;
+}

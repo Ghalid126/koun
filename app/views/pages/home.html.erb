@@ -5,49 +5,48 @@
   <div class="hero mobileHide">
     <div class="hero-text">
       <h1>
-        Offline is silent,<br>
-        Online is loud.
+        <%= t 'home.catchphrase_html' %>
       </h1>
       <h2>
-        Partner with us to create a tailored website.
+        <%= t 'home.subtitle' %>
       </h2>
-      <div class="quote-button"><%= link_to quote_step1_path do %> Request a quote<% end %> </div>
+      <div class="quote-button"><%= link_to quote_step1_path do %><%= t 'global.quote' %><% end %> </div>
     </div>
     <div class="hero-carrousel">
       <video class="rounded-video" autoplay loop playsinline muted >
         <source src="<%= asset_path 'animationkoun.mov' %>" type="video/mp4">
-        Your browser does not support the video tag.
+        <%= t 'global.videoText' %>
       </video>
     </div>
   </div>
   <div class="hero-mobile mobileShow">
     <div class="hero-text-mobile">
       <h1>
-        Offline is silent,<br>
-        Online is loud.
+        <%= t 'home.catchphrase_html' %>
       </h1>
       <h2>
-        Partner with us to create a tailored website.
+        <%= t 'home.subtitle' %>
       </h2>
     </div>
     <div class="hero-carrousel-mobile">
       <video class="rounded-video-mobile" autoplay loop playsinline muted >
         <source src="<%= asset_path 'animationkoun.mov' %>" type="video/mp4">
-        Your browser does not support the video tag.
+        <%= t 'global.videoText' %>
       </video>
-      <div class="quote-button"><%= link_to quote_step1_path do %> Request a quote<% end %> </div>
+      <div class="quote-button"><%= link_to quote_step1_path do %><%= t 'global.quote' %><% end %> </div>
     </div>
   </div>
 </div>
   <div class="process">
     <div class="process-headers">
-    <h1>The Process to Craft your Website</h1>
+    <h1><%= t 'home.process.title' %></h1>
     </div>
     <div class="process-logo">
       <div class="item" id="rubrique1">
         <div class="item-title">
-          <h2>Web<br>
-          Strategy</h2>
+          <h2>
+            <%= t 'home.process.subtitle1_html' %>
+          </h2>
         </div>
         <div class="thumbnail">
           <div id="jumper1" class="jumper"></div>
@@ -59,8 +58,9 @@
       </div>
       <div class="item" id="rubrique2">
         <div class="item-title">
-          <h2>Planning &<br>
-          Architecture</h2>
+          <h2>
+            <%= t 'home.process.subtitle2_html' %>
+          </h2>
         </div>
         <div class="thumbnail">
           <div id="jumper2"></div>
@@ -83,8 +83,9 @@
       </div>
       <div class="item" id="rubrique3">
         <div class="item-title">
-          <h2>Creative<br>
-          Design</h2>
+          <h2>
+            <%= t 'home.process.subtitle3_html' %>
+          </h2>
         </div>
         <div class="thumbnail">
           <div id="jumper3"></div>
@@ -107,8 +108,9 @@
       </div>
       <div class="item" id="rubrique4">
         <div class="item-title">
-          <h2>Responsive<br>
-          Development</h2>
+          <h2>
+            <%= t 'home.process.subtitle4_html' %>
+          </h2>
         </div>
         <div class="thumbnail">
           <div id="jumper4"></div>
@@ -119,8 +121,9 @@
       </div>
       <div class="item" id="rubrique5">
         <div class="item-title">
-          <h2>Quality<br>
-          Assurance</h2>
+          <h2>
+            <%= t 'home.process.subtitle5_html' %>
+          </h2>
           </div>
         <div class="thumbnail">
           <div id="jumper5"></div>
@@ -132,8 +135,9 @@
       </div>
       <div class="item" id="rubrique6">
         <div class="item-title">
-          <h2>Launch &<br>
-          Optimization</h2>
+          <h2>
+            <%= t 'home.process.subtitle6_html' %>
+          </h2>
         </div>
         <div class="thumbnail">
           <div id="jumper6"></div>
@@ -158,9 +162,10 @@
   <div class="contenu active"  id="content1">
     <div class="process-content">
       <div class="process-text slide-left">
-        <h2>Web Strategy</h2>
+        <h2><%= t 'home.process.content.title1' %></h2>
         <p>
-          At the heart of every successful website is a robust strategy, where we align your vision with market trends to create a blueprint for digital success.</p>
+          <%= t 'home.process.content.text1' %>
+        </p>
       </div>
       <div class="process-img slide-bottom">
         <%= image_tag '1_WEB_STRATEGY-2.png.webp', alt: "Web Strategy logo", class:"process-image" %>
@@ -170,8 +175,10 @@
   <div class="contenu"  id="content2">
     <div class="process-content">
       <div class="process-text slide-left">
-        <h2>Planning & Architecture</h2>
-        <p>Our meticulous planning and architecture phase lays a solid foundation, ensuring a seamless user journey and an intuitive structure for your website.</p>
+        <h2><%= t 'home.process.content.title2' %></h2>
+        <p>
+          <%= t 'home.process.content.text2' %>
+        </p>
       </div>
       <div class="process-img slide-bottom">
         <%= image_tag '2_PLANNING__INFORMATION_ARCHITECTURE-1.png.webp', alt: "Planning Strategy logo", class:"process-image" %>
@@ -181,8 +188,10 @@
   <div class="contenu"  id="content3">
     <div class="process-content">
       <div class="process-text slide-left">
-        <h2>Creative Design</h2>
-        <p>In the creative design stage, we bring your brand to life with a unique aesthetic that captures your essence, ensuring every pixel reflects your identity and speaks to your audience.</p>
+        <h2><%= t 'home.process.content.title3' %></h2>
+        <p>
+          <%= t 'home.process.content.text3' %>
+        </p>
       </div>
       <div class="process-img slide-bottom">
         <%= image_tag '3_CREATIVE_DESIGN-1.png.webp', alt: "Creative Design logo", class:"process-image" %>
@@ -192,8 +201,10 @@
   <div class="contenu"  id="content4">
     <div class="process-content">
       <div class="process-text slide-left">
-        <h2>Responsive Development</h2>
-        <p>Our development process is centered on responsiveness, guaranteeing a fluid, engaging user experience across all devices and platforms.</p>
+        <h2><%= t 'home.process.content.title4' %></h2>
+        <p>
+          <%= t 'home.process.content.text4' %>
+        </p>
       </div>
       <div class="process-img slide-bottom">
         <%= image_tag '4_RESPONSIVE_DEVELOPMENT-1.png.webp', alt: "Responsive Development logo", class:"process-image" %>
@@ -203,8 +214,10 @@
   <div class="contenu"  id="content5">
     <div class="process-content">
       <div class="process-text slide-left">
-        <h2>Quality Assurance</h2>
-        <p>Quality is our top priority; we rigorously test every aspect of your site to ensure peak performance, iron-clad security, and flawless user experience.</p>
+        <h2><%= t 'home.process.content.title5' %></h2>
+        <p>
+          <%= t 'home.process.content.text5' %>
+        </p>
       </div>
       <div class="process-img slide-bottom">
         <%= image_tag '5_QUALITY_ASSURANCE-1.png.webp', alt: "Quality Assurance logo", class:"process-image" %>
@@ -214,8 +227,10 @@
   <div class="contenu"  id="content6">
     <div class="process-content">
       <div class="process-text slide-left">
-        <h2>Launch & Optimization</h2>
-        <p>Launching your website is just the beginning; we continue to optimize and refine, ensuring your digital presence evolves with your business and stays ahead of the curve.</p>
+        <h2><%= t 'home.process.content.title6' %></h2>
+        <p>
+          <%= t 'home.process.content.text6' %>
+        </p>
       </div>
       <div class="process-img slide-bottom">
         <%= image_tag '6_LAUNCH__OPTIMIZATION-1.png.webp', alt: "Launch & Optimization logo", class:"process-image" %>
@@ -223,7 +238,7 @@
     </div>
   </div>
   <div class="technology-stack_container" id="technology-id">
-    <h1>Technology Stack</h1>
+    <h1><%= t 'home.technologies.title' %></h1>
     <div class="elements-container">
       <div class="row">
         <div class="technology">
@@ -231,9 +246,10 @@
             <%= image_tag 'Rails Logo.svg', alt: 'Rails Logo', class: 'rails-logo' %>
           </div>
           <div class="technology-text">
-            <h2>Ruby on Rails<br>
-            Development</h2>
-            <p>Build a beautiful and scalable web application based on predictable and scalable processes.</p>
+            <h2>
+              <%= t 'home.technologies.content.title1_html' %>
+            </h2>
+            <p><%= t 'home.technologies.content.text1' %></p>
           </div>
           <div class="bottom-arrow">
             <%= image_tag 'up-right-arrow 1.svg' %>
@@ -244,10 +260,11 @@
             <%= image_tag 'Reactjs Logo.svg', alt: 'Reactjs Logo' %>
           </div>
           <div class="technology-text">
-            <h2>ReactJS<br>
-            Development</h2>
+            <h2>
+              <%= t 'home.technologies.content.title2_html' %>
+            </h2>
             <p>
-              Building interactive and dynamic user interfaces with efficient, reusable components for a seamless web experience.
+              <%= t 'home.technologies.content.text2' %>
             </p>
           </div>
           <div class="bottom-arrow">
@@ -262,9 +279,11 @@
           </div>
           <div class="technology-text">
             <h2>
-              ChatGPT API<br>
+              <%= t 'home.technologies.content.title3_html' %>
             </h2>
-            <p>Harness the power of advanced AI with ChatGPT API integration, creating innovative, intelligent applications.</p>
+            <p>
+              <%= t 'home.technologies.content.text3' %>
+            </p>
           </div>
           <div class="bottom-arrow">
             <%= image_tag 'up-right-arrow 1.svg' %>
@@ -276,9 +295,11 @@
           </div>
           <div class="technology-text">
             <h2>
-              Shopify & Wordpress
+              <%= t 'home.technologies.content.title4_html' %>
             </h2>
-            <p>Experts in Shopify and WordPress, delivering effective e-commerce and website solutions.</p>
+            <p>
+              <%= t 'home.technologies.content.text4' %>
+            </p>
           </div>
           <div class="bottom-arrow">
             <%= image_tag 'up-right-arrow 1.svg' %>
@@ -288,17 +309,16 @@
       </div>
     </div>
   <div class="testimonials">
-    <h1>Testimonials</h1>
+    <h1><%= t 'home.testimonials.title' %></h1>
       <div class="testimonials-container">
         <div class="slider">
           <div class="slide slide-1">
             <div class="slide-text">
               <p class="testimonial-text">
-                Collaborating with Koun for our 3D printing service website was a game-changer. Their expertise in creating a platform that is both aesthetically pleasing and functionally efficient exceeded our expectations. The team’s dedication and clear communication ensured a final product that perfectly represents our brand.
+                <%= t 'home.testimonials.text1' %>
               </p>
               <p class="author-text">
-                Julien Dhobb
-                <span>Co-founder</span>
+                <%= t 'home.testimonials.author1_html' %>
                 </p>
             </div>
             <div class="slide-img">
@@ -308,11 +328,10 @@
           <div class="slide slide-2">
             <div class="slide-text">
               <p class="testimonial-text">
-                For our film festival, Koun crafted a website that not only captured the spirit of Esther & Selma but also provided an intuitive user experience. Their team understood the essence of our festival and communicated their ideas and progress effectively, resulting in a website that has been an absolute hit with our audience.
+                <%= t 'home.testimonials.text2' %>
               </p>
               <p class="author-text">
-                Catherine Becker
-                <span>Organizer</span>
+                <%= t 'home.testimonials.author2_html' %>
                 </p>
             </div>
             <div class="slide-img">
@@ -322,11 +341,10 @@
           <div class="slide slide-3">
             <div class="slide-text">
               <p class="testimonial-text">
-                The rooftop restaurant & bar experience we offer at 360 was brilliantly encapsulated in the website designed by Koun. Their ability to merge aesthetic design with functionality brought our vision to life online. The team’s professionalism and seamless communication made the entire process a delightful experience.
+                <%= t 'home.testimonials.text3' %>
               </p>
               <p class="author-text">
-                Ghali Lazrak
-                <span>Owner</span>
+                <%= t 'home.testimonials.author3_html' %>
                 </p>
             </div>
             <div class="slide-img">
@@ -336,11 +354,10 @@
           <div class="slide slide-4">
             <div class="slide-text">
               <p class="testimonial-text">
-                Working with Koun to develop our marketplace website was a great experience. Their team’s expertise in e-commerce platforms, combined with their understanding of our unique needs, resulted in a stunning and effective online presence for Hellodarb.
+                <%= t 'home.testimonials.text4' %>
               </p>
               <p class="author-text">
-                Amine Lahlou
-                <span>Sales</span>
+                <%= t 'home.testimonials.author4_html' %>
                 </p>
             </div>
             <div class="slide-img">
@@ -350,11 +367,10 @@
           <div class="slide slide-6">
             <div class="slide-text">
               <p class="testimonial-text">
-                We're really pleased with the website Koun created. It's simple yet elegant. The team was straightforward to work with, understood our needs quickly, and delivered exactly what we were looking for. A great job on the design and functionality, without any unnecessary complications.
+                <%= t 'home.testimonials.text5' %>
               </p>
               <p class="author-text">
-                Driss Sekkat
-                <span>Owner</span>
+                <%= t 'home.testimonials.author5_html' %>
                 </p>
             </div>
             <div class="slide-img">

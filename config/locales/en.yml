@@ -30,4 +30,114 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  locales:
+    fr: "French"
+    en: "English"
+  contacts:
+    form:
+      name: "Name"
+      email: "Email"
+      phone_number: "Phone Number"
+      message: "Message"
+  global:
+    forms:
+      submit: "Submit"
+    videoText: "Your browser does not support the video tag."
+    quote: "Request a quote"
+    menu:
+      about: "About Us"
+      follow: "Follow us"
+    footer:
+
+
+  home:
+    catchphrase_html: "Offline is silent,<br> Online is loud."
+    subtitle: "Partner with us to create a tailored website."
+    process: 
+      title: "The Process to Craft your Website"
+      subtitle1_html: "Web<br>Strategy"
+      subtitle2_html: "Planning &<br>Architecture"
+      subtitle3_html: "Creative<br>Design"
+      subtitle4_html: "Responsive<br>Development"
+      subtitle5_html: "Quality<br>Assurance"
+      subtitle6_html: "Launch &<br>Optimization"
+      content:
+        title1: "Web Strategy"
+        text1: "At the heart of every successful website is a robust strategy, where we align your vision with market trends to create a blueprint for digital success." 
+        title2: "Planning & Architecture"
+        text2: "Our meticulous planning and architecture phase lays a solid foundation, ensuring a seamless user journey and an intuitive structure for your website."
+        title3: "Creative Design"
+        text3: "In the creative design stage, we bring your brand to life with a unique aesthetic that captures your essence, ensuring every pixel reflects your identity and speaks to your audience."
+        title4: "Responsive Development"
+        text4: "Our development process is centered on responsiveness, guaranteeing a fluid, engaging user experience across all devices and platforms."
+        title5: "Quality Assurance"
+        text5: "Quality is our top priority; we rigorously test every aspect of your site to ensure peak performance, iron-clad security, and flawless user experience."
+        title6: "Launch & Optimization"
+        text6: "Launching your website is just the beginning; we continue to optimize and refine, ensuring your digital presence evolves with your business and stays ahead of the curve."
+    technologies:
+      title: "Technology Stack"
+      content:
+        title1_html: "Ruby on Rails<br>Development"
+        text1: "Build a beautiful and scalable web application based on predictable and scalable processes."
+        title2_html: "ReactJS<br>Development"
+        text2: "Building interactive and dynamic user interfaces with efficient, reusable components for a seamless web experience."
+        title3_html: "ChatGPT API<br>"
+        text3: "Harness the power of advanced AI with ChatGPT API integration, creating innovative, intelligent applications."
+        title4_html: "Shopify & Wordpress"
+        text4: "Experts in Shopify and WordPress, delivering effective e-commerce and website solutions."
+    testimonials:
+      title: "Testimonials"
+      text1: "Collaborating with Koun for our 3D printing service website was a game-changer. Their expertise in creating a platform that is both aesthetically pleasing and functionally efficient exceeded our expectations. The team’s dedication and clear communication ensured a final product that perfectly represents our brand."
+      author1_html: "Julien Dhobb<span>Co-founder</span>"
+      text2: "For our film festival, Koun crafted a website that not only captured the spirit of Esther & Selma but also provided an intuitive user experience. Their team understood the essence of our festival and communicated their ideas and progress effectively, resulting in a website that has been an absolute hit with our audience."
+      author2_html: "Catherine Becker<span>Organizer</span>"
+      text3: "The rooftop restaurant & bar experience we offer at 360 was brilliantly encapsulated in the website designed by Koun. Their ability to merge aesthetic design with functionality brought our vision to life online. The team’s professionalism and seamless communication made the entire process a delightful experience."
+      author3_html: "Ghali Lazrak<span>Owner</span>"
+      text4: "Working with Koun to develop our marketplace website was a great experience. Their team’s expertise in e-commerce platforms, combined with their understanding of our unique needs, resulted in a stunning and effective online presence for Hellodarb."
+      author4_html: "Amine Lahlou<span>Sales</span>"
+      text5: "We're really pleased with the website Koun created. It's simple yet elegant. The team was straightforward to work with, understood our needs quickly, and delivered exactly what we were looking for. A great job on the design and functionality, without any unnecessary complications."
+      author5_html: "Driss Sekkat<span>Owner</span>"
+  portfolio:
+    text1: "Web Development of a website for a movie festival in Essaouira - Morocco"
+    text2: "Design, Web development with mailer of a website for a residencial project in Bouskoura - Morocco"
+    text3: "Web development and design of a website for a restaurant in Casablanca - Morocco"
+    text4: "Web development and design of an online marketplace in Dar Bouazza - Morocco"
+    text5: "Web development and design for a 3D printing center in Casablanca - Morocco"
+    text6: "Web development and design for a 3D printing marketplace linked to a printer network worldwide"
+  about:
+    title: "About Us"
+    text_html: "Welcome to Koun.online, a web agency born from the lifelong friendship of three childhood friends. United since kindergarten, our global journeys through Canada, France, USA, China, and South America have refined our design ethos.
+      <br>
+      <br>
+      We blend our diverse experiences from startups, hospitality, and freelancing to create a web agency like no other. Our expertise lies in creating websites that are not just visually stunning but also intuitively functional. We believe in a personalized approach, treating each project as a unique story waiting to be told.
+      <br>
+      <br>
+      At Koun.online, we’re not just developers; we’re storytellers, designers, and innovators. Our passion for exquisite design and attention to detail drives us to deliver websites that are not only efficient but also captivating. Join us, and experience a digital craftsmanship where your vision meets our unmatched creativity and care."
+  faq:
+    title: "FAQ"
+    q1: "What Services Do You Offer?"
+    a1: "We specialize in comprehensive web solutions, including Ruby on Rails, ReactJS, front-end development (HTML, CSS, JavaScript), and development with WordPress and Shopify"
+    q2: "How Does Your Web Development Process Work?"
+    a2: "Our process involves initial consultation, design and development phases, rigorous testing, and final deployment, ensuring a seamless, high-quality website or application"
+    q3: "Can You Customize WordPress and Shopify Sites?"
+    a3: "Absolutely! We offer tailored WordPress and Shopify solutions, customizing them to meet your unique business needs and branding."
+    q4: "How Do You Ensure My Website is User-Friendly?"
+    a4: "We prioritize responsive design, intuitive navigation, and engaging content, ensuring your website offers an excellent user experience on all devices."
+    q5: "What is Your Approach to SEO in Web Development?"
+    a5: "Our development process includes SEO-optimized design and content, focusing on enhancing your site's visibility and ranking in search engine results."
+    q6: "How Long Does It Take to Develop a Website?"
+    a6: "The timeline varies based on project complexity, but we strive for efficiency without compromising on quality. We'll provide a timeline estimate after understanding your specific needs."
+    q7: "Do You Offer Ongoing Support and Maintenance?"
+    a7: "Yes, we provide ongoing support and maintenance services to ensure your website remains up-to-date, secure, and functioning optimally."
+    q8: "What Makes Your Agency Unique in Web Development?"
+    a8: "Our commitment to quality, our expertise across various technologies, and our personalized approach to each project set us apart in delivering exceptional web solutions."
+  quote:
+    title_html: "Tell us about<br>your project" 
+    subtitle1_html: "Custom Web<br>Development"
+    subtitle2_html: "Static<br>Website"
+    subtitle3_html: "E-commerce<br>Website"
+    subtitle4_html: "Website Design"
+  contact:
+    title_html: "<h1>Tell us about your project</h1>
+    <h2>Débutons ensemble cette aventure</h2>"    
+
