@@ -2899,7 +2899,7 @@ label {
   }
 }
 
-@media only screen and (min-device-width : 769px) and (max-device-width : 1124px) and (orientation: portrait) {
+@media only screen and (min-device-width : 769px) and (max-device-width : 1324px) and (orientation: portrait) {
   .header-hero {
     height: 95vh;
   }
@@ -3064,12 +3064,18 @@ label {
   }
 }
 
-@media only screen and (min-device-width : 769px) and (max-device-width : 1124px) and (orientation: landscape) {
+@media only screen and (min-device-width : 769px) and (max-device-width : 1224px) and (orientation: landscape) {
   .header-hero {
     height: 95vh;
   }
   .hero-carrousel {
     margin-left: 2rem;
+  }
+  .hero-text {
+    left: 80px;
+  }
+  .hero-carrousel {
+    margin-right: 2rem;
   }
   .item {
     margin-left: 65px;
