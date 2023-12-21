@@ -1147,12 +1147,14 @@ if (estMobile()) {
 
 // Fonction pour vérifier si l'écran est un mobile
 function estMobile() {
-  return window.matchMedia("(max-width: 844px) and (orientation: portrait)").matches  ; // Vous pouvez ajuster cette valeur en fonction de vos besoins
+  return window.matchMedia("(max-width: 740px) and (orientation: portrait)").matches  ; // Vous pouvez ajuster cette valeur en fonction de vos besoins
+  // const maxWidth = 767; // Définir la largeur maximale pour les appareils mobiles
+  // return window.innerWidth <= maxWidth;
 }
 
 // Fonction pour vérifier si l'écran est un mobile
 function estMobileLandscape() {
-  return window.matchMedia("(max-width: 844px) and (orientation: landscape)").matches  ; // Vous pouvez ajuster cette valeur en fonction de vos besoins
+  return window.matchMedia("(max-width: 767px) and (orientation: landscape)").matches  ; // Vous pouvez ajuster cette valeur en fonction de vos besoins
 }
 // Fonction pour recharger la page lors du changement d'orientation
 function rechargerPageSurChangementOrientation() {

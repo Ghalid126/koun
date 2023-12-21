@@ -162,7 +162,6 @@ h1 {
 }
 .menu {
   color: white;
-  padding: 3.5rem 2rem;
   width: auto;
   z-index: 1;
   font-size: 1.5rem;
@@ -1156,7 +1155,7 @@ footer li {
 .mobileShow {
   display: none !important;
 }
-@media only screen and (min-device-width : 320px) and (max-device-width : 800px) and (orientation: portrait){
+@media only screen and (min-device-width : 320px) and (max-device-width : 740px) and (orientation: portrait){
   .mobileHide {
     display: none;
   }
@@ -1215,7 +1214,7 @@ footer li {
 
     width: fit-content;
 }
-@media screen and (max-width: 820px) and (orientation: portrait){
+@media screen and (max-width: 479px) and (orientation: portrait){
   .header-logo {
     padding-left: 1rem;
   }  
@@ -1348,15 +1347,7 @@ footer li {
 
 /* Mobile specific styles */
 
-.menu {
-  color: white;
-  padding: 3.5rem 2rem;
-  width: auto;
-  z-index: 1;
-  font-size: 1.5rem;
-  box-sizing: border-box;
-  font-size: 16pt;
-}
+
 .menu-container {
   position: relative; /* Set relative positioning for the container */
   z-index:5;
@@ -1501,7 +1492,7 @@ footer li {
 #gradient-canvas-contact {
   position: absolute;
   width:100%;
-  height:100%;
+  height:100vh;
   --gradient-color-1: #0E21A0; 
   --gradient-color-2: #EC53B0;
   z-index:-1;
@@ -2040,7 +2031,7 @@ label {
   display:flex;
 }
 /* Add responsive styles at the end of your existing CSS */
-@media screen and (max-width: 844px) and (orientation: portrait){
+@media screen and (max-width: 479px) and (orientation: portrait){
   #gradient-canvas {
     height: 103vh;
   }
@@ -2454,7 +2445,7 @@ label {
   }
   
 }
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 740px) and (max-width: 767px) {
 
   /* HOME PAGE STYLES */
   .header-hero {
@@ -2669,7 +2660,7 @@ label {
   }
 }
 /* Mobile menu specific styles */
-@media screen and (max-width: 840px) and (orientation: portrait) {
+@media screen and (max-width: 479px) and (orientation: portrait) {
   .logo {
     width: 150px;
   }
@@ -2759,4 +2750,123 @@ label {
 .lang-list {
   position: relative;
   top: -50px;
+}
+
+/* MEDIA QUERY IPAD MINI */
+
+@media only screen and (min-device-width : 740px) and (max-device-width : 768px) and (orientation: portrait){
+  .menu .quote-button {
+    top: 20px;
+    position: relative;
+  }
+}
+
+@media only screen and (min-device-width : 740px) and (max-device-width : 1023px) and (orientation: portrait) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .hero-text {
+    transform: scale(1);
+    text-align: left;
+    left: 130px;
+    width: 100%;
+  }
+  .hero-carrousel {
+    transform: scale(1);
+    text-align: center;
+  }
+  .rounded-video {
+    width: 85vw;
+  }
+  .hero-text h1 {
+    font-size: 30pt;
+  }
+  .hero-text h2 {
+    text-align: left;
+    width: 51%;
+  }
+  .technology {
+    height: 300px;
+    min-width: 328px;
+  }
+  .bottom-arrow {
+    right: 10px;
+    top: 130px;
+    }
+
+  .testimonials-container {
+    min-height: 40vh;
+  }
+  .portfolio-container .center {
+    height: initial;
+  }
+  #gradient-canvas-portfolio {
+    height: 100vh;
+  }
+
+  .text-about p {
+    font-size: 12pt;
+  }
+  .aboutus-container {
+    margin-top: 2rem;
+  }
+  .aboutus {
+    margin-bottom: 5rem;
+  }
+  #gradient-canvas-about {
+    height: 100vh;
+  }
+
+  .header-quote h1 {
+    left: 150px;
+  }
+  .quote-svg-container {
+    right: 0;
+    background-size: 570px;
+  }
+  .choice-container {
+    height: inherit;
+  }
+  .choice {
+    height: 165px;
+    margin: 0 .7rem 5rem;
+  }
+
+  .contact-container {
+    height: initial;
+  }
+  .contact-title {
+    align-items: center;
+  }
+  .contact-image {
+    width: 360px;
+  }
+  .form-container {
+    margin-left: 5px;
+  }
+  .container {
+    padding-left: 0;
+  }
+  .form-control {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-device-width : 740px) and (max-device-width : 1023px) and (orientation: landscape) {
+  #gradient-canvas-contact {
+    height: 110vh;
+  }
+  .technology {
+    height: 310px;
+    min-width: 300px;
+  }
+  .bottom-arrow {
+    right: 15px;
+    top: 130px;
+  }
+  .choice {
+    height: 175px;
+  }
 }
