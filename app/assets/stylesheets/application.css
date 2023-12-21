@@ -2953,3 +2953,15 @@ label {
     justify-content: space-evenly;
   }
 }
+
+@media only screen and (min-device-width : 769px) and (max-device-width : 1124px) and (orientation: landscape) {
+  .header-hero {
+    height: 95vh;
+  }
+  .hero-carrousel {
+    margin-left: 2rem;
+  }
+  .item {
+    margin-left: 65px;
+  }
+}
