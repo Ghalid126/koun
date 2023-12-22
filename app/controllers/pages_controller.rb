@@ -111,6 +111,7 @@ class PagesController < ApplicationController
                     card: 'summary_large_image',
                     title: I18n.t('meta.faq.twitter.title'),
                     description: I18n.t('meta.faq.twitter.description')
-  end
+                }
+      end
 
 end
