@@ -97,4 +97,20 @@ class PagesController < ApplicationController
 
   end
 
+  def faq
+    set_meta_tags title: I18n.t('meta.faq.title'),
+                  description: I18n.t('meta.faq.description'),
+                  keywords: I18n.t('meta.faq.keywords'),
+                  og: {
+                    title: I18n.t('meta.faq.og.title'),
+                    url: 'https://www.koun.online/faq',
+                    description: I18n.t('meta.faq.og.description'),
+                    type: 'website'
+                  },
+                  twitter: {
+                    card: 'summary_large_image',
+                    title: I18n.t('meta.faq.twitter.title'),
+                    description: I18n.t('meta.faq.twitter.description')
+  end
+
 end

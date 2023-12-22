@@ -18,6 +18,99 @@ fr:
       follow: "Suivez nous"
     footer:
 
+  meta:
+    application:
+      title: 'Koun - Votre Partenaire de Développement Web à Casablanca'
+      description: 'Koun, agence leader en développement web à Casablanca, Maroc. Spécialiste en solutions web sur mesure, design réactif et technologies avancées pour renforcer votre présence en ligne.'
+      keywords: 'Développement Site Web, Agence Web, Casablanca, Maroc, Solutions Web Personnalisées, Design Réactif, Ruby on Rails, ReactJS, API ChatGPT, Shopify, Wordpress, Création Site Internet, Design Site Web, Développement E-commerce'
+      og:
+        title: 'Koun - Développement Web Innovant au Maroc'
+        description: 'Découvrez avec Koun des solutions web sur mesure. Du design stratégique au développement et au lancement, nous offrons des services web complets pour améliorer votre empreinte digitale.'
+        type: 'website'
+      twitter:
+        card: 'summary_large_image'
+        title: 'Expertise en Développement Web chez Koun à Casablanca'
+        description: 'Rejoignez Koun pour des solutions de développement web innovantes et efficaces au Maroc. Design sur mesure, développement robuste et support continu.'
+
+    home:
+      title: 'Koun Agence Web - Développement Expert à Casablanca'
+      description: 'Koun, votre agence de développement web de premier plan à Casablanca, Maroc. Spécialisée dans la création de sites web sur mesure, réactifs et de haute qualité qui propulsent votre entreprise.'
+      keywords: 'Développement Site Web, Agence Web, Maroc, Casablanca, Design Web, Développement Réactif, Assurance Qualité, Ruby on Rails, ReactJS, API ChatGPT, Shopify, Wordpress, Site Internet, Création Site Web, Agence Digitale'
+      og:
+        title: 'Koun - Agence de Développement Web Leader à Casablanca, Maroc'
+        description: 'Partenaire avec Koun pour créer un site web personnalisé, réactif et innovant qui renforce votre présence en ligne. Spécialisée en Ruby on Rails, ReactJS, intégrations API ChatGPT, Shopify et WordPress.'
+        type: 'website'
+      twitter:
+        card: 'summary_large_image'
+        title: 'Koun - Agence de Développement Web à Casablanca, Maroc'
+        description: 'Découvrez des services de développement web de premier choix avec Koun. De la stratégie au lancement, nous assurons une présence web sans faille, efficace et esthétique pour votre entreprise.'
+
+    portfolio:
+      title: 'Portfolio - Koun Agence Web, Casablanca'
+      description: 'Explorez notre portfolio diversifié chez Koun, démontrant notre expertise en développement et design web à travers divers secteurs au Maroc. Des festivals de cinéma aux marchés en ligne, nous livrons des solutions personnalisées et avant-gardistes.'
+      keywords: 'Portfolio Développement Web, Casablanca, Maroc, Site Web Festival de Cinéma, Projet Résidentiel, Site Web Restaurant, Marketplace en ligne, Centre Impression 3D, Design Web Réactif, Solutions Web sur Mesure'
+      og:
+        title: 'Portfolio de Koun - Projets Web Innovants au Maroc'
+        description: 'Plongez dans le portfolio de Koun et découvrez nos projets réussis de développement web, allant des festivals de cinéma à Essaouira aux marketplaces en ligne à Dar Bouazza. Expérimentez notre créativité et notre compétence technique dans chaque projet.'
+        type: 'website'
+      twitter:
+        card: 'summary_large_image'
+        title: 'Portfolio de Koun - Excellence en Développement Web au Maroc'
+        description: "Aperçu du portfolio de Koun, présentant des projets de développement web diversifiés au Maroc. D'Essaouira à Casablanca, nous donnons vie à des solutions web uniques."
+
+    about:
+      title: 'À Propos de Nous - Koun, Une Agence Web Unique'
+      description: 'Découvrez l’histoire de Koun.online, une agence web unique née d’une amitié de longue date. De nos voyages au Canada, en France, aux USA, en Chine, et en Amérique du Sud, nous tirons notre passion pour la création de sites web visuellement captivants et intuitivement fonctionnels.'
+      keywords: 'À Propos de Koun, Histoire Agence Web, Expérience Design Global, Développement Web Personnalisé, Design Web Innovant, Canada, France, USA, Chine, Amérique du Sud, Expérience Startup, Hospitalité, Freelance'
+      og:
+        title: 'Apprenez à Connaître Koun - Une Agence Web au Toucher Global'
+        description: 'Rencontrez Koun.online, où les voyages mondiaux inspirent un design web exceptionnel. Notre équipe de conteurs, designers et innovateurs crée des sites web captivants avec un mélange de passion et de précision.'
+        type: 'website'
+      twitter:
+        card: 'summary_large_image'
+        title: "L’Histoire de Koun - Des Voyages Mondiaux à l’Excellence Web"
+        description: "Explorez l’histoire unique de Koun.online, une agence web innovante ancrée dans des amitiés de longue date et des expériences mondiales diverses. Rejoignez-nous pour un voyage dans l'artisanat numérique et l'excellence créative."
+        
+    faq:
+      title: 'FAQ - Koun Agence Web, Réponses à vos Questions'
+      description: 'Trouvez des réponses à vos questions sur nos services de développement web chez Koun. Découvrez notre expertise en Ruby on Rails, ReactJS, WordPress, Shopify, et notre approche du design et du SEO pour votre site internet.'
+      keywords: 'FAQ Agence Web, Développement Ruby on Rails, ReactJS, WordPress, Shopify, Design Web, SEO, Développement Site Internet, User Friendly, Maintenance Web, Solutions Web Personnalisées'
+      og:
+        title: 'FAQ Koun - Vos Questions sur le Développement Web Répondues'
+        description: 'Consultez la FAQ de Koun pour comprendre notre processus de développement web, nos services personnalisés en WordPress et Shopify, et notre engagement envers des sites user-friendly et optimisés pour le SEO.'
+        type: 'website'
+      twitter:
+        card: 'summary_large_image'
+        title: 'Questions Fréquentes - Koun, Experts en Web'
+        description: 'Découvrez les réponses aux questions fréquentes sur les services de développement web de Koun, de la personnalisation WordPress/Shopify à notre approche experte du SEO et du design web adaptatif.'
+
+    quote:
+      title: 'Demandez un Devis - Koun, Développement Web Sur Mesure'
+      description: 'Parlez-nous de votre projet et obtenez un devis personnalisé de Koun. Spécialisés dans le développement web, les sites vitrines, les sites e-commerce, et le design web adapté à vos besoins.'
+      keywords: 'Développement Web, Solutions Web Sur Mesure, Site Vitrine, Site E-commerce, Design Web, Demande de Devis, Services Web Personnalisés, Agence Web Professionnelle, Casablanca, Maroc'
+      og:
+        title: 'Obtenez un Devis pour Votre Projet - Agence Web Koun'
+        description: 'À la recherche d’un développement web personnalisé ? Demandez un devis chez Koun et laissez-nous vous aider à créer un site web qui correspond parfaitement à votre vision et à vos objectifs. Expertise en sites vitrines, e-commerce et design web saisissant.'
+        type: 'website'
+      twitter:
+        card: 'summary_large_image'
+        title: 'Demandez un Devis en Développement Web Sur Mesure - Agence Koun'
+        description: "Lancez votre projet web avec Koun. Demandez un devis dès aujourd'hui et découvrez nos services de développement web personnalisés, nos solutions e-commerce et notre design web créatif."
+
+    contact:
+      title: 'Contactez-Nous - Koun, Votre Projet Web à Casablanca'
+      description: 'Contactez Koun pour discuter de votre projet web. Notre équipe à Casablanca est prête à vous aider avec des solutions personnalisées et innovantes en développement web.'
+      keywords: 'Contact Agence Web, Projet Web Casablanca, Formulaire de Contact, Développement Web, Design Web, Maroc, Solutions Web Personnalisées, Assistance Web Professionnelle'
+      og:
+        title: 'Contactez Koun - Discutez de Votre Projet Web'
+        description: 'Vous avez un projet web en tête ? Contactez Koun pour découvrir comment nous pouvons transformer votre idée en réalité avec nos solutions web sur mesure et notre expertise en développement.'
+        type: 'website'
+      twitter:
+        card: 'summary_large_image'
+        title: 'Contactez Koun - Partenaire de Votre Succès Web à Casablanca'
+        description: 'Prenons contact pour discuter de votre projet web. Chez Koun, nous apportons notre expertise en développement et design web pour créer des sites sur mesure, adaptés à vos besoins.'
+
+
   home:
     catchphrase_html: "Soyez visible,<br> Soyez en ligne."
     subtitle: "Pour un site sur mesure, qui vous ressemble."

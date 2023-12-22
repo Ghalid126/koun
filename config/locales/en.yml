@@ -126,6 +126,18 @@ en:
         title: 'Contact Koun - Expert Web Solutions at Your Fingertips'
         description: 'Looking for expert web development services? Fill out the contact form at Koun.online and get immediate assistance from our dedicated team in Casablanca.'
 
+    faq:
+      title: 'FAQ - Koun Web Agency, Your Questions Answered'
+      description: 'Find answers to your questions about our web development services at Koun. Learn about our expertise in Ruby on Rails, ReactJS, WordPress, Shopify, and our approach to web design and SEO for your website.'
+      keywords: 'Web Agency FAQ, Ruby on Rails Development, ReactJS, WordPress, Shopify, Web Design, SEO, Website Development, User Friendly, Web Maintenance, Custom Web Solutions'
+      og:
+        title: 'Koun FAQ - Your Web Development Questions Answered'
+        description: 'Check out Koun’s FAQ to understand our web development process, custom services in WordPress and Shopify, and our commitment to user-friendly and SEO-optimized websites.'
+        type: 'website'
+      twitter:
+        card: 'summary_large_image'
+        title: 'Frequently Asked Questions - Koun, Web Experts'
+        description: 'Explore the frequently asked questions about Koun’s web development services, from WordPress/Shopify customization to our expert approach to SEO and adaptive web design.'
 
 
   home:
