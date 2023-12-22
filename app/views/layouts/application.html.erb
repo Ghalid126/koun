@@ -17,7 +17,8 @@
       'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
       })(window,document,'script','dataLayer','GTM-TZ3S3WS5');</script>
     <!-- End Google Tag Manager -->
-    <title><%= full_title(yield(:title))%></title>
+    <%= display_meta_tags site: "Koun.online" %>
+    <%# <title><%= full_title(yield(:title))</title>%>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= favicon_link_tag 'favicon.png' %>
     <%= csrf_meta_tags %>
@@ -42,7 +43,7 @@
     </div>
     <%= render 'layouts/footer' %>
     <div class="get-quote-mobile">
-    <%= link_to quote_step1_path, class: "cta-link" do %> 
+    <%= link_to request_quote_path, class: "cta-link" do %> 
       Request a quote
       <div class="cta-arrow">
         <%= image_tag 'white-arrow.svg', class:'cta-mobile-arrow', alt: 'white arrow'%> 

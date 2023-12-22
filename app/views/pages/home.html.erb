@@ -10,7 +10,7 @@
       <h2>
         <%= t 'home.subtitle' %>
       </h2>
-      <div class="quote-button"><%= link_to quote_step1_path do %><%= t 'global.quote' %><% end %> </div>
+      <div class="quote-button"><%= link_to request_quote_path do %><%= t 'global.quote' %><% end %> </div>
     </div>
     <div class="hero-carrousel">
       <video class="rounded-video" autoplay loop playsinline muted >
@@ -33,7 +33,7 @@
         <source src="<%= asset_path 'animationkoun.mov' %>" type="video/mp4">
         <%= t 'global.videoText' %>
       </video>
-      <div class="quote-button"><%= link_to quote_step1_path do %><%= t 'global.quote' %><% end %> </div>
+      <div class="quote-button"><%= link_to request_quote_path do %><%= t 'global.quote' %><% end %> </div>
     </div>
   </div>
 </div>
