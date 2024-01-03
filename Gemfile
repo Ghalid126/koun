@@ -85,3 +85,5 @@ gem "sentry-rails", "~> 5.15"
 gem 'dotenv-rails', groups: [:development, :test]
 
 gem "meta-tags"
+
+gem "sitemap_generator"
