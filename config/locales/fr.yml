@@ -18,41 +18,41 @@ fr:
       follow: "Suivez nous"
     footer:
 
-meta:
-  application:
-    title: 'Koun - Création de Sites Internet Professionnels au Maroc'
-    description: 'Koun, spécialiste en création de sites internet au Maroc, offre des services de développement web personnalisés et de haute qualité pour booster votre présence en ligne.'
-    keywords: 'Création Site Internet Maroc, Développement Web Maroc, Agence Web Maroc, Solutions Web Innovantes, Design Web Maroc, Ruby on Rails, ReactJS, API ChatGPT, Shopify, Wordpress'
+  meta:
+    application:
+      title: 'Koun - Création de Sites Internet Professionnels au Maroc'
+      description: 'Koun, spécialiste en création de sites internet au Maroc, offre des services de développement web personnalisés et de haute qualité pour booster votre présence en ligne.'
+      keywords: 'Création Site Internet Maroc, Développement Web Maroc, Agence Web Maroc, Solutions Web Innovantes, Design Web Maroc, Ruby on Rails, ReactJS, API ChatGPT, Shopify, Wordpress'
 
-  home:
-    title: 'Koun - Votre Expert en Sites Internet au Maroc'
-    description: 'Découvrez chez Koun des services professionnels de création et de développement de sites internet à Casablanca, Maroc. Nous combinons design moderne et technologies avancées pour des résultats impressionnants.'
-    keywords: 'Création Site Web Maroc, Développement Web Casablanca, Solutions Web Sur Mesure, Agence Web Maroc, Design Réactif, Assurance Qualité, Expertise en Ruby on Rails et ReactJS'
+    home:
+      title: 'Koun - Votre Expert en Sites Internet au Maroc'
+      description: 'Découvrez chez Koun des services professionnels de création et de développement de sites internet à Casablanca, Maroc. Nous combinons design moderne et technologies avancées pour des résultats impressionnants.'
+      keywords: 'Création Site Web Maroc, Développement Web Casablanca, Solutions Web Sur Mesure, Agence Web Maroc, Design Réactif, Assurance Qualité, Expertise en Ruby on Rails et ReactJS'
 
-  portfolio:
-    title: 'Portfolio Koun - Projets Web Réalisés au Maroc'
-    description: 'Explorez notre portfolio pour voir nos réalisations en matière de sites internet à travers le Maroc. Découvrez comment nous avons aidé nos clients à atteindre leurs objectifs en ligne.'
-    keywords: 'Portfolio Web Maroc, Projets Développement Web, Casablanca, Maroc, Sites Internet Réussis, Solutions Web Personnalisées, Design Innovant'
+    portfolio:
+      title: 'Portfolio Koun - Projets Web Réalisés au Maroc'
+      description: 'Explorez notre portfolio pour voir nos réalisations en matière de sites internet à travers le Maroc. Découvrez comment nous avons aidé nos clients à atteindre leurs objectifs en ligne.'
+      keywords: 'Portfolio Web Maroc, Projets Développement Web, Casablanca, Maroc, Sites Internet Réussis, Solutions Web Personnalisées, Design Innovant'
 
-  about:
-    title: 'À Propos de Koun - Votre Partenaire Web au Maroc'
-    description: 'Apprenez-en plus sur Koun, votre partenaire fiable pour la création de sites internet au Maroc. Notre passion pour le web et notre expérience internationale nous distinguent.'
-    keywords: 'Agence Web Maroc, Création Site Internet, Expérience Internationale, Design Web Innovant, Développement Web Personnalisé'
+    about:
+      title: 'À Propos de Koun - Votre Partenaire Web au Maroc'
+      description: 'Apprenez-en plus sur Koun, votre partenaire fiable pour la création de sites internet au Maroc. Notre passion pour le web et notre expérience internationale nous distinguent.'
+      keywords: 'Agence Web Maroc, Création Site Internet, Expérience Internationale, Design Web Innovant, Développement Web Personnalisé'
 
-  faq:
-    title: 'FAQ - Réponses à Vos Questions sur le Web au Maroc'
-    description: 'Trouvez des réponses aux questions fréquentes concernant la création de sites internet au Maroc. Koun vous aide à comprendre nos processus et services.'
-    keywords: 'FAQ Création Site Web Maroc, Questions Développement Web, Services Web Koun, Ruby on Rails, ReactJS, Wordpress'
+    faq:
+      title: 'FAQ - Réponses à Vos Questions sur le Web au Maroc'
+      description: 'Trouvez des réponses aux questions fréquentes concernant la création de sites internet au Maroc. Koun vous aide à comprendre nos processus et services.'
+      keywords: 'FAQ Création Site Web Maroc, Questions Développement Web, Services Web Koun, Ruby on Rails, ReactJS, Wordpress'
 
-  quote:
-    title: 'Devis pour Votre Site Internet au Maroc - Koun'
-    description: 'Demandez un devis personnalisé pour votre projet de site internet au Maroc. Chez Koun, nous nous engageons à fournir des solutions web adaptées à vos besoins spécifiques.'
-    keywords: 'Devis Site Web Maroc, Solutions Web Personnalisées, Développement Site Internet Maroc, Design Web Professionnel'
+    quote:
+      title: 'Devis pour Votre Site Internet au Maroc - Koun'
+      description: 'Demandez un devis personnalisé pour votre projet de site internet au Maroc. Chez Koun, nous nous engageons à fournir des solutions web adaptées à vos besoins spécifiques.'
+      keywords: 'Devis Site Web Maroc, Solutions Web Personnalisées, Développement Site Internet Maroc, Design Web Professionnel'
 
-  contact:
-    title: 'Contactez Koun - Création de Sites Internet au Maroc'
-    description: 'Pour toute question ou pour démarrer votre projet de site internet au Maroc, contactez Koun. Notre équipe est prête à vous aider à atteindre vos objectifs en ligne.'
-    keywords: 'Contact Agence Web Maroc, Projet Site Internet Maroc, Conseil Développement Web, Assistance Professionnelle'
+    contact:
+      title: 'Contactez Koun - Création de Sites Internet au Maroc'
+      description: 'Pour toute question ou pour démarrer votre projet de site internet au Maroc, contactez Koun. Notre équipe est prête à vous aider à atteindre vos objectifs en ligne.'
+      keywords: 'Contact Agence Web Maroc, Projet Site Internet Maroc, Conseil Développement Web, Assistance Professionnelle'
 
 
 
@@ -154,5 +154,5 @@ meta:
     subtitle3_html: "Site<br>E-commerce"
     subtitle4_html: "Design de Site Web"
   contact:
-    title_html: "<h1>Parlez nous de votre projet</h1>
-    <h2>Contactez nous pour en savoir d'avantage</h2>"
+    title_html: "Parlez nous de votre projet"
+    subtitle_html: "Développons ensemble"

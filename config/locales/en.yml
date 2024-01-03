@@ -228,6 +228,6 @@ en:
     subtitle3_html: "E-commerce<br>Website"
     subtitle4_html: "Website Design"
   contact:
-    title_html: "<h1>Tell us about your project</h1>
-    <h2>Let's have a discussion</h2>"    
+    title_html: "Tell us about your project"
+    subtitle_html: "Let's have a discussion"    
 
