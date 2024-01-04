@@ -13,7 +13,7 @@
       <div class="quote-button"><%= link_to request_quote_path do %><%= t 'global.quote' %><% end %> </div>
     </div>
     <div class="hero-carrousel">
-      <video class="rounded-video" autoplay loop playsinline muted >
+      <video class="rounded-video" autoplay loop playsinline muted poster="<%= asset_path('screenshot-talata.png') %>">
         <source src="<%= asset_path 'animationkoun2.mp4' %>" type="video/mp4">
         <%= t 'global.videoText' %>
       </video>
@@ -29,7 +29,7 @@
       </h2>
     </div>
     <div class="hero-carrousel-mobile">
-      <video class="rounded-video-mobile" autoplay loop playsinline muted >
+      <video class="rounded-video-mobile" autoplay loop playsinline muted poster="<%= asset_path('screenshot-talata.png') %>">
         <source src="<%= asset_path 'animationkoun2.mp4' %>" type="video/mp4">
         <%= t 'global.videoText' %>
       </video>
