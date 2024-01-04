@@ -1,2 +1,5 @@
 User-agents: *
-Disallow: /
+Disallow: /calendar
+Allow: 
+Sitemap: /sitemap.xml
+Noindex: /calendar
