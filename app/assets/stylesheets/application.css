@@ -116,6 +116,7 @@ h1 {
   padding-top: 3rem;
   text-align: center;
 }
+
 .container {
   display: flex;
   flex: 1 1 auto;
@@ -306,6 +307,16 @@ h1 {
   -webkit-background-clip: text; /* Pour la compatibilité avec certains navigateurs WebKit */
   color: transparent;
 }
+.process-headers h2 {
+  background: linear-gradient(to right, #0E21A0, #51C2EF);
+  background-clip: text;
+  -webkit-background-clip: text; /* Pour la compatibilité avec certains navigateurs WebKit */
+  color: transparent;
+  font-size: 30pt;
+  font-weight: 600;
+  padding-bottom: 4rem;
+  padding-top: 3rem;
+}
 /* .process::before {
   content: "";
   position: absolute;
@@ -484,7 +495,8 @@ jumper::after {
   justify-content: center;
   margin-left: 80px;
 }
-.item h2 {
+
+.item h3 {
   color: #5f6568;
   font-size: 18pt;
   margin-bottom: 1.5rem;
@@ -504,12 +516,13 @@ jumper::after {
 }
 .process-text h2 {
   color: #3b7bce;
-  font-size: 20pt;
+  font-size: 26pt;
   font-weight: 600;
   margin-bottom: 2rem;
 }
 .process-text p {
   color: #1b2c5c;
+  font-size: 14pt;
 }
 .process-img {
   height: max-content;
@@ -617,6 +630,16 @@ jumper::after {
   color: transparent;
   font-weight: 600;
 }
+.technology-stack_container h2 {
+  background: linear-gradient(to right, #0E21A0, #EC53B0);
+  background-clip: text;
+  -webkit-background-clip: text; /* Pour la compatibilité avec certains navigateurs WebKit */
+  color: transparent;
+  font-size: 30pt;
+  font-weight: 600;
+  padding-bottom: 4rem;
+  padding-top: 3rem;
+}
 .elements-container {
   display: flex;
   flex-direction: column;
@@ -696,6 +719,8 @@ jumper::after {
   margin-bottom: 1.5rem;
   font-size: 20pt;
   font-weight: 600;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .technology-text p {
   /* color: #0E21A0; */
@@ -729,13 +754,14 @@ jumper::after {
   align-items: center;
   flex-direction: column;
 }
-.testimonials h1 {
+.testimonials h2 {
   padding-bottom: 0;
   padding-top: 0;
   background: linear-gradient(to right, #51C2EF, #0E21A0 );
   background-clip: text;
   -webkit-background-clip: text; /* Pour la compatibilité avec certains navigateurs WebKit */
   color: transparent;
+  font-size: 30pt;
   font-weight: 600;
 }
 .testimonials-container {
@@ -1941,8 +1967,9 @@ label {
 
 /* Additional styles for very small screens, if needed */
 @media screen and (max-width: 480px) {
-    .item h2 {
-        font-size: 16pt; /* Smaller font size for very small screens */
+
+    .item h3 {
+      font-size: 16pt; /* Smaller font size for very small screens */
     }
 
     .process-text h2 {
@@ -2077,6 +2104,13 @@ label {
       padding-left: 1rem;
       padding-right: 1rem;
     }
+    .process-headers h2 {
+      font-size: 28pt;
+      padding-bottom: 0;
+      padding-top: 3rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
     .process-text {
         order: 2; /* Make text appear after the image on small screens */
     }
@@ -2123,6 +2157,10 @@ label {
       padding-top: 3rem;
       padding-bottom: 3rem;
     }
+    .technology-stack_container h2 {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
     .technology {
       flex-direction: column;
       padding: 1rem;
@@ -2132,6 +2170,8 @@ label {
   }
   .technology-text h2 {
     text-align: center;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   
   /* Contact styles mobile */
@@ -2246,6 +2286,10 @@ label {
     font-size: 28pt;
     padding-bottom: 0;
   }
+  .process-headers h2 {
+    font-size: 28pt;
+    padding-bottom: 0;
+  }
   .process-logo {
     transform: scale(0.7);
     top: 57px;
@@ -2272,7 +2316,7 @@ label {
   .technology-stack_container {
     margin-bottom: 2rem;
   }
-  .technology-stack_container h1 {
+  .technology-stack_container h2 {
     font-size: 28pt;
     padding-bottom: 1rem;
   }
@@ -2295,6 +2339,7 @@ label {
   }
   .technology-text h2 {
     font-size: 18pt;
+    padding-bottom: 0;
   }
   .technology-text p {
     font-size: 14pt;
@@ -2503,6 +2548,10 @@ label {
     font-size: 28pt;
     padding-bottom: 0;
   }
+  .process-headers h2 {
+    font-size: 28pt;
+    padding-bottom: 0;
+  }
   .process-logo {
     transform: scale(0.7);
     top: 57px;
@@ -2529,7 +2578,7 @@ label {
   .technology-stack_container {
     margin-bottom: 3rem;
   }
-  .technology-stack_container h1 {
+  .technology-stack_container h2 {
     font-size: 28pt;
     padding-bottom: 1rem;
   }
@@ -2552,6 +2601,7 @@ label {
   }
   .technology-text h2 {
     font-size: 18pt;
+    padding-bottom: 0;
   }
   .technology-text p {
     font-size: 14pt;
