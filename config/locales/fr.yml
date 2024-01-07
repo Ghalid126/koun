@@ -22,17 +22,17 @@ fr:
     application:
       title: 'Koun - Création de Sites Internet Professionnels au Maroc'
       description: 'Koun, spécialiste en création de sites internet au Maroc, offre des services de développement web personnalisés et de haute qualité pour booster votre présence en ligne.'
-      keywords: 'Création Site Internet Maroc, Développement Web Maroc, Agence Web Maroc, Solutions Web Innovantes, Design Web Maroc, Ruby on Rails, ReactJS, API ChatGPT, Shopify, Wordpress'
+      keywords: 'Création Site Internet Maroc, Site Web Maroc, Développement Web Maroc, Agence Web Maroc, Solutions Web Innovantes, Design Web Maroc'
 
     home:
       title: 'Koun - Votre Expert en Sites Internet au Maroc'
       description: "Koun: Expertise en création de sites internet à Casablanca, Maroc. Design innovant et technologies de pointe pour votre succès en ligne."
-      keywords: 'Création Site Web Maroc, Développement Web Casablanca, Solutions Web Sur Mesure, Agence Web Maroc, Design Réactif, Assurance Qualité, Expertise en Ruby on Rails et ReactJS'
+      keywords: 'Création Site Web Maroc, Site internet Maroc, Développement Web Casablanca, Solutions Web Sur Mesure, Agence Web Maroc, Design Réactif'
 
     portfolio:
       title: 'Portfolio Koun - Projets Web Réalisés au Maroc'
       description: 'Explorez notre portfolio pour voir nos réalisations en matière de sites internet à travers le Maroc. Découvrez comment nous avons aidé nos clients à atteindre leurs objectifs en ligne.'
-      keywords: 'Portfolio Web Maroc, Projets Développement Web, Casablanca, Maroc, Sites Internet Réussis, Solutions Web Personnalisées, Design Innovant'
+      keywords: 'Portfolio Web Maroc, Projets Développement Web, Casablanca, Maroc, Sites Internet, Solutions Web Personnalisées, Design Innovant'
 
     about:
       title: 'À Propos de Koun - Votre Partenaire Web au Maroc'
@@ -42,7 +42,7 @@ fr:
     faq:
       title: 'FAQ - Réponses à Vos Questions sur le Web au Maroc'
       description: 'Trouvez des réponses aux questions fréquentes concernant la création de sites internet au Maroc. Koun vous aide à comprendre nos processus et services.'
-      keywords: 'FAQ Création Site Web Maroc, Questions Développement Web, Services Web Koun, Ruby on Rails, ReactJS, Wordpress'
+      keywords: 'FAQ Création Site Web Maroc, Questions Développement Web, Services Web Koun, Site internet, Maroc, Casablanca'
 
     quote:
       title: 'Devis pour Votre Site Internet au Maroc - Koun'
