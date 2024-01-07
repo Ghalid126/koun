@@ -2105,6 +2105,7 @@ label {
       padding-right: 1rem;
     }
     .process-headers h2 {
+      text-align: center;
       font-size: 28pt;
       padding-bottom: 0;
       padding-top: 3rem;
