@@ -173,6 +173,9 @@ h1 {
   display: inline;
   list-style: none;
 }
+.menu li:hover {
+  opacity: 0.8;
+}
 .menu li ~li {
   padding-left: 1rem;
 }
