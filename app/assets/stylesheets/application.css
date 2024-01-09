@@ -677,11 +677,11 @@ jumper::after {
   padding: 4rem 3rem;
   border-radius: 12px;
 }
-.technology:hover {
-  /* cursor: pointer; */
+/* .technology:hover {
+  cursor: pointer;
   transform: scale(1.05);
   transition: all 0.5s ease-in-out;
-}
+} */
 
 .technology-logo {
   margin-right: 3rem;
