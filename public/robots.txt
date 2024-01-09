@@ -1,5 +1,5 @@
 User-agents: *
 Disallow: /calendar
 Allow: 
-Sitemap: /sitemap.xml
+Sitemap: https://www.koun.online/sitemap.xml
 Noindex: /calendar
