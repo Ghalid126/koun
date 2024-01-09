@@ -106,7 +106,10 @@ body {
 }
 a {
   text-decoration: none; /* Supprime le soulignement par défaut des liens */
-  color: inherit; /* Utilise la couleur du texte parent */
+  color: inherit;/* Utilise la couleur du texte parent */
+}
+a:hover {
+  cursor: pointer;
 }
 h1 {
   color: #3095FF;
@@ -172,13 +175,20 @@ h1 {
 .menu li {
   display: inline;
   list-style: none;
+  cursor: pointer;
 }
 .menu li:hover {
   opacity: 0.8;
+  cursor: pointer;
 }
 .menu li ~li {
   padding-left: 1rem;
 }
+.nav-item.active{
+  opacity: 0.8 !important;
+
+}
+
 .menu .quote-button {
   background-color: rgba(255, 255, 255, 0.2);
   padding: 0.4rem 2.2rem;
