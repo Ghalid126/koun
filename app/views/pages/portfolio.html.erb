@@ -2,75 +2,75 @@
 <canvas id="gradient-canvas-portfolio">
 </canvas>
 <%= render 'layouts/navbar' %>
-<div class="portfolio-container">
-  <div class="thumb-col">
-    <div class="thumb thumb-active" id="thumb-1" >
-      <%= image_tag 'Capture écran site internet Esther et Selma.png', class: 'thumb-portfolio', alt: 'Website Festival Esther et Selma Screenshot' %>
+<div class="portfolio-flex">
+  <div class="portfolio-container">
+    <div class="thumb-col">
+      <div class="thumb thumb-active" id="thumb-1" >
+        <%= image_tag 'Capture écran site internet Esther et Selma.png', class: 'thumb-portfolio', alt: 'Website Festival Esther et Selma Screenshot' %>
+      </div>
+      <div class="thumb" id="thumb-2">
+        <%= image_tag 'screenshot site web les 3 golfs.png', class: 'thumb-portfolio', alt: 'Site Web Les 3 golfs Screenshot' %>
+      </div>
+      <div class="thumb" id="thumb-3">
+        <%= image_tag 'screenshot site internet 360°.png', class: 'thumb-portfolio', alt: 'Site Web 360 restaurant Screenshot' %>
+      </div>
+      <div class="thumb" id="thumb-4">
+        <%= image_tag 'screenshot site web hellodarb.png', class: 'thumb-portfolio', alt: 'Site Web hellodarb Screenshot' %>
+      </div>
+      <div class="thumb" id="thumb-5">
+        <%= image_tag 'screenshot site web talata.png', class: 'thumb-portfolio', alt: 'Site Web Talata Screenshot' %>
+      </div>
+      <div class="thumb" id="thumb-6">
+        <%= image_tag 'screenshot site web teleport.png', class: 'thumb-portfolio', alt: 'Site Web teleport Screenshot' %>
+      </div>
     </div>
-    <div class="thumb" id="thumb-2">
-      <%= image_tag 'screenshot site web les 3 golfs.png', class: 'thumb-portfolio', alt: 'Site Web Les 3 golfs Screenshot' %>
-    </div>
-    <div class="thumb" id="thumb-3">
-      <%= image_tag 'screenshot site internet 360°.png', class: 'thumb-portfolio', alt: 'Site Web 360 restaurant Screenshot' %>
-    </div>
-    <div class="thumb" id="thumb-4">
-      <%= image_tag 'screenshot site web hellodarb.png', class: 'thumb-portfolio', alt: 'Site Web hellodarb Screenshot' %>
-    </div>
-    <div class="thumb" id="thumb-5">
-      <%= image_tag 'screenshot site web talata.png', class: 'thumb-portfolio', alt: 'Site Web Talata Screenshot' %>
-    </div>
-    <div class="thumb" id="thumb-6">
-      <%= image_tag 'screenshot site web teleport.png', class: 'thumb-portfolio', alt: 'Site Web teleport Screenshot' %>
-    </div>
-  </div>
-  <div class="center">
-    <div class="main-image main-active" id="main-image-1">
-      <%= image_tag 'Capture écran site internet Esther et Selma.png', class: 'center-portfolio', alt: 'Site internet Screenshot' %>
-    </div>
-    <div class="main-image" id="main-image-2">
-      <%= image_tag 'screenshot site web les 3 golfs.png', class: 'center-portfolio', alt: 'Site internet Les 3 golfs' %>
-    </div>
-    <div class="main-image" id="main-image-3">
-      <%= image_tag 'screenshot site internet 360°.png', class: 'center-portfolio', alt: 'Site internet 360 restaurant Screenshot' %>
-    </div>
-    <div class="main-image" id="main-image-4">
-      <%= image_tag 'screenshot site web hellodarb.png', class: 'center-portfolio', alt: 'Site internet hellodarb Screenshot' %>
-    </div>
-    <div class="main-image" id="main-image-5">
-      <%= image_tag 'screenshot site web talata.png', class: 'center-portfolio', alt: 'Site internet Talata Screenshot' %>
-    </div>
-    <div class="main-image" id="main-image-6">
-      <%= image_tag 'screenshot site web teleport.png', class: 'center-portfolio', alt: 'Site internet teleport Screenshot' %>
-    </div>
-  </div>
-  <div class="right-col">
-    <div class="portfolio-text portfolio-text-active" id= "portfolio-text-1">
-      <h3>
-        Festival Esther et Selma
-      </h3>
-      <p><%= t 'portfolio.text1' %></p>
-    </div>
-    <div class="portfolio-text" id= "portfolio-text-2">
-      <h3>
-        Les Trois Golfs Bouskoura
-      </h3>
-      <p><%= t 'portfolio.text2' %></p>
-    </div>
-    <div class="portfolio-text" id= "portfolio-text-3">
-      <h3>Restaurant le 360</h3>
-      <p><%= t 'portfolio.text3' %></p>
-    </div>
-    <div class="portfolio-text" id= "portfolio-text-4">
-      <h3>Hellodarb.com</h3>
-      <p><%= t 'portfolio.text4' %></p>
-    </div>
-    <div class="portfolio-text" id= "portfolio-text-5">
-      <h3>Talata.io</h3>
-      <p><%= t 'portfolio.text5' %></p>
-    </div>
-    <div class="portfolio-text" id= "portfolio-text-6">
-      <h3>Tel3port.com</h3>
-      <p><%= t 'portfolio.text6' %></p>
+    <div class="center">
+      <div class="main-image main-active" id="main-image-1">
+        <%= image_tag 'Capture écran site internet Esther et Selma.png', class: 'center-portfolio', alt: 'Site internet Screenshot' %>
+      </div>
+      <div class="main-image" id="main-image-2">
+        <%= image_tag 'screenshot site web les 3 golfs.png', class: 'center-portfolio', alt: 'Site internet Les 3 golfs' %>
+      </div>
+      <div class="main-image" id="main-image-3">
+        <%= image_tag 'screenshot site internet 360°.png', class: 'center-portfolio', alt: 'Site internet 360 restaurant Screenshot' %>
+      </div>
+      <div class="main-image" id="main-image-4">
+        <%= image_tag 'screenshot site web hellodarb.png', class: 'center-portfolio', alt: 'Site internet hellodarb Screenshot' %>
+      </div>
+      <div class="main-image" id="main-image-5">
+        <%= image_tag 'screenshot site web talata.png', class: 'center-portfolio', alt: 'Site internet Talata Screenshot' %>
+      </div>
+      <div class="main-image" id="main-image-6">
+        <%= image_tag 'screenshot site web teleport.png', class: 'center-portfolio', alt: 'Site internet teleport Screenshot' %>
+      </div>
+      <div class="portfolio-text portfolio-text-active" id= "portfolio-text-1">
+        <h3>
+          Festival Esther et Selma
+        </h3>
+        <p><%= t 'portfolio.text1' %></p>
+      </div>
+      <div class="portfolio-text" id= "portfolio-text-2">
+        <h3>
+          Les Trois Golfs Bouskoura
+        </h3>
+        <p><%= t 'portfolio.text2' %></p>
+      </div>
+      <div class="portfolio-text" id= "portfolio-text-3">
+        <h3>Restaurant le 360</h3>
+        <p><%= t 'portfolio.text3' %></p>
+      </div>
+      <div class="portfolio-text" id= "portfolio-text-4">
+        <h3>Hellodarb.com</h3>
+        <p><%= t 'portfolio.text4' %></p>
+      </div>
+      <div class="portfolio-text" id= "portfolio-text-5">
+        <h3>Talata.io</h3>
+        <p><%= t 'portfolio.text5' %></p>
+      </div>
+      <div class="portfolio-text" id= "portfolio-text-6">
+        <h3>Tel3port.com</h3>
+        <p><%= t 'portfolio.text6' %></p>
+      </div>
     </div>
   </div>
 </div>
