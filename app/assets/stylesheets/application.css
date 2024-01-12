@@ -2038,7 +2038,7 @@ label {
   display: none;
   position: fixed;
   bottom: 0;
-  font-size: 24pt;
+  font-size: 20pt;
   width: 100vw;
   background-color: rgba(19, 39, 97, 0.95);
   z-index: 25;
