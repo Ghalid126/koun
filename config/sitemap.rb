@@ -28,10 +28,10 @@ SitemapGenerator::Sitemap.create do
   #   end
   I18n.available_locales.each do |locale|
     # Accueil
-    add root_path(locale: locale), :changefreq => 'monthly', :priority => 1.0
+    add root_path(locale: locale), :changefreq => 'weekly', :priority => 1.0
 
     # Pages statiques
-    add home_path(locale: locale), :changefreq => 'monthly'
+    # add home_path(locale: locale), :changefreq => 'monthly'
     add request_quote_path(locale: locale), :changefreq => 'monthly'
     add portfolio_path(locale: locale), :changefreq => 'monthly'
     add about_us_path(locale: locale), :changefreq => 'monthly'
