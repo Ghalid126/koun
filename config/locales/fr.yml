@@ -17,7 +17,12 @@ fr:
       about: "À propos"
       follow: "Suivez nous"
     footer:
-
+    routes:
+      about: "a_propos"
+      quote: "devis"
+  nav:
+    mobile:
+      quote: "DEMANDEZ UN DEVIS"
   meta:
     application:
       title: 'Koun - Création de Sites Internet Professionnels au Maroc'
@@ -184,7 +189,7 @@ fr:
 
               Nous sommes des alchimistes du web, mélangeant habilement storytelling, design et innovation. Notre passion pour un design raffiné et notre attention méticuleuse aux détails nous motivent à concevoir des sites web non seulement performants mais aussi envoûtants. Chez Koun.online, votre vision devient réalité, nourrie par notre créativité débordante et notre dévouement sans faille.
               <br><br>
-              Rejoignez-nous dans cette aventure numérique où votre rêve rencontre notre expertise et notre passion. Ensemble, façonnons le web de demain, un site à la fois !"
+              Rejoignez-nous dans cette aventure numérique où votre rêve rencontre notre expertise et notre passion. Ensemble, façonnons le web de demain, un site à la fois!"
   faq:
     title: "FAQ"
     q1: "Quels services proposez-vous ?"

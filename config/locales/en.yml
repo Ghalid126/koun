@@ -48,7 +48,12 @@ en:
       about: "About Us"
       follow: "Follow us"
     footer:
-
+    routes:
+      about: "about_us"
+      quote: "get_a_quote"
+  nav:
+    mobile:
+      quote: "REQUEST A QUOTE"
   meta:
     application:
       title: 'Koun - Your Web Development Partner in Casablanca'
