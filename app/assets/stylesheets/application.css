@@ -1709,13 +1709,14 @@ label {
     border-radius: 8px;
     justify-content: center;
     /* text-align: center; */
-    margin-bottom: 4vh;
+    margin-bottom: 1vh;
     overflow-x: hidden;
   }
   .center {
     height: auto;
     padding-top: .1rem;
-    margin-left: 5px;
+    /* margin-left: 5px; */
+    text-align: center;
   }
   .center p {
     padding-right: 5px;
@@ -1730,7 +1731,7 @@ label {
   }
   .main-image {
     flex: 1;
-    width: 100%;
+    /* width: 100%; */
   }
   .thumb-col {
     flex: 1;
@@ -1754,6 +1755,7 @@ label {
   .portfolio-text {
     margin-left: 0;
     margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   .right-col {
     margin: 0;
@@ -2288,7 +2290,7 @@ label {
     padding-left: .7rem;
   }
   .navbar {
-    height: 25vh;
+    height: 15vh;
   }
   #gradient-canvas {
     height: inherit;
@@ -2426,8 +2428,11 @@ label {
   .center-portfolio {
     margin-top: .5rem;
     margin-bottom: .5rem;
-    width: 540px;
+    width: 785px;
     border-radius: 15px;
+  }
+  .center p {
+    margin-bottom: 15px;
   }
   .right-col {
     margin-top: 0rem;
@@ -2993,7 +2998,10 @@ label {
   }
   .hero-text {
     width: initial;
-    left: 0;
+    left: 20px;
+  }
+  .hero-carrousel {
+    padding-right: 5px;
   }
   .hero-text h1 {
     font-size: 40pt;
@@ -3003,6 +3011,9 @@ label {
   }
   .hero-text .quote-button {
     font-size: 25pt;
+  }
+  .navbar {
+    height: 10vh;
   }
   .menu li ~ li {
     padding-left: .5rem;
@@ -3099,7 +3110,10 @@ label {
   .center-portfolio {
     margin-top: .5rem;
     margin-bottom: .5rem;
-    width: 540px;
+    width: 738px;
+  }
+  .center p {
+    margin-bottom: 20px;
   }
   .right-col {
     margin-top: 0rem;
@@ -3173,10 +3187,14 @@ label {
     width: 90%;
   }
 }
-
+@media only screen and (min-device-width : 740px) and (max-device-width : 1324px) and (orientation: portrait) {
+  .center-portfolio {
+    width: 695px;
+  }
+}
 @media only screen and (min-device-width : 769px) and (max-device-width : 1224px) and (orientation: landscape) {
   .header-hero {
-    height: 95vh;
+    height: 99vh;
   }
   .hero-carrousel {
     margin-left: 2rem;
@@ -3214,7 +3232,7 @@ label {
   .center-portfolio {
     margin-top: .5rem;
     margin-bottom: .5rem;
-    width: 540px;
+    width: 800px;
   }
   .right-col {
     margin-top: 0rem;
@@ -3229,7 +3247,9 @@ label {
     float: left;
     margin-bottom: 1rem;
   }
-
+  .center p {
+    margin-bottom: 20px;
+  }
   .aboutus-photo {
     height: 300px;
     float: left;
