@@ -1697,6 +1697,12 @@ label {
 
 /* PORTFOLIO MOBILE */
 
+@media screen and (max-width: 400px) and (orientation: portrait){
+  #gradient-canvas-about {
+    height: 240vh !important;
+  }
+}
+
 @media screen and (max-width: 430px) and (orientation: portrait){
   .portfolio-container {
     flex-direction: column;
@@ -1754,6 +1760,7 @@ label {
   .thumb:last-child {
     padding-bottom: 0;
   }
+
   .portfolio-text {
     margin-left: 0;
     margin-bottom: 10px;
