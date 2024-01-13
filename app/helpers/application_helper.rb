@@ -13,4 +13,8 @@ module ApplicationHelper
       'active' if current_page?(path)
     end
 
+    def canonical_tag(url)
+      tag(:link, rel: "canonical", href: url)
+    end
+
 end
