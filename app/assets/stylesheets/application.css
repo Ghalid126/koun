@@ -1702,14 +1702,14 @@ label {
     flex-direction: column;
     margin-left: 0;
     margin-right: 0;
-    margin-top: 1vh;
+    /* margin-top: 1vh; */
     z-index: 2;
     height: 100%;
     width: 100%;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     justify-content: center;
     /* text-align: center; */
-    margin-bottom: 1vh;
+    /* margin-bottom: 1vh; */
     overflow-x: hidden;
   }
   .center {
@@ -1731,6 +1731,7 @@ label {
   }
   .main-image {
     flex: 1;
+    margin-top: .5rem;
     /* width: 100%; */
   }
   .thumb-col {
@@ -1740,13 +1741,14 @@ label {
     width: 99%;
     flex-direction: row;
     border-right: none;
+    border-bottom: 1px solid #1b2c5c;
   }
   .thumb {
     margin-top: 1rem;
     margin-right: .5rem;
     padding-right: .5rem;
     padding-left: .5rem;
-    padding-bottom: .5rem;
+    /* padding-bottom: .5rem; */
     box-sizing: border-box;
   }
   .thumb:last-child {
