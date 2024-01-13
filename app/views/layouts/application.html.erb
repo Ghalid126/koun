@@ -27,11 +27,7 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload', as: 'style'%>
     <%# Code pour inclure balises canonicales %>
-    <% if I18n.locale == I18n.default_locale %>
-      <%= tag :link, rel: "canonical", href: request.original_url %>
-    <% else %>
-      <%= tag :link, rel: "canonical", href: url_for(locale: I18n.default_locale, only_path: false) %>
-    <% end %>
+
 
     <%= javascript_importmap_tags %>
 
