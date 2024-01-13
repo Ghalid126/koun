@@ -26,12 +26,9 @@ SitemapGenerator::Sitemap.create do
   #   Article.find_each do |article|
   #     add article_path(article), :lastmod => article.updated_at
   #   end
-  #
-  add root_path, :changefreq => 'weekly', :priority => 1.0
-
   I18n.available_locales.each do |locale|
     # Accueil
-    # add root_path(locale: locale), :changefreq => 'weekly', :priority => 1.0
+    add root_path(locale: locale), :changefreq => 'weekly', :priority => 1.0
 
     # Pages statiques
     # add home_path(locale: locale), :changefreq => 'monthly'
