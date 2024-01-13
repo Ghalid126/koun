@@ -3,5 +3,5 @@ Disallow: /404
 Disallow: /422
 Disallow: /500
  
-Sitemap: https://www.koun.online/sitemap.xml.gz
+Sitemap: https://www.koun.online/sitemap.xml
 
