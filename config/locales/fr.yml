@@ -38,16 +38,16 @@ fr:
         description: "Collaborez avec Koun, votre agence web de choix pour la création de sites internet au Maroc. Bénéficiez de solutions de développement web innovantes et efficaces, d'un design sur mesure et d'un support technique continu."
 
     home:
-      title: 'Koun - Votre Expert en Sites Internet au Maroc'
+      title: 'Création Site Internet au Maroc'
       description: "Koun: Expertise en création de sites internet à Casablanca, Maroc. Design innovant et technologies de pointe pour votre succès en ligne."
       keywords: 'Création Site Internet Maroc, Site Web Maroc, Développement Web Maroc, Agence Web Maroc, Création Site Internet, Design Web Maroc, Création Site Internet Casablanca, Création Site Web Maroc, Site internet Maroc, Site internet Casablanca'
       og:
-        title: 'Koun - Innovative Web Development in Morocco'
+        title: 'Koun - Agence Web expert en Création Site Internet Innovant Maroc'
         description: 'Découvrez des solutions web sur-mesure avec Koun. De la conception stratégique au développement et au lancement, nous proposons des services web complets pour renforcer votre empreinte numérique.'
         type: 'website'
       twitter:
         card: 'summary_large_image'
-        title: 'Koun - Web Development Expertise in Casablanca'
+        title: 'Agence Web expert en Création Site Web Maroc'
         description: "Collaborez avec Koun, votre agence web de choix pour la création de sites internet au Maroc. Bénéficiez de solutions de développement web innovantes et efficaces, d'un design sur mesure et d'un support technique continu."
 
     portfolio:
