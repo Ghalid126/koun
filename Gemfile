@@ -87,3 +87,5 @@ gem 'dotenv-rails', groups: [:development, :test]
 gem "meta-tags"
 
 gem "sitemap_generator"
+
+gem 'carrierwave'

@@ -37,6 +37,7 @@ SitemapGenerator::Sitemap.create do
     add about_us_path(locale: locale), :changefreq => 'monthly'
     add faq_path(locale: locale), :changefreq => 'monthly'
     add contact_path(locale: locale), :changefreq => 'monthly'
+
     # add calendar_path(locale: locale), :changefreq => 'monthly'
 
     # Autres pages et ressources - ajoutez ici selon vos besoins
