@@ -103,7 +103,7 @@ class PagesController < ApplicationController
                   keywords: I18n.t('meta.faq.keywords'),
                   og: {
                     title: I18n.t('meta.faq.og.title'),
-                    url: I18n.t('meta.home.faq.url'),
+                    url: I18n.t('meta.faq.og.url'),
                     description: I18n.t('meta.faq.og.description'),
                     type: 'website'
                   },
