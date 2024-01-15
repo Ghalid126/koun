@@ -63,6 +63,7 @@ en:
         title: 'Koun - Innovative Web Development in Morocco'
         description: "Explore Koun's custom web solutions: Strategic design, development, and launch services for an enhanced digital footprint."
         type: 'website'
+        url: 'https://www.koun.online/en'
       twitter:
         card: 'summary_large_image'
         title: 'Koun - Web Development Expertise in Casablanca'
@@ -76,6 +77,7 @@ en:
         title: 'Koun - Leading Web Development Agency in Casablanca, Morocco'
         description: "Team up with Koun for a bespoke, responsive website using Ruby on Rails, ReactJS, ChatGPT API, Shopify, and WordPress to boost your online presence."
         type: 'website'
+        url: 'https://www.koun.online/en'
       twitter:
         card: 'summary_large_image'
         title: 'Koun - Web Development Agency in Casablanca, Morocco'
@@ -88,6 +90,7 @@ en:
         title: 'Portfolio of Koun - Innovative Web Projects in Morocco'
         description: "Discover Koun's portfolio: From Essaouira's film festivals to Dar Bouazza's online markets, experience our creative and technical web development excellence."
         type: 'website'
+        url: 'https://www.koun.online/en/portfolio'
       twitter:
         card: 'summary_large_image'
         title: 'Koun’s Portfolio - Web Development Excellence in Morocco'
@@ -100,6 +103,7 @@ en:
         title: 'Request a Quote for Web Development - Koun Agency'
         description: "Start your web project with Koun: Contact us for a personalized quote in custom development, e-commerce, static sites, and creative design in Casablanca, Morocco."
         type: 'website'
+        url: 'https://www.koun.online/en/request_quote'
       twitter:
         card: 'summary_large_image'
         title: 'Get Your Custom Web Development Quote - Koun Agency'
@@ -113,6 +117,7 @@ en:
         title: 'Learn About Koun - A Web Agency with a Global Touch'
         description: "Meet Koun.online: Inspired by global experiences, our team of storytellers and designers creates captivating, precise websites."
         type: 'website'
+        url: 'https://www.koun.online/en/about_us'
       twitter:
         card: 'summary_large_image'
         title: 'Koun’s Story - From Global Journeys to Web Excellence'
@@ -126,6 +131,7 @@ en:
         title: 'Get in Touch with Koun - Your Web Development Partner'
         description: "Contact Koun.online for web development: Use our form for fast, personalized replies. Ready for collaboration on your next Casablanca web project."
         type: 'website'
+        url: 'https://www.koun.online/en/contact'
       twitter:
         card: 'summary_large_image'
         title: 'Contact Koun - Expert Web Solutions at Your Fingertips'
@@ -139,6 +145,7 @@ en:
         title: 'Koun FAQ - Your Web Development Questions Answered'
         description: "Get answers about Koun's web services: Discover our Ruby on Rails, ReactJS, WordPress, Shopify expertise, and our web design and SEO approach."
         type: 'website'
+        url: 'https://www.koun.online/en/faq'
       twitter:
         card: 'summary_large_image'
         title: 'Frequently Asked Questions - Koun, Web Experts'

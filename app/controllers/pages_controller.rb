@@ -8,7 +8,7 @@ class PagesController < ApplicationController
                     title: I18n.t('meta.home.og.title'),
                     description: I18n.t('meta.home.og.description'),
                     type: I18n.t('meta.home.og.type'),
-                    url: 'https://www.koun.online',
+                    url: I18n.t('meta.home.og.url'),
                     image: 'https://www.koun.online/favicon.png', # Remplacez par l'URL de l'image que vous souhaitez afficher
                     site_name: 'koun.online'
                   },
@@ -28,7 +28,7 @@ class PagesController < ApplicationController
               og: {
                 title: I18n.t('meta.quote.og.title'),
                 description: I18n.t('meta.quote.og.description'),
-                url: 'https://www.koun.online/about_us',
+                url: I18n.t('meta.quote.og.url'),
                 type: I18n.t('meta.quote.og.type')
               },
               twitter: {
@@ -48,7 +48,7 @@ class PagesController < ApplicationController
       title: I18n.t('meta.portfolio.og.title'),
       description: I18n.t('meta.portfolio.og.description'),
       type: I18n.t('meta.portfolio.og.type'),
-      url: 'https://www.koun.online/portfolio',
+      url: I18n.t('meta.portfolio.og.url'),
       image: 'https://www.koun.online/favicon.png', # Remplacez par l'URL de l'image que vous souhaitez afficher
       site_name: 'koun.online'
     },
@@ -68,7 +68,7 @@ class PagesController < ApplicationController
               og: {
                 title: I18n.t('meta.about.og.title'),
                 description: I18n.t('meta.about.og.description'),
-                url: 'https://www.koun.online/about_us',
+                url: I18n.t('meta.home.about.url'),
                 type: I18n.t('meta.about.og.type')
               },
               twitter: {
@@ -86,7 +86,7 @@ class PagesController < ApplicationController
               og: {
                 title: I18n.t('meta.contact.og.title'),
                 description: I18n.t('meta.contact.og.description'),
-                url: 'https://www.koun.online/contact',
+                url: I18n.t('meta.contact.og.url'),
                 type: I18n.t('meta.contact.og.type')
               },
               twitter: {
@@ -103,7 +103,7 @@ class PagesController < ApplicationController
                   keywords: I18n.t('meta.faq.keywords'),
                   og: {
                     title: I18n.t('meta.faq.og.title'),
-                    url: 'https://www.koun.online/faq',
+                    url: I18n.t('meta.home.faq.url'),
                     description: I18n.t('meta.faq.og.description'),
                     type: 'website'
                   },
