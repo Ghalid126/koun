@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
 
-  def home
+  def index
     set_meta_tags title: I18n.t('meta.home.title'),
                   description: I18n.t('meta.home.description'),
                   keywords: I18n.t('meta.home.keywords'),

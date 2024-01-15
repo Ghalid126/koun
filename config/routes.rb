@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   scope "(:locale)", locale: /#{I18n.available_locales.join("|")}/ do
-    root "pages#home"
+    root "pages#index"
 
     # get 'home', to: 'pages#home'
     get 'request_quote', to: 'pages#quote_step1'
