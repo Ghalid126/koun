@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html lang="<%= I18n.locale %>">
   <head>
-    <% canonical_url = locale == I18n.default_locale ? root_url : url_for(locale: locale, only_path: false) %>
+    <% if locale == I18n.default_locale %>
+      <%# Pour la locale par défaut, utilisez l'URL avec '/fr' %>
+      <% canonical_url = url_for(locale: :fr, only_path: false) %>
+    <% else %>
+      <%# Pour les autres locales, utilisez l'URL avec le suffixe de locale %>
+      <% canonical_url = url_for(locale: locale, only_path: false) %>
+    <% end %>
     <link rel="canonical" href="<%= canonical_url %>">
 
     <!-- Google tag (gtag.js) -->
