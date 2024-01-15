@@ -56,7 +56,7 @@ en:
       quote: "REQUEST A QUOTE"
   meta:
     application:
-      title: 'Koun - Your Web Development Partner in Casablanca'
+      title: 'Your Web Development Partner in Casablanca'
       description: "Koun, Casablanca: Experts in custom web solutions, responsive design, and cutting-edge tech to enhance your online presence."
       keywords: 'Web Development, Website Agency, Casablanca, Morocco, Custom Web Solutions, Responsive Design, Website Morocco'
       og:
@@ -69,7 +69,7 @@ en:
         description: "Partner with Koun for innovative web development in Morocco: Custom design, strong development, and continuous support."
 
     home:
-      title: "Koun Web Agency - Expert Development in Casablanca"
+      title: "Web Agency Expert Development in Casablanca"
       description: "Koun, Casablanca's leading web development agency: Crafting custom, responsive websites for business growth."
       keywords: 'Web Development, Website Agency, Morocco, Casablanca, Web Design, Responsive Development, Quality Assurance, Ruby on Rails, ReactJS, ChatGPT API, Shopify, Wordpress'
       og:
@@ -81,7 +81,7 @@ en:
         title: 'Koun - Web Development Agency in Casablanca, Morocco'
         description: "Team up with Koun for a bespoke, responsive website using Ruby on Rails, ReactJS, ChatGPT API, Shopify, and WordPress to boost your online presence."
     portfolio:
-      title: 'Portfolio - Koun Web Agency, Casablanca'
+      title: 'Portfolio - Website, Casablanca'
       description: "Explore Koun's work: Diverse web development and design for Moroccan industries, offering tailored websites, advanced solutions."
       keywords: 'Web Development Portfolio, Casablanca, Morocco, Movie Festival Website, Residential Project, Restaurant Website, Online Marketplace, 3D Printing Center, Responsive Web Design, Tailored Web Solutions'
       og:
@@ -93,7 +93,7 @@ en:
         title: 'Koun’s Portfolio - Web Development Excellence in Morocco'
         description: "Discover Koun's portfolio: From Essaouira's film festivals to Dar Bouazza's online markets, experience our creative and technical web development excellence."
     quote:
-      title: 'Request a Quote - Koun Web Agency, Casablanca'
+      title: 'Request a Quote - Web Agency, Casablanca'
       description: "Request a custom quote from Koun for your web project: Specializing in bespoke web development, e-commerce, and design in Casablanca, Morocco."
       keywords: 'Request Web Development Quote, Custom Web Development, Static Website, E-commerce Website, Website Design, Casablanca, Morocco, Web Agency'
       og:
@@ -106,7 +106,7 @@ en:
         description: "Start your web project with Koun: Contact us for a personalized quote in custom development, e-commerce, static sites, and creative design in Casablanca, Morocco."
 
     about:
-      title: 'About Us - Koun, A Unique Web Agency'
+      title: 'About Us - A Unique Web Agency'
       description: "Explore Koun.online's journey: Born from a lifelong friendship, our global team from Canada, France, USA, China, and South America crafts visually stunning, intuitive websites with diverse expertise."
       keywords: 'About Koun, Web Agency Story, Global Design Experience, Personalized Web Development, Innovative Web Design, Canada, France, USA, China, South America, Startup Experience, Hospitality, Freelancing'
       og:
@@ -119,7 +119,7 @@ en:
         description: "Meet Koun.online: Inspired by global experiences, our team of storytellers and designers creates captivating, precise websites."
 
     contact:
-      title: 'Contact Us - Koun Web Agency, Casablanca'
+      title: 'Contact Us - Web Agency, Casablanca'
       description: "Contact Koun.online for web development: Use our form for fast, personalized replies. Ready for collaboration on your next Casablanca web project."
       keywords: 'Contact Web Agency, Web Development Inquiry, Casablanca, Morocco, Responsive Web Agency, Custom Web Solutions, Contact Form, Professional Web Assistance, Reach Out to Web Experts'
       og:
@@ -132,7 +132,7 @@ en:
         description: "Contact Koun.online for web development: Use our form for fast, personalized replies. Ready for collaboration on your next Casablanca web project."
 
     faq:
-      title: 'FAQ - Koun Web Agency, Your Questions Answered'
+      title: 'FAQ - Web Agency, Your Questions Answered'
       description: "Get answers about Koun's web services: Discover our Ruby on Rails, ReactJS, WordPress, Shopify expertise, and our web design and SEO approach."
       keywords: 'Web Agency FAQ, Ruby on Rails Development, ReactJS, WordPress, Shopify, Web Design, SEO, Website Development, User Friendly, Web Maintenance, Custom Web Solutions'
       og:
