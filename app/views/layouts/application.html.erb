@@ -2,8 +2,8 @@
 <html lang="<%= I18n.locale %>">
   <head>
     <% if locale == I18n.default_locale %>
-      <%# Pour la locale par défaut, utilisez l'URL avec '/fr' %>
-      <% canonical_url = url_for(locale: :fr, only_path: false) %>
+      <%# Pour la locale par défaut, utilisez l'URL sans suffixe de langue %>
+      <% canonical_url = url_for(only_path: false) %>
     <% else %>
       <%# Pour les autres locales, utilisez l'URL avec le suffixe de locale %>
       <% canonical_url = url_for(locale: locale, only_path: false) %>
