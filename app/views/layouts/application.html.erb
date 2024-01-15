@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="<%= I18n.locale %>">
   <head>
+    <%= canonical_link_tag(request.original_url) %>
     <!-- Google tag (gtag.js) -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-VFL1H1K7NT"></script>
       <script>
@@ -29,10 +30,14 @@
     <%# Code pour inclure balises canonicales %>
 
     <%= javascript_importmap_tags %>
-
-    <% I18n.available_locales.each do |locale| %>
-      <%= tag :link, rel: "alternate", hreflang: locale.to_s, href: url_for(locale: locale, only_path: false) %>
+<%# 
+    <% I18n.available_locales.each do |locale| 
+      <%= tag :link, rel: "alternate", hreflang: locale.to_s, href: url_for(locale: locale, only_path: false) 
     <% end %>
+
+    <link rel="alternate" hreflang="en" href="https://www.koun.online" />
+    <link rel="alternate" hreflang="fr" href="https://www.koun.online/fr" />
+
   </head>
 
   <body>
