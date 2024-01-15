@@ -27,16 +27,17 @@ SitemapGenerator::Sitemap.create do
   #     add article_path(article), :lastmod => article.updated_at
   #   end
   I18n.available_locales.each do |locale|
-    # Accueil
-    add root_path(locale: locale), :changefreq => 'weekly', :priority => 1.0
-
-    # Pages statiques
-    # add home_path(locale: locale), :changefreq => 'monthly'
-    add request_quote_path(locale: locale), :changefreq => 'monthly'
-    add portfolio_path(locale: locale), :changefreq => 'monthly'
-    add about_us_path(locale: locale), :changefreq => 'monthly'
-    add faq_path(locale: locale), :changefreq => 'monthly'
-    add contact_path(locale: locale), :changefreq => 'monthly'
+    if locale == I18n.default_locale
+      add root_path, :changefreq => 'weekly', :priority => 1.0
+    else
+      add root_path(locale: locale), :changefreq => 'weekly', :priority => 1.0
+      add request_quote_path(locale: locale), :changefreq => 'monthly'
+      add portfolio_path(locale: locale), :changefreq => 'monthly'
+      add about_us_path(locale: locale), :changefreq => 'monthly'
+      add faq_path(locale: locale), :changefreq => 'monthly'
+      add contact_path(locale: locale), :changefreq => 'monthly'
+      # Ajoutez ici d'autres pages localisées
+    end
 
     # add calendar_path(locale: locale), :changefreq => 'monthly'
 

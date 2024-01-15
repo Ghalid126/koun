@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="<%= I18n.locale %>">
   <head>
+    <% canonical_url = locale == I18n.default_locale ? root_url : url_for(locale: locale, only_path: false) %>
+    <link rel="canonical" href="<%= canonical_url %>">
+
     <!-- Google tag (gtag.js) -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-VFL1H1K7NT"></script>
       <script>
@@ -34,8 +37,8 @@
       <%= tag :link, rel: "alternate", hreflang: locale.to_s, href: url_for(locale: locale, only_path: false) 
     <% end %>
 
-    <link rel="alternate" hreflang="en" href="https://www.koun.online" />
-    <link rel="alternate" hreflang="fr" href="https://www.koun.online/fr" />
+    <link rel="alternate" hreflang="en" href="https://www.koun.online/en" />
+    <link rel="alternate" hreflang="fr" href="https://www.koun.online/" />
 
   </head>
 
