@@ -32,13 +32,11 @@
     <%# Code pour inclure balises canonicales %>
 
     <%= javascript_importmap_tags %>
-<%# 
-    <% I18n.available_locales.each do |locale| 
-      <%= tag :link, rel: "alternate", hreflang: locale.to_s, href: url_for(locale: locale, only_path: false) 
+    
+    <% I18n.available_locales.each do |locale| %>
+      <%= tag :link, rel: "alternate", hreflang: locale.to_s, href: url_for(locale: locale, only_path: false)  %>
     <% end %>
 
-    <link rel="alternate" hreflang="en" href="https://www.koun.online/en" />
-    <link rel="alternate" hreflang="fr" href="https://www.koun.online/" />
 
   </head>
 
