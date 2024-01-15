@@ -57,20 +57,20 @@ en:
   meta:
     application:
       title: 'Koun - Your Web Development Partner in Casablanca'
-      description: "Koun, Casablanca: Specializing in bespoke web solutions, responsive design, and advanced technologies to boost your online presence."
-      keywords: 'Web Development, Website Agency, Casablanca, Morocco, Custom Web Solutions, Responsive Design, Ruby on Rails, ReactJS, ChatGPT API, Shopify, Wordpress'
+      description: "Koun, Casablanca: Experts in custom web solutions, responsive design, and cutting-edge tech to enhance your online presence."
+      keywords: 'Web Development, Website Agency, Casablanca, Morocco, Custom Web Solutions, Responsive Design, Website Morocco'
       og:
         title: 'Koun - Innovative Web Development in Morocco'
-        description: 'Discover tailor-made web solutions with Koun. From strategic design to development and launch, we provide comprehensive web services to enhance your digital footprint.'
+        description: "Explore Koun's custom web solutions: Strategic design, development, and launch services for an enhanced digital footprint."
         type: 'website'
       twitter:
         card: 'summary_large_image'
         title: 'Koun - Web Development Expertise in Casablanca'
-        description: 'Join forces with Koun for innovative and effective web development solutions in Morocco. Tailored design, robust development, and ongoing support.'
+        description: "Partner with Koun for innovative web development in Morocco: Custom design, strong development, and continuous support."
 
     home:
       title: "Koun Web Agency - Expert Development in Casablanca"
-      description: 'Koun is your premier web development agency in Casablanca, Morocco. Specializing in creating tailored, responsive, and high-quality websites that drive your business forward.'
+      description: "Koun, Casablanca's leading web development agency: Crafting custom, responsive websites for business growth."
       keywords: 'Web Development, Website Agency, Morocco, Casablanca, Web Design, Responsive Development, Quality Assurance, Ruby on Rails, ReactJS, ChatGPT API, Shopify, Wordpress'
       og:
         title: 'Koun - Leading Web Development Agency in Casablanca, Morocco'
