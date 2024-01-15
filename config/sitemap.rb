@@ -28,7 +28,7 @@ SitemapGenerator::Sitemap.create do
   #   end
   I18n.available_locales.each do |locale|
     if locale == I18n.default_locale
-      add root_path, :changefreq => 'weekly', :priority => 1.0
+      add root_path(locale: locale), :changefreq => 'weekly', :priority => 1.0
     else
       add root_path(locale: locale), :changefreq => 'weekly', :priority => 1.0
       add request_quote_path(locale: locale), :changefreq => 'monthly'
