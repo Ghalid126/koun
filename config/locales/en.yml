@@ -201,11 +201,12 @@ en:
       author5_html: "Driss Sekkat<span>Owner</span>"
   portfolio:
     text1: "Web Development of a website for a movie festival in Essaouira - Morocco"
-    text2: "Design, Web development with mailer of a website for a residencial project in Bouskoura - Morocco"
+    text2: "Web development and design for Dental Clinic Located in Casablanca - Morocco"
     text3: "Web development and design of a website for a restaurant in Casablanca - Morocco"
     text4: "Web development and design of an online marketplace in Dar Bouazza - Morocco"
     text5: "Web development and design for a 3D printing center in Casablanca - Morocco"
     text6: "Web development and design for a 3D printing marketplace linked to a printer network worldwide"
+    text7: "Design, Web development with mailer of a website for a residencial project in Bouskoura - Morocco"
   about:
     title: "About Us"
     text_html: "Welcome to Koun.online, a web agency born from the lifelong friendship of three childhood friends. United since kindergarten, our global journeys through Canada, France, USA, China, and South America have refined our design ethos.

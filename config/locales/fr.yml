@@ -172,11 +172,12 @@ fr:
       author5_html: "Driss Sekkat<span>Propriétaire</span>"
   portfolio:
     text1: "Développement d'un site web pour un festival de cinéma à Essaouira - Maroc"
-    text2: "Conception et développement web avec système de mailing pour un projet résidentiel à Bouskoura - Maroc"
+    text2: "Conception et développment d'un site internet pour un centre dentaire à Casablanca - Morocco"
     text3: "Design et développement d'un site internet pour un restaurant à Casablanca - Maroc"
     text4: "Conception et développement d'un site internet pour un site d'annonces en ligne à Dar Bouazza - Maroc"
     text5: "Design et deéveloppement d'un site web pour un centre d'impression 3D à Casablanca - Maroc"
     text6: "Conception et développement d'un site internet pour un marché d'impression 3D connecté à un réseau d'imprimantes mondial"
+    text7: "Conception et développement web avec système de mailing pour un projet résidentiel à Bouskoura - Maroc"
   about:
     title: "À propos de nous"
     text_html: "<b>Bienvenue dans l'Univers Innovant de Koun.online !</b><br><br>
