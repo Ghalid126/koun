@@ -1,13 +1,8 @@
 <!DOCTYPE html>
 <html lang="<%= I18n.locale %>">
   <head>
-    <% if locale == I18n.default_locale %>
-      <%# Pour la locale par défaut, utilisez l'URL sans suffixe de langue %>
-      <% canonical_url = url_for(only_path: false) %>
-    <% else %>
-      <%# Pour les autres locales, utilisez l'URL avec le suffixe de locale %>
-      <% canonical_url = url_for(locale: locale, only_path: false) %>
-    <% end %>
+    <%# Définir l'URL canonique pour la version française et inclure le préfixe de locale pour les autres langues %>
+    <% canonical_url = I18n.locale == :fr ? "https://www.koun.online" : url_for(locale: I18n.locale, only_path: false) %>
     <link rel="canonical" href="<%= canonical_url %>">
 
     <!-- Google tag (gtag.js) -->
