@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html lang="<%= I18n.locale %>">
   <head>
-    <%# Définir l'URL canonique pour la version française et inclure le préfixe de locale pour les autres langues %>
-    <% canonical_url = I18n.locale == :fr ? "https://www.koun.online" : url_for(locale: I18n.locale, only_path: false) %>
-    <link rel="canonical" href="<%= canonical_url %>">
+      <%# Set the correct canonical URL for each page %>
+      <% canonical_url = request.original_url %>
+      <link rel="canonical" href="<%= canonical_url %>">
+      
+      <%# Ensure hreflang tags point to the canonical URLs %>
+      <% I18n.available_locales.each do |locale| %>
+        <%# Generate the URL for the alternate versions %>
+        <% alternate_url = url_for(locale: locale, only_path: false) %>
+        
+        <%# Add the hreflang link tag %>
+        <%= tag :link, rel: "alternate", hreflang: locale.to_s, href: alternate_url %>
+      <% end %>
 
     <!-- Google tag (gtag.js) -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-VFL1H1K7NT"></script>
